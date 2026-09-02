@@ -1,0 +1,153 @@
+{
+  "top_artistas_mes": [
+    {
+      "posicion": 1,
+      "nombre": "XXANTERIA",
+      "reproducciones": "18"
+    },
+    {
+      "posicion": 2,
+      "nombre": "saraunh0ly",
+      "reproducciones": "11"
+    },
+    {
+      "posicion": 3,
+      "nombre": "DVRST",
+      "reproducciones": "8"
+    },
+    {
+      "posicion": 4,
+      "nombre": "LONOWN",
+      "reproducciones": "5"
+    },
+    {
+      "posicion": 5,
+      "nombre": "Malcriada",
+      "reproducciones": "5"
+    }
+  ],
+  "top_albumes_mes": [
+    {
+      "posicion": 1,
+      "nombre": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg"
+    },
+    {
+      "posicion": 2,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
+    },
+    {
+      "posicion": 3,
+      "nombre": "captivation",
+      "artista": "LONOWN",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png"
+    },
+    {
+      "posicion": 4,
+      "nombre": "Grave",
+      "artista": "Pluxry SkUrt",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/7f18d663d977d57cbe4852e872b7f489.jpg"
+    },
+    {
+      "posicion": 5,
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
+    }
+  ],
+  "top_canciones_mes": [
+    {
+      "posicion": 1,
+      "nombre": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes"
+    },
+    {
+      "posicion": 2,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST"
+    },
+    {
+      "posicion": 3,
+      "nombre": "snobbery",
+      "artista": "LONOWN"
+    },
+    {
+      "posicion": 4,
+      "nombre": "Grave",
+      "artista": "Pluxry SkUrt"
+    },
+    {
+      "posicion": 5,
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis"
+    }
+  ],
+  "recientes": [
+    {
+      "cancion": "Reptile Crawling From The Forest",
+      "artista": "Nero's Day at Disneyland",
+      "album": "grievances and dead malls",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d40387a605f414830de9fb861967e15b.png",
+      "fecha": "Ahora mismo"
+    },
+    {
+      "cancion": "Reptile Crawling From The Forest",
+      "artista": "Nero's Day at Disneyland",
+      "album": "grievances and dead malls",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d40387a605f414830de9fb861967e15b.png",
+      "fecha": "01 Sep 2026, 19:10"
+    },
+    {
+      "cancion": "Lunar Abyss",
+      "artista": "Lchavasse",
+      "album": "Lunar Abyss",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/8f54e34bd3b60fd28759fcf75f9d9756.png",
+      "fecha": "01 Sep 2026, 19:06"
+    },
+    {
+      "cancion": "Ok",
+      "artista": "Tommy Cash",
+      "album": "Ok",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e6d43f5d93f4cebba4f22b3c684e066a.png",
+      "fecha": "01 Sep 2026, 18:59"
+    },
+    {
+      "cancion": "AMNEVSEMALO",
+      "artista": "Graxu",
+      "album": "",
+      "portada": "",
+      "fecha": "01 Sep 2026, 18:55"
+    },
+    {
+      "cancion": "AMNEVSEMALO",
+      "artista": "Graxu",
+      "album": "",
+      "portada": "",
+      "fecha": "01 Sep 2026, 18:54"
+    },
+    {
+      "cancion": "BeepBox Original",
+      "artista": "Stixx's Song",
+      "album": "",
+      "portada": "",
+      "fecha": "01 Sep 2026, 18:51"
+    },
+    {
+      "cancion": "Oliver Tree (Splitting Branches)",
+      "artista": "Sacred Elements (ft Finn Rivera)",
+      "album": "",
+      "portada": "",
+      "fecha": "01 Sep 2026, 18:47"
+    },
+    {
+      "cancion": "so bitter (instrumental)",
+      "artista": "stxlkin: Tema",
+      "album": "",
+      "portada": "",
+      "fecha": "01 Sep 2026, 18:43"
+    }
+  ]
+}
