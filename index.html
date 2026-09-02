@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>JAFI's Place</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Nova+Square&display=swap" rel="stylesheet">
+
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="home">
+
+  <div class="viewport-bg"></div>
+
+  <nav class="floating-nav">
+    <div class="nav-pill">
+      <button class="nav-link active" onclick="switchView('home', this)">HOME</button>
+      
+      <div class="portfolio-menu-wrapper">
+        <button class="nav-link" onclick="switchView('portfolio-music', this)">PORTFOLIO ▾</button>
+        <div class="subnav-dropdown">
+          <button class="subnav-link" onclick="switchView('portfolio-illustration', this)">Illustration</button>
+          <button class="subnav-link" onclick="switchView('portfolio-animation', this)">Animation</button>
+          <button class="subnav-link" onclick="switchView('portfolio-music', this)">Music</button>
+          <button class="subnav-link" onclick="switchView('portfolio-programming', this)">Programming</button>
+          <button class="subnav-link" onclick="switchView('portfolio-modeling', this)">Modeling</button>
+          <button class="subnav-link" onclick="switchView('portfolio-textile', this)">Textile Work</button>
+        </div>
+      </div>
+
+      <button class="nav-link" onclick="switchView('about', this)">ABOUT</button>
+      <button class="nav-link" onclick="switchView('contact', this)">CONTACT</button>
+    </div>
+  </nav>
+
+  <div class="social-bubble-wrapper" id="socialBubble">
+    <button class="social-toggle-btn" onclick="toggleSocialBubble()" aria-label="Social Links">
+      <span class="social-btn-icon">🌐</span>
+    </button>
+    <div class="social-bubble-menu">
+      <a href="https://youtube.com/@orangebz" target="_blank" rel="noopener noreferrer" class="bubble-link">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+      <a href="https://soundcloud.com/orangebz" target="_blank" rel="noopener noreferrer" class="bubble-link">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19.7 11.2c-.3 0-.6.1-.9.2-.6-2.5-2.9-4.4-5.6-4.4-1.5 0-2.8.6-3.8 1.5-.4-.1-.7-.2-1.1-.2-.4 0-.8.1-1.1.2v10.5h12.5c2.6 0 4.7-2.1 4.7-4.7s-2.1-4.7-4.7-4.7zM1 13.5c-.3 0-.5.2-.5.5v2.8c0 .3.2.5.5.5s.5-.2.5-.5V14c0-.3-.2-.5-.5-.5zm2.3-2c-.3 0-.5.2-.5.5v6.8c0 .3.2.5.5.5s.5-.2.5-.5V12c0-.3-.2-.5-.5-.5zm2.4-1.2c-.3 0-.5.2-.5.5v9.2c0 .3.2.5.5.5s.5-.2.5-.5v-9.2c0-.3-.2-.5-.5-.5zm2.3-.8c-.3 0-.5.2-.5.5v10.8c0 .3.2.5.5.5s.5-.2.5-.5V10.5c0-.3-.2-.5-.5-.5z"/></svg>
+        SoundCloud
+      </a>
+      <a href="https://github.com/OrangeBz" target="_blank" rel="noopener noreferrer" class="bubble-link">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.instagram.com/orangebz_/" target="_blank" rel="noopener noreferrer" class="bubble-link">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Instagram
+      </a>
+      <a href="https://x.com/OrangeBz1" target="_blank" rel="noopener noreferrer" class="bubble-link">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        X (Twitter)
+      </a>
+      <a href="https://www.tiktok.com/@orangebz1" target="_blank" rel="noopener noreferrer" class="bubble-link">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+        TikTok
+      </a>
+      <a href="https://www.artstation.com/orange_bz" target="_blank" rel="noopener noreferrer" class="bubble-link">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M.26 18.225l1.603 2.768a2.152 2.152 0 0 0 1.862 1.077h13.79l-3.328-5.761H.26zM23.74 18.225l-7.906-13.692a2.152 2.152 0 0 0-1.862-1.077H10.165l10.247 17.747h1.466a2.152 2.152 0 0 0 1.862-3.003zM7.34 3.456l-6.19 10.723h12.38L7.34 3.456z"/></svg>
+        ArtStation
+      </a>
+    </div>
+  </div>
+
+  <main class="view-container">
+
+    <section id="home" class="page-view active">
+      <div class="home-hero">
+        <div class="avatar-wrapper">
+          <img src="OrangeBz nowords.jpg" alt="OrangeBz" class="avatar-img hero-logo">
+        </div>
+        <h1 class="identity-title">OrangeBz</h1>
+        <p class="micro-bio">
+          Exploración visual, sonora y de código. Creando universos conceptuales, experimentos interactivos y música independiente.
+        </p>
+        <div class="social-strip">
+          <a href="https://youtube.com/@orangebz" target="_blank" rel="noopener noreferrer" class="social-btn" data-name="YouTube" aria-label="YouTube">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://soundcloud.com/orangebz" target="_blank" rel="noopener noreferrer" class="social-btn" data-name="SoundCloud" aria-label="SoundCloud">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19.7 11.2c-.3 0-.6.1-.9.2-.6-2.5-2.9-4.4-5.6-4.4-1.5 0-2.8.6-3.8 1.5-.4-.1-.7-.2-1.1-.2-.4 0-.8.1-1.1.2v10.5h12.5c2.6 0 4.7-2.1 4.7-4.7s-2.1-4.7-4.7-4.7zM1 13.5c-.3 0-.5.2-.5.5v2.8c0 .3.2.5.5.5s.5-.2.5-.5V14c0-.3-.2-.5-.5-.5zm2.3-2c-.3 0-.5.2-.5.5v6.8c0 .3.2.5.5.5s.5-.2.5-.5V12c0-.3-.2-.5-.5-.5zm2.4-1.2c-.3 0-.5.2-.5.5v9.2c0 .3.2.5.5.5s.5-.2.5-.5v-9.2c0-.3-.2-.5-.5-.5zm2.3-.8c-.3 0-.5.2-.5.5v10.8c0 .3.2.5.5.5s.5-.2.5-.5V10.5c0-.3-.2-.5-.5-.5z"/></svg>
+          </a>
+          <a href="https://github.com/OrangeBz" target="_blank" rel="noopener noreferrer" class="social-btn" data-name="GitHub" aria-label="GitHub">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/orangebz_/" target="_blank" rel="noopener noreferrer" class="social-btn" data-name="Instagram" aria-label="Instagram">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://x.com/OrangeBz1" target="_blank" rel="noopener noreferrer" class="social-btn" data-name="X (Twitter)" aria-label="X (Twitter)">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@orangebz1" target="_blank" rel="noopener noreferrer" class="social-btn" data-name="TikTok" aria-label="TikTok">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+          </a>
+          <a href="https://www.artstation.com/orange_bz" target="_blank" rel="noopener noreferrer" class="social-btn" data-name="ArtStation" aria-label="ArtStation">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M.26 18.225l1.603 2.768a2.152 2.152 0 0 0 1.862 1.077h13.79l-3.328-5.761H.26zM23.74 18.225l-7.906-13.692a2.152 2.152 0 0 0-1.862-1.077H10.165l10.247 17.747h1.466a2.152 2.152 0 0 0 1.862-3.003zM7.34 3.456l-6.19 10.723h12.38L7.34 3.456z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio-music" class="page-view">
+      <div class="discipline-header">
+        <h2 class="discipline-title">Music</h2>
+        <p class="section-subtitle">Producciones propias, historial de reproducción e influencias.</p>
+      </div>
+
+      <div class="music-tabs">
+        <button class="music-tab-btn active" onclick="switchMusicPane('my-music', this)">My Music</button>
+        <button class="music-tab-btn" onclick="switchMusicPane('listening-scrobbles', this)">Listening / Scrobbles</button>
+      </div>
+
+      <div id="my-music" class="music-subpane active">
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="images/the-watch.jpg" alt="They Watch" class="card-img" onerror="this.src='https://via.placeholder.com/260x180/161426/f0f0f5?text=They+Watch'">
+            <h3 class="card-title">They Watch</h3>
+            <p class="card-desc">Álbum conceptual / Producción e instrumental.</p>
+            <div class="custom-audio-player">
+              <audio preload="none">
+                <source src="audio/the-watch-preview.mp3" type="audio/mpeg">
+              </audio>
+              <button class="player-toggle-btn" aria-label="Reproducir / Pausar">
+                <svg class="svg-icon play-icon" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                <svg class="svg-icon pause-icon" viewBox="0 0 24 24" style="display:none;"><rect x="5" y="4" width="4" height="16"/><rect x="15" y="4" width="4" height="16"/></svg>
+              </button>
+              <div class="player-timeline-wrapper">
+                <div class="player-timeline">
+                  <div class="player-progress"></div>
+                </div>
+                <div class="player-time-display">
+                  <span class="player-curr-time">0:00</span>
+                  <span class="player-dur-time">0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/we-were-two.jpg" alt="We Were Two" class="card-img" onerror="this.src='https://via.placeholder.com/260x180/161622/f0f0f5?text=We+Were+Two'">
+            <h3 class="card-title">We Were Two</h3>
+            <p class="card-desc">Singles y tracks en colaboración.</p>
+            <div class="custom-audio-player">
+              <audio preload="none">
+                <source src="audio/we-were-preview.mp3" type="audio/mpeg">
+              </audio>
+              <button class="player-toggle-btn" aria-label="Reproducir / Pausar">
+                <svg class="svg-icon play-icon" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                <svg class="svg-icon pause-icon" viewBox="0 0 24 24" style="display:none;"><rect x="5" y="4" width="4" height="16"/><rect x="15" y="4" width="4" height="16"/></svg>
+              </button>
+              <div class="player-timeline-wrapper">
+                <div class="player-timeline">
+                  <div class="player-progress"></div>
+                </div>
+                <div class="player-time-display">
+                  <span class="player-curr-time">0:00</span>
+                  <span class="player-dur-time">0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/jafi.jpg" alt="J A F I _" class="card-img" onerror="this.src='https://via.placeholder.com/260x180/261816/f0f0f5?text=J+A+F+I+_'">
+            <h3 class="card-title">J A F I _</h3>
+            <p class="card-desc">Exploración de mezclas y diseño sonoro.</p>
+            <div class="custom-audio-player">
+              <audio preload="none">
+                <source src="audio/yafi-preview.mp3" type="audio/mpeg">
+              </audio>
+              <button class="player-toggle-btn" aria-label="Reproducir / Pausar">
+                <svg class="svg-icon play-icon" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                <svg class="svg-icon pause-icon" viewBox="0 0 24 24" style="display:none;"><rect x="5" y="4" width="4" height="16"/><rect x="15" y="4" width="4" height="16"/></svg>
+              </button>
+              <div class="player-timeline-wrapper">
+                <div class="player-timeline">
+                  <div class="player-progress"></div>
+                </div>
+                <div class="player-time-display">
+                  <span class="player-curr-time">0:00</span>
+                  <span class="player-dur-time">0:00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div id="listening-scrobbles" class="music-subpane">
+        <div class="scrobbles-container">
+          <div class="project-card">
+            <h4 class="stats-section-title">Top 5 Artistas (Último mes)</h4>
+            <ul id="top-artistas-list" class="scrobbles-list"><li>Cargando datos...</li></ul>
+          </div>
+
+          <div class="project-card">
+            <h4 class="stats-section-title">Top 5 Álbumes (Último mes)</h4>
+            <ul id="top-albumes-list" class="scrobbles-list"><li>Cargando datos...</li></ul>
+          </div>
+
+          <div class="project-card">
+            <h4 class="stats-section-title">Top 5 Canciones (Último mes)</h4>
+            <ul id="top-canciones-list" class="scrobbles-list"><li>Cargando datos...</li></ul>
+          </div>
+
+          <div class="project-card">
+            <h4 class="stats-section-title">Historial Reciente</h4>
+            <ul id="recientes-list" class="scrobbles-list"><li>Cargando datos...</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio-illustration" class="page-view">
+      <div class="discipline-header">
+        <h2 class="discipline-title">Illustration</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/illustration1.jpg" alt="Character Assets" class="card-img" onerror="this.src='https://via.placeholder.com/240x180/1a1a24/ffffff?text=La+Naranja'">
+          <h3 class="card-title">Character Assets</h3>
+          <p class="card-desc">Bocetos y diseño de "la Naranja".</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio-animation" class="page-view">
+      <div class="discipline-header">
+        <h2 class="discipline-title">Animation</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/storyboard1.gif" alt="Visual Scripts" class="card-img" onerror="this.src='https://via.placeholder.com/240x180/1a1a24/ffffff?text=Animatic+Preview'">
+          <h3 class="card-title">Visual Scripts</h3>
+          <p class="card-desc">Storyboards para Scar y Feliz.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio-programming" class="page-view">
+      <div class="discipline-header">
+        <h2 class="discipline-title">Programming</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3 class="card-title">Web Canvas</h3>
+          <p class="card-desc space-bottom">Interfaz interactiva HTML/CSS/JS 3D.</p>
+          <a href="https://github.com" target="_blank" class="social-btn btn-full">Ver repositorio ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio-modeling" class="page-view">
+      <div class="discipline-header">
+        <h2 class="discipline-title">Modeling</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <model-viewer src="models/blockbench_model.glb" alt="Modelo 3D" auto-rotate camera-controls shadow-intensity="1" ar-status="not-presenting"></model-viewer>
+          <h3 class="card-title">3D Prototypes</h3>
+          <p class="card-desc">Modelado de escenarios y personajes en Blockbench.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio-textile" class="page-view">
+      <div class="discipline-header">
+        <h2 class="discipline-title">Textile Work</h2>
+        <p class="section-subtitle">Pasa el cursor sobre cada prenda para ver el estado original.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="textile-card-wrapper">
+            <img src="images/textile1_final.jpg" alt="Final" class="textile-img final" onerror="this.src='https://via.placeholder.com/240x220/2a1a34/ffffff?text=Prenda+Customized'">
+            <img src="images/textile1_original.jpg" alt="Original" class="textile-img original" onerror="this.src='https://via.placeholder.com/240x220/141420/a0a0b5?text=Prenda+Original'">
+          </div>
+          <h3 class="card-title">Custom Garments</h3>
+          <p class="card-desc">Modificación, sastrería y confección de prendas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="page-view">
+      <div class="discipline-header">
+        <h2 class="discipline-title">About</h2>
+      </div>
+      <div class="project-card about-card">
+        <p class="space-bottom">
+          Desarrollo ideas combinando sonido, diseño e interacción digital. Mi enfoque está en mantener independencia creativa en cada etapa del proceso.
+        </p>
+        <p><strong class="highlight-text">Áreas de trabajo:</strong> Música, Ilustración, Animación, Programación Web, Modelado 3D y Confección Textil.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="page-view">
+      <div class="discipline-header">
+        <h2 class="discipline-title">Contact</h2>
+      </div>
+      <div class="project-card contact-card">
+        <p class="contact-subtext">Para proyectos o consultas independientes:</p>
+        <a href="mailto:contact@orangebz.com" class="contact-email">contact@orangebz.com</a>
+        
+        <form class="contact-form" action="https://formspree.io/f/tu-id-formspree" method="POST">
+          <input type="text" name="name" class="contact-input" placeholder="Tu nombre" required>
+          <input type="email" name="email" class="contact-input" placeholder="Tu correo electrónico" required>
+          <div class="textarea-wrapper">
+            <textarea name="message" id="contactMessage" class="contact-textarea" placeholder="Mensaje..." maxlength="500" required></textarea>
+            <span class="char-counter" id="charCounter">0 / 500</span>
+          </div>
+          <button type="submit" class="contact-submit-btn">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
