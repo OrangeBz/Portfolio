@@ -1,9 +1,16 @@
-name: Actualizar Scrobbles de Last.fm
+name: Actualizar Datos del Sitio
 
 on:
   schedule:
     - cron: '0 0 */3 * *'
-  workflow_dispatch:
+  workflow_dispatch: 
+  push:
+    paths:
+    
+      - 'media/**'
+      - 'models/**'
+      - 'audio/**'
+      - 'projects/**'
 
 jobs:
   update-data:
@@ -28,9 +35,12 @@ jobs:
           LASTFM_USER: ${{ secrets.LASTFM_USER }}
         run: python update_stats.py
 
+      - name: Escanear todo el portafolio
+        run: python update_media.py
+
       - name: Guardar y subir cambios
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add scrobbles.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: actualizar scrobbles" && git push)
+          git add scrobbles.json portfolio_data.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: actualizar scrobbles y portfolio_data" && git push)
