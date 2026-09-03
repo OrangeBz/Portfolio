@@ -3,26 +3,26 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "18"
+      "reproducciones": "24"
     },
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "11"
+      "reproducciones": "12"
     },
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "8"
+      "reproducciones": "9"
     },
     {
       "posicion": 4,
       "nombre": "LONOWN",
-      "reproducciones": "5"
+      "reproducciones": "7"
     },
     {
       "posicion": 5,
-      "nombre": "Malcriada",
+      "nombre": "Clovis Reyes",
       "reproducciones": "5"
     }
   ],
@@ -47,15 +47,15 @@
     },
     {
       "posicion": 4,
-      "nombre": "Grave",
-      "artista": "Pluxry SkUrt",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/7f18d663d977d57cbe4852e872b7f489.jpg"
-    },
-    {
-      "posicion": 5,
       "nombre": "FUNK DO BOUNCE",
       "artista": "ariis",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
+    },
+    {
+      "posicion": 5,
+      "nombre": "Grave",
+      "artista": "Pluxry SkUrt",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/7f18d663d977d57cbe4852e872b7f489.jpg"
     }
   ],
   "top_canciones_mes": [
@@ -76,78 +76,78 @@
     },
     {
       "posicion": 4,
-      "nombre": "Grave",
-      "artista": "Pluxry SkUrt"
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis"
     },
     {
       "posicion": 5,
-      "nombre": "FUNK DO BOUNCE",
-      "artista": "ariis"
+      "nombre": "Grave",
+      "artista": "Pluxry SkUrt"
     }
   ],
   "recientes": [
     {
-      "cancion": "The Only Thing they Fear is You (Mick Gordon)",
-      "artista": "DOOM Eternal OST",
+      "cancion": "ONE TRICK PONY",
+      "artista": "MAYOCHUP: Tema",
       "album": "",
       "portada": "",
       "fecha": "Ahora mismo"
     },
     {
-      "cancion": "The Only Thing they Fear is You (Mick Gordon)",
-      "artista": "DOOM Eternal OST",
+      "cancion": "ONE TRICK PONY",
+      "artista": "MAYOCHUP: Tema",
       "album": "",
       "portada": "",
-      "fecha": "02 Sep 2026, 14:13"
+      "fecha": "03 Sep 2026, 19:17"
     },
     {
-      "cancion": "Optimistic Nihilism",
-      "artista": "Epic Mountain",
-      "album": "Kurzgesagt, Vol. 4",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/96e3f73c6efa098bcfbc35ab19bb3ab6.jpg",
-      "fecha": "02 Sep 2026, 14:05"
+      "cancion": "Bonita",
+      "artista": "Cabas",
+      "album": "Bonita",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/b02a8cfbcffad7adb1579faad9d4ed34.jpg",
+      "fecha": "03 Sep 2026, 19:13"
     },
     {
-      "cancion": "Nuclear Throne",
-      "artista": "Jukio Kallio",
-      "album": "Nuclear Throne OST",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/debbb66ee2b1b8493c2e94bbdb98b8ae.jpg",
-      "fecha": "02 Sep 2026, 14:00"
+      "cancion": "The Lady in My Life",
+      "artista": "Michael Jackson",
+      "album": "Thriller 25 Super Deluxe Edition",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6e2894e4edba9f42ee448670a59fc12e.png",
+      "fecha": "03 Sep 2026, 19:08"
     },
     {
-      "cancion": "Minor bosses",
-      "artista": "Sonic 3 Music",
+      "cancion": "Reloj ingrato (versión bolero)",
+      "artista": "Doc 3V",
       "album": "",
       "portada": "",
-      "fecha": "02 Sep 2026, 13:58"
+      "fecha": "03 Sep 2026, 19:05"
     },
     {
-      "cancion": "The Course Of True Love",
-      "artista": "David Ferguson: Tema",
+      "cancion": "NOT THAT I'M ANYWHERE",
+      "artista": "Cities Aviv: Tema",
       "album": "",
       "portada": "",
-      "fecha": "02 Sep 2026, 13:51"
+      "fecha": "03 Sep 2026, 18:43"
     },
     {
-      "cancion": "Guirat",
-      "artista": "OrangeBz",
-      "album": "",
-      "portada": "",
-      "fecha": "02 Sep 2026, 13:38"
+      "cancion": "Dirty Diana",
+      "artista": "Michael Jackson",
+      "album": "The Essential Michael Jackson",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/36577e77dabeb2aed157e98c8924d436.jpg",
+      "fecha": "03 Sep 2026, 18:38"
     },
     {
-      "cancion": "perpetual (from Terrifier 3)",
-      "artista": "my head is empty",
-      "album": "",
-      "portada": "",
-      "fecha": "02 Sep 2026, 13:38"
+      "cancion": "hunter eyes (slowed)",
+      "artista": "laydownrot",
+      "album": "hunter eyes (slowed)",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9695fea17c24baaddbbcd2d89629107c.jpg",
+      "fecha": "03 Sep 2026, 18:36"
     },
     {
-      "cancion": "Noches de Arabia – 2019",
-      "artista": "Arturo Mercado Jr",
-      "album": "",
-      "portada": "",
-      "fecha": "02 Sep 2026, 13:35"
+      "cancion": "TB",
+      "artista": "XXANTERIA",
+      "album": "TB",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5abaebfae074a3f8ed4f24d27805df6b.jpg",
+      "fecha": "03 Sep 2026, 18:34"
     }
   ]
 }
