@@ -17,7 +17,16 @@
   user-select: none;
 }
 
-html {
+html, body {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Bloqueo estricto del viewport global para evitar cortes de fondo */
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  font-family: 'DM Sans', sans-serif;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -29,23 +38,9 @@ body::-webkit-scrollbar {
   height: 0;
 }
 
-body {
-  background-color: var(--bg-base);
-  color: var(--text-main);
-  font-family: 'DM Sans', sans-serif;
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 .viewport-bg {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100vw;
   height: 100vh;
   z-index: -2;
@@ -329,39 +324,51 @@ body {
    VISTAS Y TRANSICIONES 3D
    ========================================================================== */
 main.view-container {
-  width: 100%;
-  max-width: 920px;
-  min-height: 100vh;
-  padding: 90px 20px 80px;
-  display: grid;
-  place-items: center;
-  position: relative;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 85px 20px 80px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   perspective: 1000px;
 }
 
-/* Home, About y Contact: centrados verticalmente */
+main.view-container::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Home, About y Contact: centrados verticalmente en la pantalla disponible */
 #home,
 #about,
 #contact {
-  place-self: center;
+  margin: auto 0;
+  padding: 20px 0;
 }
 
-/* Secciones de Portfolio: alineadas a una altura cómoda bajo el navbar */
+/* Secciones de Portfolio: alineadas arriba para permitir scroll fluido cuando crezca el contenido */
 #portfolio-music,
 #portfolio-illustration,
 #portfolio-animation,
 #portfolio-programming,
 #portfolio-modeling,
 #portfolio-textile {
-  place-self: start center;
-  margin-top: 35px;
-  padding-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 
 section.page-view {
-  grid-area: 1 / 1;
   width: 100%;
+  max-width: 920px;
   opacity: 0;
   pointer-events: none;
   transform: scale(0.85);
@@ -374,6 +381,7 @@ section.page-view {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
 }
 
 section.page-view.active {

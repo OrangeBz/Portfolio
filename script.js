@@ -31,6 +31,10 @@ function switchView(targetId, element) {
   targetView.classList.add('active');
 
   // Scroll suave hacia arriba al cambiar de vista
+  const viewContainer = document.querySelector('main.view-container');
+  if (viewContainer) {
+    viewContainer.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
   // Actualizar estados activos de los enlaces del menú
@@ -61,6 +65,11 @@ function switchMusicPane(paneId, btn) {
   }
   if (btn) {
     btn.classList.add('active');
+  }
+
+  const viewContainer = document.querySelector('main.view-container');
+  if (viewContainer) {
+    viewContainer.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
 
