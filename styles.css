@@ -17,14 +17,26 @@
   user-select: none;
 }
 
-html, body {
+html {
   width: 100%;
   height: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Bloqueo estricto del viewport global para evitar cortes de fondo */
+  overflow: hidden;
   background-color: var(--bg-base);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Bloqueo estricto del viewport global */
+  background: transparent;
   color: var(--text-main);
   font-family: 'DM Sans', sans-serif;
   scrollbar-width: none;
@@ -43,7 +55,7 @@ body::-webkit-scrollbar {
   inset: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -2;
+  z-index: 0;
   background: radial-gradient(
     ellipse 540px 400px at 50% 66%,
     rgba(6, 6, 10, 0.66) 0%,
@@ -66,7 +78,7 @@ body::-webkit-scrollbar {
   background-image: url('OrangeBz banner.png');
   background-size: cover;
   background-position: center;
-  z-index: 50; 
+  z-index: 60; 
   pointer-events: none;
   opacity: 0;
   clip-path: circle(0% at var(--banner-origin-x, 50%) var(--banner-origin-y, 35%));
@@ -328,16 +340,19 @@ main.view-container {
   inset: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 10;
+  background: transparent;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
   padding: 85px 20px 80px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: minmax(100%, auto);
+  justify-items: center;
+  align-items: start;
   perspective: 1000px;
 }
 
@@ -351,6 +366,7 @@ main.view-container::-webkit-scrollbar {
 #home,
 #about,
 #contact {
+  align-self: center;
   margin: auto 0;
   padding: 20px 0;
 }
@@ -362,11 +378,13 @@ main.view-container::-webkit-scrollbar {
 #portfolio-programming,
 #portfolio-modeling,
 #portfolio-textile {
+  align-self: start;
   margin-top: 25px;
   margin-bottom: 40px;
 }
 
 section.page-view {
+  grid-area: 1 / 1;
   width: 100%;
   max-width: 920px;
   opacity: 0;
@@ -396,6 +414,7 @@ section.page-view.active {
 section.page-view.exiting {
   display: flex;
   opacity: 0;
+  pointer-events: none;
   transform: scale(1.25);
   filter: blur(12px);
   z-index: 3;
