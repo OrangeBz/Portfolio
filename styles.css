@@ -45,9 +45,21 @@ body {
 
 .viewport-bg {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: -2;
-  background: linear-gradient(rgba(6, 6, 8, 0.4), rgba(6, 6, 8, 0.5)), url('Fondo.jpg') center/cover no-repeat;
+  background: radial-gradient(
+    ellipse 540px 400px at 50% 66%,
+    rgba(6, 6, 10, 0.66) 0%,
+    rgba(6, 6, 10, 0.40) 45%,
+    rgba(6, 6, 10, 0.12) 75%,
+    rgba(6, 6, 10, 0) 100%
+  ), url('Fondo.jpg') center/cover no-repeat;
+  pointer-events: none;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
 }
 
 /* ==========================================================================
@@ -194,7 +206,7 @@ body {
   position: fixed;
   top: 24px;
   right: 24px;
-  z-index: 60;
+  z-index: 95; /* Visible por encima del visualizador */
   opacity: 0;
   pointer-events: none;
   transform: scale(0.85);
@@ -330,6 +342,24 @@ main.view-container {
   box-sizing: border-box;
 }
 
+/* Home, About y Contact: centrados verticalmente */
+#home,
+#about,
+#contact {
+  place-self: center;
+}
+
+/* Secciones de Portfolio: alineadas a una altura cómoda bajo el navbar */
+#portfolio-music,
+#portfolio-illustration,
+#portfolio-animation,
+#portfolio-programming,
+#portfolio-modeling,
+#portfolio-textile {
+  place-self: start center;
+  margin-top: 35px;
+}
+
 section.page-view {
   grid-area: 1 / 1;
   width: 100%;
@@ -368,6 +398,7 @@ section.page-view.exiting {
    HOME HERO & REDES SOCIALES CON HOVER TOOLTIP
    ========================================================================== */
 .home-hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,11 +417,23 @@ section.page-view.exiting {
   margin-top: 24px; /* Baja el logo un poquito más en estado normal */
 }
 
+.logo-particles-canvas {
+  position: absolute;
+  top: -140px;
+  left: -140px;
+  width: calc(100% + 280px);
+  height: calc(100% + 280px);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .avatar-wrapper.expanded-active {
   z-index: 100;
 }
 
 .avatar-img {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -499,7 +542,7 @@ section.page-view.exiting {
    SUBMENÚS Y CENTRADO DE TARJETAS
    ========================================================================== */
 .discipline-header {
-  margin-bottom: 24px;
+  margin-bottom: 42px;
   text-align: center;
   width: 100%;
 }
@@ -598,9 +641,9 @@ section.page-view.exiting {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   width: 100%;
 }
 
@@ -955,4 +998,383 @@ model-viewer {
 
 .contact-submit-btn:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   TARJETAS INTERACTIVAS (Illustration, Animation, Modeling, Textile)
+   ========================================================================== */
+.interactive-card {
+  cursor: pointer;
+  position: relative;
+}
+
+.interactive-card:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 16px rgba(255, 255, 255, 0.12);
+}
+
+.interactive-card::after {
+  content: "⤢ Expandir";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(10, 10, 16, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-family: 'Nova Square', sans-serif;
+  padding: 3px 8px;
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  pointer-events: none;
+}
+
+.interactive-card:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   SHOWCASE EXPANDIDO / 3D FLIP MODAL A TAMAÑO MÁXIMO
+   ========================================================================== */
+.showcase-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 85;
+  background: linear-gradient(rgba(6, 6, 10, 0.65), rgba(6, 6, 10, 0.75)), url('Fondo.jpg') center/cover no-repeat;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.showcase-lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+/* Botón de Cerrar (X) ubicado al lado de la bubble de socials */
+.lightbox-close-btn {
+  position: fixed;
+  top: 24px;
+  right: 80px; /* Exactamente a la izquierda de la bolita social que está en right: 24px */
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(22, 20, 30, 0.9);
+  border: 1px solid var(--glass-border);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 90;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-close-btn:hover {
+  transform: scale(1.08);
+  background: rgba(40, 35, 55, 0.95);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-close-btn .svg-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Flechas flotantes Atrás / Adelante */
+.lightbox-nav-btn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(18, 16, 26, 0.85);
+  border: 1px solid var(--glass-border);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 90;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.lightbox-nav-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+  background: rgba(35, 30, 50, 0.95);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.lightbox-prev-btn {
+  left: 24px;
+}
+
+.lightbox-next-btn {
+  right: 24px;
+}
+
+.lightbox-nav-btn .svg-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ==========================================================================
+   ESTRUCTURA 3D FLIP CARD
+   ========================================================================== */
+.showcase-content-wrapper {
+  width: min(92vw, 840px);
+  max-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1600px;
+  z-index: 86;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  max-height: 80vh;
+  cursor: pointer;
+  position: relative;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  max-height: 80vh;
+  transition: transform 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(14, 14, 22, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CARA FRONTAL: MEDIA A TAMAÑO MÁXIMO */
+.flip-card-front {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 10, 16, 0.92);
+}
+
+.showcase-media-container {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.showcase-media-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 18px 18px 0 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.showcase-media-container model-viewer {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  background: rgba(0, 0, 0, 0.35);
+  border: none;
+  border-radius: 18px;
+}
+
+.showcase-media-container .textile-card-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: none;
+  border-radius: 18px;
+  margin-bottom: 0;
+}
+
+.flip-hint-badge {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(8, 8, 14, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--text-main);
+  font-size: 0.76rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.flip-card:hover .flip-hint-badge {
+  background: rgba(20, 20, 32, 0.95);
+  transform: translateX(-50%) translateY(-2px);
+}
+
+/* CARA TRASERA: FICHA TÉCNICA ESTRUCTURADA */
+.flip-card-back {
+  transform: rotateY(180deg);
+  padding: 32px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background: linear-gradient(145deg, rgba(20, 18, 28, 0.95), rgba(12, 12, 18, 0.98));
+}
+
+.showcase-details-card {
+  width: 100%;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.showcase-discipline-tag {
+  align-self: flex-start;
+  font-family: 'Nova Square', sans-serif;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-border);
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.showcase-title {
+  font-family: 'Nova Square', sans-serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.showcase-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.meta-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.meta-value {
+  font-size: 0.88rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.showcase-description {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.showcase-flipback-btn {
+  align-self: flex-start;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--glass-border);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-family: 'Nova Square', sans-serif;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.showcase-flipback-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ffffff;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .lightbox-close-btn {
+    top: 16px;
+    right: 76px;
+    width: 40px;
+    height: 40px;
+  }
+  .lightbox-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .lightbox-prev-btn { left: 8px; }
+  .lightbox-next-btn { right: 8px; }
+  .flip-card-back { padding: 20px; }
+  .showcase-title { font-size: 1.3rem; }
 }

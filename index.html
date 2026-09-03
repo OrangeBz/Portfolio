@@ -48,7 +48,7 @@
         YouTube
       </a>
       <a href="https://soundcloud.com/orangebz" target="_blank" rel="noopener noreferrer" class="bubble-link">
-        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19.7 11.2c-.3 0-.6.1-.9.2-.6-2.5-2.9-4.4-5.6-4.4-1.5 0-2.8.6-3.8 1.5-.4-.1-.7-.2-1.1-.2-.4 0-.8.1-1.1.2v10.5h12.5c2.6 0 4.7-2.1 4.7-4.7s-2.1-4.7-4.7-4.7zM1 13.5c-.3 0-.5.2-.5.5v2.8c0 .3.2.5.5.5s.5-.2.5-.5V14c0-.3-.2-.5-.5-.5zm2.3-2c-.3 0-.5.2-.5.5v6.8c0 .3.2.5.5.5s.5-.2.5-.5V12c0-.3-.2-.5-.5-.5zm2.4-1.2c-.3 0-.5.2-.5.5v9.2c0 .3.2.5.5.5s.5-.2.5-.5v-9.2c0-.3-.2-.5-.5-.5zm2.3-.8c-.3 0-.5.2-.5.5v10.8c0 .3.2.5.5.5s.5-.2.5-.5V10.5c0-.3-.2-.5-.5-.5z"/></svg>
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M23.999 14.165c-.052 1.796-1.612 3.169-3.4 3.169h-8.18a.68.68 0 0 1-.675-.683V7.862a.747.747 0 0 1 .452-.724s.75-.513 2.333-.513a5.364 5.364 0 0 1 2.763.755 5.433 5.433 0 0 1 2.57 3.54c.282-.08.574-.121.868-.12.884 0 1.73.358 2.347.992s.948 1.49.922 2.373ZM10.721 8.421c.247 2.98.427 5.697 0 8.672a.264.264 0 0 1-.53 0c-.395-2.946-.22-5.718 0-8.672a.264.264 0 0 1 .53 0ZM9.072 9.448c.285 2.659.37 4.986-.006 7.655a.277.277 0 0 1-.55 0c-.331-2.63-.256-5.02 0-7.655a.277.277 0 0 1 .556 0Zm-1.663-.257c.27 2.726.39 5.171 0 7.904a.266.266 0 0 1-.532 0c-.38-2.69-.257-5.21 0-7.904a.266.266 0 0 1 .532 0Zm-1.647.77a26.108 26.108 0 0 1-.008 7.147.272.272 0 0 1-.542 0 27.955 27.955 0 0 1 0-7.147.275.275 0 0 1 .55 0Zm-1.67 1.769c.421 1.865.228 3.5-.029 5.388a.257.257 0 0 1-.514 0c-.21-1.858-.398-3.549 0-5.389a.272.272 0 0 1 .543 0Zm-1.655-.273c.388 1.897.26 3.508-.01 5.412-.026.28-.514.283-.54 0-.244-1.878-.347-3.54-.01-5.412a.283.283 0 0 1 .56 0Zm-1.668.911c.4 1.268.257 2.292-.026 3.572a.257.257 0 0 1-.514 0c-.241-1.262-.354-2.312-.023-3.572a.283.283 0 0 1 .563 0Z"/></svg>
         SoundCloud
       </a>
       <a href="https://github.com/OrangeBz" target="_blank" rel="noopener noreferrer" class="bubble-link">
@@ -79,6 +79,7 @@
     <section id="home" class="page-view active">
       <div class="home-hero">
         <div class="avatar-wrapper">
+          <canvas id="logoParticlesCanvas" class="logo-particles-canvas"></canvas>
           <img src="OrangeBz nowords.jpg" alt="OrangeBz" class="avatar-img hero-logo">
         </div>
         <h1 class="identity-title">OrangeBz</h1>
@@ -90,7 +91,7 @@
             <svg class="svg-icon" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
           <a href="https://soundcloud.com/orangebz" target="_blank" rel="noopener noreferrer" class="social-btn" data-name="SoundCloud" aria-label="SoundCloud">
-            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19.7 11.2c-.3 0-.6.1-.9.2-.6-2.5-2.9-4.4-5.6-4.4-1.5 0-2.8.6-3.8 1.5-.4-.1-.7-.2-1.1-.2-.4 0-.8.1-1.1.2v10.5h12.5c2.6 0 4.7-2.1 4.7-4.7s-2.1-4.7-4.7-4.7zM1 13.5c-.3 0-.5.2-.5.5v2.8c0 .3.2.5.5.5s.5-.2.5-.5V14c0-.3-.2-.5-.5-.5zm2.3-2c-.3 0-.5.2-.5.5v6.8c0 .3.2.5.5.5s.5-.2.5-.5V12c0-.3-.2-.5-.5-.5zm2.4-1.2c-.3 0-.5.2-.5.5v9.2c0 .3.2.5.5.5s.5-.2.5-.5v-9.2c0-.3-.2-.5-.5-.5zm2.3-.8c-.3 0-.5.2-.5.5v10.8c0 .3.2.5.5.5s.5-.2.5-.5V10.5c0-.3-.2-.5-.5-.5z"/></svg>
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M23.999 14.165c-.052 1.796-1.612 3.169-3.4 3.169h-8.18a.68.68 0 0 1-.675-.683V7.862a.747.747 0 0 1 .452-.724s.75-.513 2.333-.513a5.364 5.364 0 0 1 2.763.755 5.433 5.433 0 0 1 2.57 3.54c.282-.08.574-.121.868-.12.884 0 1.73.358 2.347.992s.948 1.49.922 2.373ZM10.721 8.421c.247 2.98.427 5.697 0 8.672a.264.264 0 0 1-.53 0c-.395-2.946-.22-5.718 0-8.672a.264.264 0 0 1 .53 0ZM9.072 9.448c.285 2.659.37 4.986-.006 7.655a.277.277 0 0 1-.55 0c-.331-2.63-.256-5.02 0-7.655a.277.277 0 0 1 .556 0Zm-1.663-.257c.27 2.726.39 5.171 0 7.904a.266.266 0 0 1-.532 0c-.38-2.69-.257-5.21 0-7.904a.266.266 0 0 1 .532 0Zm-1.647.77a26.108 26.108 0 0 1-.008 7.147.272.272 0 0 1-.542 0 27.955 27.955 0 0 1 0-7.147.275.275 0 0 1 .55 0Zm-1.67 1.769c.421 1.865.228 3.5-.029 5.388a.257.257 0 0 1-.514 0c-.21-1.858-.398-3.549 0-5.389a.272.272 0 0 1 .543 0Zm-1.655-.273c.388 1.897.26 3.508-.01 5.412-.026.28-.514.283-.54 0-.244-1.878-.347-3.54-.01-5.412a.283.283 0 0 1 .56 0Zm-1.668.911c.4 1.268.257 2.292-.026 3.572a.257.257 0 0 1-.514 0c-.241-1.262-.354-2.312-.023-3.572a.283.283 0 0 1 .563 0Z"/></svg>
           </a>
           <a href="https://github.com/OrangeBz" target="_blank" rel="noopener noreferrer" class="social-btn" data-name="GitHub" aria-label="GitHub">
             <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -226,7 +227,7 @@
         <h2 class="discipline-title">Illustration</h2>
       </div>
       <div class="project-grid">
-        <article class="project-card">
+        <article class="project-card interactive-card" onclick="openShowcase('portfolio-illustration')">
           <img src="images/illustration1.jpg" alt="Character Assets" class="card-img" onerror="this.src='https://via.placeholder.com/240x180/1a1a24/ffffff?text=La+Naranja'">
           <h3 class="card-title">Character Assets</h3>
           <p class="card-desc">Bocetos y diseño de "la Naranja".</p>
@@ -239,7 +240,7 @@
         <h2 class="discipline-title">Animation</h2>
       </div>
       <div class="project-grid">
-        <article class="project-card">
+        <article class="project-card interactive-card" onclick="openShowcase('portfolio-animation')">
           <img src="images/storyboard1.gif" alt="Visual Scripts" class="card-img" onerror="this.src='https://via.placeholder.com/240x180/1a1a24/ffffff?text=Animatic+Preview'">
           <h3 class="card-title">Visual Scripts</h3>
           <p class="card-desc">Storyboards para Scar y Feliz.</p>
@@ -255,7 +256,7 @@
         <article class="project-card">
           <h3 class="card-title">Web Canvas</h3>
           <p class="card-desc space-bottom">Interfaz interactiva HTML/CSS/JS 3D.</p>
-          <a href="https://github.com" target="_blank" class="social-btn btn-full">Ver repositorio ↗</a>
+          <a href="https://github.com/OrangeBz" target="_blank" rel="noopener noreferrer" class="social-btn btn-full">Ver repositorio ↗</a>
         </article>
       </div>
     </section>
@@ -265,7 +266,7 @@
         <h2 class="discipline-title">Modeling</h2>
       </div>
       <div class="project-grid">
-        <article class="project-card">
+        <article class="project-card interactive-card" onclick="openShowcase('portfolio-modeling')">
           <model-viewer src="models/blockbench_model.glb" alt="Modelo 3D" auto-rotate camera-controls shadow-intensity="1" ar-status="not-presenting"></model-viewer>
           <h3 class="card-title">3D Prototypes</h3>
           <p class="card-desc">Modelado de escenarios y personajes en Blockbench.</p>
@@ -279,7 +280,7 @@
         <p class="section-subtitle">Pasa el cursor sobre cada prenda para ver el estado original.</p>
       </div>
       <div class="project-grid">
-        <article class="project-card">
+        <article class="project-card interactive-card" onclick="openShowcase('portfolio-textile')">
           <div class="textile-card-wrapper">
             <img src="images/textile1_final.jpg" alt="Final" class="textile-img final" onerror="this.src='https://via.placeholder.com/240x220/2a1a34/ffffff?text=Prenda+Customized'">
             <img src="images/textile1_original.jpg" alt="Original" class="textile-img original" onerror="this.src='https://via.placeholder.com/240x220/141420/a0a0b5?text=Prenda+Original'">
@@ -323,6 +324,69 @@
     </section>
 
   </main>
+
+  <!-- SHOWCASE EXPANDIDO / 3D FLIP MODAL -->
+  <div id="showcaseLightbox" class="showcase-lightbox" aria-hidden="true">
+    <!-- Botón de Cerrar (X) al lado de la bolita de socials -->
+    <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Cerrar vista expandida" onclick="closeShowcase()">
+      <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+
+    <!-- Flechas de navegación Atrás / Adelante -->
+    <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrevBtn" aria-label="Proyecto anterior" onclick="navigateShowcase(-1)">
+      <svg class="svg-icon" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+    </button>
+    <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNextBtn" aria-label="Proyecto siguiente" onclick="navigateShowcase(1)">
+      <svg class="svg-icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+
+    <!-- Contenedor 3D Flip Card -->
+    <div class="showcase-content-wrapper">
+      <div class="flip-card" id="showcaseFlipCard" onclick="toggleCardFlip(event)" title="Haz clic en la tarjeta para voltearla">
+        <div class="flip-card-inner" id="showcaseFlipInner">
+          <!-- Cara Frontal (Imagen/Modelo a tamaño máximo) -->
+          <div class="flip-card-front" id="showcaseFront">
+            <div class="showcase-media-container" id="showcaseMediaContainer"></div>
+            <div class="flip-hint-badge">
+              <svg class="svg-icon" viewBox="0 0 24 24" style="width:14px;height:14px;"><path d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"/></svg>
+              Haz clic para voltear y ver ficha técnica
+            </div>
+          </div>
+
+          <!-- Cara Trasera (Información Técnica) -->
+          <div class="flip-card-back" id="showcaseBack">
+            <div class="showcase-details-card">
+              <span class="showcase-discipline-tag" id="showcaseDiscipline">Illustration</span>
+              <h3 class="showcase-title" id="showcaseTitle">Character Assets</h3>
+              
+              <div class="showcase-meta-grid">
+                <div class="meta-item">
+                  <span class="meta-label">Año</span>
+                  <strong class="meta-value" id="showcaseYear">2024</strong>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Software / Herramientas</span>
+                  <strong class="meta-value" id="showcaseSoftware">Photoshop, Clip Studio Paint</strong>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Técnica / Enfoque</span>
+                  <strong class="meta-value" id="showcaseTechnique">Concept Art & Character Design</strong>
+                </div>
+              </div>
+
+              <p class="showcase-description" id="showcaseDesc">
+                Bocetos conceptuales, paleta de color y diseño de personaje para "la Naranja".
+              </p>
+
+              <button type="button" class="showcase-flipback-btn" onclick="toggleCardFlip(event)">
+                ↺ Volver a la imagen
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

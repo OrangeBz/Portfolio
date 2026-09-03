@@ -215,9 +215,9 @@ function initCustomAudioPlayers() {
     }
 
     // Toggle Play / Pause
-    toggleBtn.addEventListener('click', () => {
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       if (audio.paused) {
-        // Pausar todos los otros reproductores
         allAudios.forEach(a => {
           if (a !== audio && !a.paused) {
             a.pause();
@@ -262,6 +262,7 @@ function initCustomAudioPlayers() {
     // Scrubbing en la barra de reproducción
     if (timeline) {
       timeline.addEventListener('click', (e) => {
+        e.stopPropagation();
         const rect = timeline.getBoundingClientRect();
         const clickX = e.clientX - rect.left;
         const width = rect.width;
@@ -274,7 +275,292 @@ function initCustomAudioPlayers() {
 }
 
 /* ==========================================================================
-   6. BANNER INTERACTIVO Y EXPANSIÓN DEL LOGO AL CENTRO
+   6. SHOWCASE EXPANDIDO / 3D FLIP MODAL (Illustration, Animation, Modeling, Textile)
+   ========================================================================== */
+const showcaseData = [
+  {
+    id: 'portfolio-illustration',
+    title: 'Character Assets',
+    discipline: 'Illustration',
+    year: '2024',
+    software: 'Photoshop, Clip Studio Paint',
+    technique: 'Concept Art & Character Design',
+    description: 'Bocetos y diseño conceptual para "la Naranja". Desarrollo de siluetas, expresiones e iteraciones cromáticas para universo visual propio.',
+    type: 'image',
+    mediaSrc: 'images/illustration1.jpg',
+    fallbackSrc: 'https://via.placeholder.com/700x500/1a1a24/ffffff?text=La+Naranja'
+  },
+  {
+    id: 'portfolio-animation',
+    title: 'Visual Scripts',
+    discipline: 'Animation',
+    year: '2024',
+    software: 'After Effects, Premiere Pro, Toon Boom',
+    technique: 'Storyboarding & 2D Animatic',
+    description: 'Storyboards dinámicos y animatics sincronizados para los proyectos Scar y Feliz. Enfoque en ritmo visual, narrativa y actuación de personajes.',
+    type: 'image',
+    mediaSrc: 'images/storyboard1.gif',
+    fallbackSrc: 'https://via.placeholder.com/700x500/1a1a24/ffffff?text=Animatic+Preview'
+  },
+  {
+    id: 'portfolio-modeling',
+    title: '3D Prototypes',
+    discipline: 'Modeling',
+    year: '2024',
+    software: 'Blockbench, Blender',
+    technique: 'Low-Poly 3D Modeling & Texturing',
+    description: 'Modelado tridimensional de personajes y entornos estilizados en Blockbench y Blender. Optimización de polígonos y texturizado pixel-art.',
+    type: 'model',
+    modelSrc: 'models/blockbench_model.glb'
+  },
+  {
+    id: 'portfolio-textile',
+    title: 'Custom Garments',
+    discipline: 'Textile Work',
+    year: '2024',
+    software: 'Sastrería manual, Tintes artesanales, Máquina de coser',
+    technique: 'Upcycling, Patronaje & Custom Stitching',
+    description: 'Modificación, sastrería y confección integral de prendas. Deconstrucción textil, aplicaciones personalizadas y acabados experimentales.',
+    type: 'textile',
+    imgFinal: 'images/textile1_final.jpg',
+    imgOriginal: 'images/textile1_original.jpg',
+    fallbackFinal: 'https://via.placeholder.com/700x500/2a1a34/ffffff?text=Prenda+Customized',
+    fallbackOriginal: 'https://via.placeholder.com/700x500/141420/a0a0b5?text=Prenda+Original'
+  }
+];
+
+let currentShowcaseIndex = 0;
+
+function openShowcase(disciplineId) {
+  const foundIndex = showcaseData.findIndex(item => item.id === disciplineId);
+  if (foundIndex !== -1) {
+    currentShowcaseIndex = foundIndex;
+  }
+  renderShowcase(currentShowcaseIndex);
+
+  const lightbox = document.getElementById('showcaseLightbox');
+  if (lightbox) {
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // La bolita de socials no debe desaparecer al abrir el visualizador
+  const socialBubble = document.getElementById('socialBubble');
+  if (socialBubble) {
+    socialBubble.classList.add('visible');
+  }
+}
+
+function closeShowcase() {
+  const lightbox = document.getElementById('showcaseLightbox');
+  const flipCard = document.getElementById('showcaseFlipCard');
+  if (lightbox) {
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  if (flipCard) {
+    flipCard.classList.remove('flipped');
+  }
+
+  // Si estamos en la vista 'home', restaurar visibilidad oculta de la burbuja
+  const currentActive = document.querySelector('.page-view.active');
+  if (currentActive && currentActive.id === 'home') {
+    const socialBubble = document.getElementById('socialBubble');
+    if (socialBubble) {
+      socialBubble.classList.remove('visible', 'open');
+    }
+  }
+}
+
+function navigateShowcase(delta) {
+  const flipCard = document.getElementById('showcaseFlipCard');
+  if (flipCard) flipCard.classList.remove('flipped');
+
+  currentShowcaseIndex = (currentShowcaseIndex + delta + showcaseData.length) % showcaseData.length;
+  renderShowcase(currentShowcaseIndex);
+}
+
+function toggleCardFlip(event) {
+  if (event) event.stopPropagation();
+  const flipCard = document.getElementById('showcaseFlipCard');
+  if (flipCard) {
+    flipCard.classList.toggle('flipped');
+  }
+}
+
+function renderShowcase(index) {
+  const item = showcaseData[index];
+  if (!item) return;
+
+  const container = document.getElementById('showcaseMediaContainer');
+  const tagEl = document.getElementById('showcaseDiscipline');
+  const titleEl = document.getElementById('showcaseTitle');
+  const yearEl = document.getElementById('showcaseYear');
+  const softEl = document.getElementById('showcaseSoftware');
+  const techEl = document.getElementById('showcaseTechnique');
+  const descEl = document.getElementById('showcaseDesc');
+
+  if (tagEl) tagEl.textContent = item.discipline;
+  if (titleEl) titleEl.textContent = item.title;
+  if (yearEl) yearEl.textContent = item.year;
+  if (softEl) softEl.textContent = item.software;
+  if (techEl) techEl.textContent = item.technique;
+  if (descEl) descEl.textContent = item.description;
+
+  if (container) {
+    if (item.type === 'image') {
+      container.innerHTML = `
+        <img src="${item.mediaSrc}" alt="${item.title}" onerror="this.src='${item.fallbackSrc}'">
+      `;
+    } else if (item.type === 'model') {
+      container.innerHTML = `
+        <model-viewer src="${item.modelSrc}" alt="${item.title}" auto-rotate camera-controls shadow-intensity="1" ar-status="not-presenting"></model-viewer>
+      `;
+    } else if (item.type === 'textile') {
+      container.innerHTML = `
+        <div class="textile-card-wrapper" style="width:100%; height:100%; min-height:420px; position:relative; overflow:hidden;">
+          <img src="${item.imgFinal}" alt="${item.title} Final" class="textile-img final" onerror="this.src='${item.fallbackFinal}'">
+          <img src="${item.imgOriginal}" alt="${item.title} Original" class="textile-img original" onerror="this.src='${item.fallbackOriginal}'">
+        </div>
+      `;
+    }
+  }
+}
+
+// Atajos de teclado para el showcase
+document.addEventListener('keydown', (e) => {
+  const lightbox = document.getElementById('showcaseLightbox');
+  if (lightbox && lightbox.classList.contains('active')) {
+    if (e.key === 'Escape') {
+      closeShowcase();
+    } else if (e.key === 'ArrowLeft') {
+      navigateShowcase(-1);
+    } else if (e.key === 'ArrowRight') {
+      navigateShowcase(1);
+    } else if (e.key === ' ' || e.key === 'Enter') {
+      toggleCardFlip();
+    }
+  }
+});
+
+// Cerrar al hacer clic en el backdrop fuera de la tarjeta
+document.addEventListener('DOMContentLoaded', () => {
+  const lightbox = document.getElementById('showcaseLightbox');
+  if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox || e.target.classList.contains('showcase-content-wrapper')) {
+        closeShowcase();
+      }
+    });
+  }
+});
+
+/* ==========================================================================
+   7. EMISOR DE PARTÍCULAS SUTILES DEL LOGO HACIA EL EXTERIOR (EXPANDIDAS)
+   ========================================================================== */
+function initLogoParticles() {
+  const canvas = document.getElementById('logoParticlesCanvas');
+  const avatar = document.querySelector('.hero-logo');
+  if (!canvas || !avatar) return;
+
+  const ctx = canvas.getContext('2d');
+  let width, height, cx, cy, baseRadius;
+
+  function resize() {
+    const rect = canvas.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    width = rect.width || 440;
+    height = rect.height || 440;
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    ctx.scale(dpr, dpr);
+    cx = width / 2;
+    cy = height / 2;
+    baseRadius = (avatar.offsetWidth || 140) / 2;
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+
+  const PARTICLE_COUNT = 45;
+  const particles = [];
+
+  class Particle {
+    constructor(initial = false) {
+      this.reset(initial);
+    }
+
+    reset(initial = false) {
+      this.angle = Math.random() * Math.PI * 2;
+      const offset = (Math.random() - 0.5) * 8;
+      this.dist = baseRadius + offset;
+      if (initial) {
+        this.dist += Math.random() * 90;
+      }
+      this.speed = 0.35 + Math.random() * 0.55; // Expansión fluida y elegante
+      this.size = 1 + Math.random() * 1.5;
+      this.maxLife = 110 + Math.random() * 130; // Mayor recorrido hacia el exterior
+      this.life = initial ? Math.floor(Math.random() * this.maxLife) : 0;
+      this.maxAlpha = 0.22 + Math.random() * 0.38; // Muy sutil
+      this.hue = Math.random() > 0.45 ? '255, 255, 255' : '230, 238, 255';
+    }
+
+    update() {
+      this.life++;
+      this.dist += this.speed;
+
+      if (this.life >= this.maxLife) {
+        this.reset();
+      }
+    }
+
+    draw() {
+      const progress = this.life / this.maxLife;
+      let alpha = 0;
+      if (progress < 0.15) {
+        alpha = (progress / 0.15) * this.maxAlpha;
+      } else {
+        alpha = (1 - (progress - 0.15) / 0.85) * this.maxAlpha;
+      }
+
+      const x = cx + Math.cos(this.angle) * this.dist;
+      const y = cy + Math.sin(this.angle) * this.dist;
+
+      ctx.beginPath();
+      ctx.arc(x, y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${this.hue}, ${alpha})`;
+      ctx.shadowBlur = 4;
+      ctx.shadowColor = `rgba(${this.hue}, ${alpha * 0.8})`;
+      ctx.fill();
+    }
+  }
+
+  for (let i = 0; i < PARTICLE_COUNT; i++) {
+    particles.push(new Particle(true));
+  }
+
+  function animate() {
+    const homeSection = document.getElementById('home');
+    const isHomeActive = homeSection && homeSection.classList.contains('active');
+
+    if (isHomeActive) {
+      ctx.clearRect(0, 0, width, height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
+
+/* ==========================================================================
+   8. BANNER INTERACTIVO Y EXPANSIÓN DEL LOGO AL CENTRO
    ========================================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   // Cargar estadísticas de Last.fm
@@ -282,6 +568,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Inicializar reproductores personalizados
   initCustomAudioPlayers();
+
+  // Inicializar partículas sutiles del logo
+  initLogoParticles();
 
   // Contador de caracteres del mensaje de contacto
   const contactMsg = document.getElementById('contactMessage');
@@ -306,10 +595,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (heroLogo) {
     heroLogo.addEventListener('mouseenter', () => {
-      // Evitar reactivar si ya está en expansión
       if (heroLogo.classList.contains('expanded')) return;
 
-      // Calcular distancia relativa desde el logo hasta el centro exacto del viewport
       const rect = heroLogo.getBoundingClientRect();
       const viewportCenterX = window.innerWidth / 2;
       const viewportCenterY = window.innerHeight / 2;
@@ -319,29 +606,23 @@ document.addEventListener('DOMContentLoaded', () => {
       const deltaX = viewportCenterX - logoCenterX;
       const deltaY = viewportCenterY - logoCenterY;
 
-      // Pasar las coordenadas exactas a CSS
       heroLogo.style.setProperty('--logo-dx', `${deltaX}px`);
       heroLogo.style.setProperty('--logo-dy', `${deltaY}px`);
 
-      // Establecer el origen radial del banner exactamente en la posición inicial del logo
       overlay.style.setProperty('--banner-origin-x', `${logoCenterX}px`);
       overlay.style.setProperty('--banner-origin-y', `${logoCenterY}px`);
 
       if (resetActiveId) clearTimeout(resetActiveId);
       if (timeoutId) clearTimeout(timeoutId);
 
-      // Activar expansión: se hace grande y baja al centro de la pantalla
       heroLogo.classList.add('expanded');
       heroLogo.parentElement.classList.add('expanded-active');
       overlay.classList.add('active');
 
-      // Permanece en el centro 1 segundo (más ágil y dinámico)
       timeoutId = setTimeout(() => {
-        // Regresa suavemente en reversa a su posición y escala inicial (duración 0.8s)
         heroLogo.classList.remove('expanded');
         overlay.classList.remove('active');
 
-        // Al culminar la reversa de 0.8s, restauramos el z-index normal
         resetActiveId = setTimeout(() => {
           heroLogo.parentElement.classList.remove('expanded-active');
         }, 800);
