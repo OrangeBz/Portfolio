@@ -19,12 +19,12 @@ def get_image_url(image_list, size_index=1):
     return ""
 
 try:
-    # 1. Top Artistas
-    artistas_raw = fetch_lastfm("user.gettopartists", 5).get("topartists", {}).get("artist", [])
+    # 1. Top Artistas (8)
+    artistas_raw = fetch_lastfm("user.gettopartists", 8).get("topartists", {}).get("artist", [])
     top_artistas = [{"posicion": i+1, "nombre": a.get("name", ""), "reproducciones": a.get("playcount", 0)} for i, a in enumerate(artistas_raw)]
 
-    # 2. Top Álbumes
-    albumes_raw = fetch_lastfm("user.gettopalbums", 5).get("topalbums", {}).get("album", [])
+    # 2. Top Álbumes (6)
+    albumes_raw = fetch_lastfm("user.gettopalbums", 6).get("topalbums", {}).get("album", [])
     top_albumes = [{
         "posicion": i+1,
         "nombre": a.get("name", ""),
@@ -32,15 +32,15 @@ try:
         "portada": get_image_url(a.get("image", []), 1)
     } for i, a in enumerate(albumes_raw)]
 
-    # 3. Top Canciones
-    canciones_raw = fetch_lastfm("user.gettoptracks", 5).get("toptracks", {}).get("track", [])
+    # 3. Top Canciones (6)
+    canciones_raw = fetch_lastfm("user.gettoptracks", 6).get("toptracks", {}).get("track", [])
     top_canciones = [{
         "posicion": i+1,
         "nombre": t.get("name", ""),
         "artista": t.get("artist", {}).get("name", "") if isinstance(t.get("artist"), dict) else str(t.get("artist", ""))
     } for i, t in enumerate(canciones_raw)]
 
-    # 4. Recientes
+    # 4. Recientes (8)
     recientes_raw = fetch_lastfm("user.getrecenttracks", 8).get("recenttracks", {}).get("track", [])
     recientes = [{
         "cancion": t.get("name", ""),

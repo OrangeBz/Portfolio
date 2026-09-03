@@ -40,7 +40,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  perspective: 1000px;
 }
 
 .viewport-bg {
@@ -58,8 +57,6 @@ body {
     rgba(6, 6, 10, 0) 100%
   ), url('Fondo.jpg') center/cover no-repeat;
   pointer-events: none;
-  transform: translate3d(0, 0, 0);
-  will-change: transform;
 }
 
 /* ==========================================================================
@@ -335,11 +332,12 @@ main.view-container {
   width: 100%;
   max-width: 920px;
   min-height: 100vh;
-  padding: 90px 20px 40px;
+  padding: 90px 20px 80px;
   display: grid;
   place-items: center;
   position: relative;
   box-sizing: border-box;
+  perspective: 1000px;
 }
 
 /* Home, About y Contact: centrados verticalmente */
@@ -358,6 +356,7 @@ main.view-container {
 #portfolio-textile {
   place-self: start center;
   margin-top: 35px;
+  padding-bottom: 50px;
 }
 
 section.page-view {
@@ -615,6 +614,22 @@ section.page-view.exiting {
   margin-bottom: 6px;
 }
 
+.card-media-slot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-media-slot model-viewer {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid var(--glass-border);
+  background: rgba(0, 0, 0, 0.2);
+}
+
 .card-img {
   width: 100%;
   height: 180px;
@@ -689,16 +704,31 @@ section.page-view.exiting {
 
 .scrobbles-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   width: 100%;
+  max-width: 880px;
   justify-content: center;
   margin: 0 auto;
 }
 
+@media (max-width: 840px) {
+  .scrobbles-container {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
 .scrobbles-container .project-card {
-  max-width: 280px;
+  max-width: none;
   width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.scrobbles-wide-card {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none !important;
 }
 
 .stats-section-title {
@@ -719,6 +749,13 @@ section.page-view.exiting {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+}
+
+.scrobbles-grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 8px 24px;
   width: 100%;
 }
 
@@ -761,6 +798,14 @@ section.page-view.exiting {
   gap: 12px;
   box-sizing: border-box;
   transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.custom-audio-player.player-disabled {
+  opacity: 0.55;
+}
+
+.custom-audio-player.player-disabled .player-toggle-btn {
+  cursor: default;
 }
 
 .custom-audio-player:hover {

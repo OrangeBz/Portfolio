@@ -125,14 +125,12 @@
 
       <div id="my-music" class="music-subpane active">
         <div class="project-grid">
-          <article class="project-card">
-            <img src="images/the-watch.jpg" alt="They Watch" class="card-img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'260\' height=\'180\' viewBox=\'0 0 260 180\'><rect width=\'100%\' height=\'100%\' fill=\'%23161426\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23ffffff\' font-family=\'sans-serif\' font-size=\'14\'>They Watch</text></svg>';">
+          <article class="project-card" data-card-id="the-watch">
+            <div class="card-media-slot" data-media-type="image" data-media-key="the-watch" data-placeholder-title="They Watch" data-placeholder-color="%23161426"></div>
             <h3 class="card-title">They Watch</h3>
             <p class="card-desc">Álbum conceptual / Producción e instrumental.</p>
-            <div class="custom-audio-player">
-              <audio preload="none">
-                <source src="audio/the-watch-preview.mp3" type="audio/mpeg">
-              </audio>
+            <div class="custom-audio-player" data-audio-key="the-watch">
+              <audio preload="none"></audio>
               <button class="player-toggle-btn" aria-label="Reproducir / Pausar">
                 <svg class="svg-icon play-icon" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
                 <svg class="svg-icon pause-icon" viewBox="0 0 24 24" style="display:none;"><rect x="5" y="4" width="4" height="16"/><rect x="15" y="4" width="4" height="16"/></svg>
@@ -148,14 +146,12 @@
               </div>
             </div>
           </article>
-          <article class="project-card">
-            <img src="images/we-were-two.jpg" alt="We Were Two" class="card-img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'260\' height=\'180\' viewBox=\'0 0 260 180\'><rect width=\'100%\' height=\'100%\' fill=\'%23161622\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23ffffff\' font-family=\'sans-serif\' font-size=\'14\'>We Were Two</text></svg>';">
+          <article class="project-card" data-card-id="we-were-two">
+            <div class="card-media-slot" data-media-type="image" data-media-key="we-were" data-placeholder-title="We Were Two" data-placeholder-color="%23161622"></div>
             <h3 class="card-title">We Were Two</h3>
             <p class="card-desc">Singles y tracks en colaboración.</p>
-            <div class="custom-audio-player">
-              <audio preload="none">
-                <source src="audio/we-were-preview.mp3" type="audio/mpeg">
-              </audio>
+            <div class="custom-audio-player" data-audio-key="we-were">
+              <audio preload="none"></audio>
               <button class="player-toggle-btn" aria-label="Reproducir / Pausar">
                 <svg class="svg-icon play-icon" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
                 <svg class="svg-icon pause-icon" viewBox="0 0 24 24" style="display:none;"><rect x="5" y="4" width="4" height="16"/><rect x="15" y="4" width="4" height="16"/></svg>
@@ -171,14 +167,12 @@
               </div>
             </div>
           </article>
-          <article class="project-card">
-            <img src="images/jafi.jpg" alt="J A F I _" class="card-img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'260\' height=\'180\' viewBox=\'0 0 260 180\'><rect width=\'100%\' height=\'100%\' fill=\'%23261816\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23ffffff\' font-family=\'sans-serif\' font-size=\'14\'>J A F I _</text></svg>';">
+          <article class="project-card" data-card-id="jafi">
+            <div class="card-media-slot" data-media-type="image" data-media-key="jafi" data-placeholder-title="J A F I _" data-placeholder-color="%23261816"></div>
             <h3 class="card-title">J A F I _</h3>
             <p class="card-desc">Exploración de mezclas y diseño sonoro.</p>
-            <div class="custom-audio-player">
-              <audio preload="none">
-                <source src="audio/yafi-preview.mp3" type="audio/mpeg">
-              </audio>
+            <div class="custom-audio-player" data-audio-key="jafi">
+              <audio preload="none"></audio>
               <button class="player-toggle-btn" aria-label="Reproducir / Pausar">
                 <svg class="svg-icon play-icon" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
                 <svg class="svg-icon pause-icon" viewBox="0 0 24 24" style="display:none;"><rect x="5" y="4" width="4" height="16"/><rect x="15" y="4" width="4" height="16"/></svg>
@@ -200,23 +194,23 @@
       <div id="listening-scrobbles" class="music-subpane">
         <div class="scrobbles-container">
           <div class="project-card">
-            <h4 class="stats-section-title">Top 5 Artistas (Último mes)</h4>
+            <h4 class="stats-section-title">Top Artistas (Último mes)</h4>
             <ul id="top-artistas-list" class="scrobbles-list"><li>Cargando datos...</li></ul>
           </div>
 
           <div class="project-card">
-            <h4 class="stats-section-title">Top 5 Álbumes (Último mes)</h4>
+            <h4 class="stats-section-title">Top Álbumes (Último mes)</h4>
             <ul id="top-albumes-list" class="scrobbles-list"><li>Cargando datos...</li></ul>
           </div>
 
           <div class="project-card">
-            <h4 class="stats-section-title">Top 5 Canciones (Último mes)</h4>
+            <h4 class="stats-section-title">Top Canciones (Último mes)</h4>
             <ul id="top-canciones-list" class="scrobbles-list"><li>Cargando datos...</li></ul>
           </div>
 
-          <div class="project-card">
+          <div class="project-card scrobbles-wide-card">
             <h4 class="stats-section-title">Historial Reciente</h4>
-            <ul id="recientes-list" class="scrobbles-list"><li>Cargando datos...</li></ul>
+            <ul id="recientes-list" class="scrobbles-list scrobbles-grid-list"><li>Cargando datos...</li></ul>
           </div>
         </div>
       </div>
@@ -228,7 +222,7 @@
       </div>
       <div class="project-grid">
         <article class="project-card interactive-card" onclick="openShowcase('portfolio-illustration')">
-          <img src="images/illustration1.jpg" alt="Character Assets" class="card-img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'260\' height=\'180\' viewBox=\'0 0 260 180\'><rect width=\'100%\' height=\'100%\' fill=\'%231a1a24\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23ffffff\' font-family=\'sans-serif\' font-size=\'14\'>La Naranja</text></svg>';">
+          <div class="card-media-slot" data-media-type="image" data-media-key="illustration1" data-placeholder-title="La Naranja" data-placeholder-color="%231a1a24"></div>
           <h3 class="card-title">Character Assets</h3>
           <p class="card-desc">Bocetos y diseño de "la Naranja".</p>
         </article>
@@ -241,7 +235,7 @@
       </div>
       <div class="project-grid">
         <article class="project-card interactive-card" onclick="openShowcase('portfolio-animation')">
-          <img src="images/storyboard1.gif" alt="Visual Scripts" class="card-img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'260\' height=\'180\' viewBox=\'0 0 260 180\'><rect width=\'100%\' height=\'100%\' fill=\'%231a1a24\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23ffffff\' font-family=\'sans-serif\' font-size=\'14\'>Animatic Preview</text></svg>';">
+          <div class="card-media-slot" data-media-type="image" data-media-key="storyboard1" data-placeholder-title="Animatic Preview" data-placeholder-color="%231a1a24"></div>
           <h3 class="card-title">Visual Scripts</h3>
           <p class="card-desc">Storyboards para Scar y Feliz.</p>
         </article>
@@ -267,7 +261,7 @@
       </div>
       <div class="project-grid">
         <article class="project-card interactive-card" onclick="openShowcase('portfolio-modeling')">
-          <model-viewer src="models/blockbench_model.glb" alt="Modelo 3D" auto-rotate camera-controls shadow-intensity="1" ar-status="not-presenting"></model-viewer>
+          <div class="card-media-slot" data-media-type="model" data-media-key="blockbench_model" data-placeholder-title="3D Prototype" data-placeholder-color="%2314141e"></div>
           <h3 class="card-title">3D Prototypes</h3>
           <p class="card-desc">Modelado de escenarios y personajes en Blockbench.</p>
         </article>
@@ -281,10 +275,7 @@
       </div>
       <div class="project-grid">
         <article class="project-card interactive-card" onclick="openShowcase('portfolio-textile')">
-          <div class="textile-card-wrapper">
-            <img src="images/textile1_final.jpg" alt="Final" class="textile-img final" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'260\' height=\'220\' viewBox=\'0 0 260 220\'><rect width=\'100%\' height=\'100%\' fill=\'%232a1a34\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23ffffff\' font-family=\'sans-serif\' font-size=\'14\'>Prenda Customized</text></svg>';">
-            <img src="images/textile1_original.jpg" alt="Original" class="textile-img original" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'260\' height=\'220\' viewBox=\'0 0 260 220\'><rect width=\'100%\' height=\'100%\' fill=\'%23141420\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23a0a0b5\' font-family=\'sans-serif\' font-size=\'14\'>Prenda Original</text></svg>';">
-          </div>
+          <div class="card-media-slot" data-media-type="textile" data-media-key="textile1" data-placeholder-title="Prenda Customized"></div>
           <h3 class="card-title">Custom Garments</h3>
           <p class="card-desc">Modificación, sastrería y confección de prendas.</p>
         </article>

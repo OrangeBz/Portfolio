@@ -188,8 +188,109 @@ function loadScrobbles() {
 }
 
 /* ==========================================================================
-   5. REPRODUCTORES DE AUDIO PERSONALIZADOS (Estilo Web)
+   5. ARQUITECTURA DINÁMICA DE ASSETS Y REPRODUCTORES DE AUDIO (Zero-Touch & Zero-404)
    ========================================================================== */
+let portfolioData = {
+  images: [],
+  models: [],
+  audio: [],
+  video: [],
+  other: [],
+  by_folder: {},
+  all: []
+};
+
+const makeSvgPlaceholder = (text, bg = '%231a1a24', fg = '%23ffffff', w = 700, h = 500) =>
+  `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}' viewBox='0 0 ${w} ${h}'><rect width='100%' height='100%' fill='${bg}'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='${fg}' font-family='sans-serif' font-size='18'>${encodeURIComponent(text)}</text></svg>`;
+
+function findPortfolioAsset(key, category = null) {
+  if (!portfolioData || !portfolioData.all || portfolioData.all.length === 0 || !key) return null;
+  const lowerKey = key.toLowerCase();
+  
+  const pool = (category && portfolioData[category]) ? portfolioData[category] : portfolioData.all;
+  return pool.find(item => {
+    const itemKey = (item.key || '').toLowerCase();
+    const itemName = (item.name || '').toLowerCase();
+    const itemPath = (item.path || '').toLowerCase();
+    return itemKey === lowerKey || itemKey.includes(lowerKey) || itemName.includes(lowerKey) || itemPath.includes(lowerKey);
+  }) || null;
+}
+
+function initDynamicPortfolio() {
+  fetch('portfolio_data.json')
+    .then(res => {
+      if (!res.ok) throw new Error("portfolio_data.json no disponible");
+      return res.json();
+    })
+    .then(data => {
+      portfolioData = Object.assign({ images: [], models: [], audio: [], video: [], other: [], by_folder: {}, all: [] }, data);
+      renderDynamicSlots();
+      bindDynamicAudio();
+    })
+    .catch(err => {
+      console.info("Modo offline / assets locales por defecto:", err.message);
+      renderDynamicSlots();
+      bindDynamicAudio();
+    });
+}
+
+function renderDynamicSlots() {
+  const slots = document.querySelectorAll('.card-media-slot');
+  slots.forEach(slot => {
+    const type = slot.getAttribute('data-media-type') || 'image';
+    const key = slot.getAttribute('data-media-key') || '';
+    const title = slot.getAttribute('data-placeholder-title') || 'Media';
+    const color = slot.getAttribute('data-placeholder-color') || '%231a1a24';
+
+    if (type === 'image') {
+      const asset = findPortfolioAsset(key, 'images');
+      if (asset) {
+        slot.innerHTML = `<img src="${asset.path}" alt="${title}" class="card-img" onerror="this.onerror=null; this.src='${makeSvgPlaceholder(title, color, '%23ffffff', 260, 180)}'">`;
+      } else {
+        slot.innerHTML = `<img src="${makeSvgPlaceholder(title, color, '%23ffffff', 260, 180)}" alt="${title}" class="card-img">`;
+      }
+    } else if (type === 'model') {
+      const asset = findPortfolioAsset(key, 'models');
+      if (asset) {
+        slot.innerHTML = `<model-viewer src="${asset.path}" alt="${title}" auto-rotate camera-controls shadow-intensity="1" ar-status="not-presenting"></model-viewer>`;
+      } else {
+        slot.innerHTML = `<img src="${makeSvgPlaceholder(title, color, '%23ffffff', 260, 180)}" alt="${title}" class="card-img">`;
+      }
+    } else if (type === 'textile') {
+      const assetFinal = findPortfolioAsset('textile1_final', 'images') || findPortfolioAsset('textile1', 'images');
+      const assetOrig = findPortfolioAsset('textile1_original', 'images');
+      if (assetFinal && assetOrig) {
+        slot.innerHTML = `
+          <div class="textile-card-wrapper" style="width:100%; height:180px; margin-bottom:12px; position:relative; overflow:hidden; border-radius:10px;">
+            <img src="${assetFinal.path}" alt="Final" class="textile-img final">
+            <img src="${assetOrig.path}" alt="Original" class="textile-img original">
+          </div>
+        `;
+      } else {
+        slot.innerHTML = `<img src="${makeSvgPlaceholder(title, '%232a1a34', '%23ffffff', 260, 180)}" alt="${title}" class="card-img">`;
+      }
+    }
+  });
+}
+
+function bindDynamicAudio() {
+  const players = document.querySelectorAll('.custom-audio-player');
+  players.forEach(player => {
+    const key = player.getAttribute('data-audio-key');
+    const audio = player.querySelector('audio');
+    if (!audio || !key) return;
+
+    const asset = findPortfolioAsset(key, 'audio');
+    if (asset && asset.path) {
+      audio.src = asset.path;
+      player.classList.remove('player-disabled');
+    } else {
+      audio.removeAttribute('src');
+      player.classList.add('player-disabled');
+    }
+  });
+}
+
 function initCustomAudioPlayers() {
   const players = document.querySelectorAll('.custom-audio-player');
   const allAudios = [];
@@ -217,6 +318,9 @@ function initCustomAudioPlayers() {
     // Toggle Play / Pause
     toggleBtn.addEventListener('click', (e) => {
       e.stopPropagation();
+      if (!audio.src || audio.src === '' || audio.src === window.location.href) {
+        return;
+      }
       if (audio.paused) {
         allAudios.forEach(a => {
           if (a !== audio && !a.paused) {
@@ -277,12 +381,10 @@ function initCustomAudioPlayers() {
 /* ==========================================================================
    6. SHOWCASE EXPANDIDO / 3D FLIP MODAL (Illustration, Animation, Modeling, Textile)
    ========================================================================== */
-const makeSvgPlaceholder = (text, bg = '%231a1a24', fg = '%23ffffff', w = 700, h = 500) =>
-  `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}' viewBox='0 0 ${w} ${h}'><rect width='100%' height='100%' fill='${bg}'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='${fg}' font-family='sans-serif' font-size='18'>${encodeURIComponent(text)}</text></svg>`;
-
 const showcaseData = [
   {
     id: 'portfolio-illustration',
+    assetKey: 'illustration1',
     title: 'Character Assets',
     discipline: 'Illustration',
     year: '2024',
@@ -290,11 +392,11 @@ const showcaseData = [
     technique: 'Concept Art & Character Design',
     description: 'Bocetos y diseño conceptual para "la Naranja". Desarrollo de siluetas, expresiones e iteraciones cromáticas para universo visual propio.',
     type: 'image',
-    mediaSrc: 'images/illustration1.jpg',
     fallbackSrc: makeSvgPlaceholder('La Naranja', '%231a1a24')
   },
   {
     id: 'portfolio-animation',
+    assetKey: 'storyboard1',
     title: 'Visual Scripts',
     discipline: 'Animation',
     year: '2024',
@@ -302,11 +404,11 @@ const showcaseData = [
     technique: 'Storyboarding & 2D Animatic',
     description: 'Storyboards dinámicos y animatics sincronizados para los proyectos Scar y Feliz. Enfoque en ritmo visual, narrativa y actuación de personajes.',
     type: 'image',
-    mediaSrc: 'images/storyboard1.gif',
     fallbackSrc: makeSvgPlaceholder('Animatic Preview', '%231a1a24')
   },
   {
     id: 'portfolio-modeling',
+    assetKey: 'blockbench_model',
     title: '3D Prototypes',
     discipline: 'Modeling',
     year: '2024',
@@ -314,10 +416,11 @@ const showcaseData = [
     technique: 'Low-Poly 3D Modeling & Texturing',
     description: 'Modelado tridimensional de personajes y entornos estilizados en Blockbench y Blender. Optimización de polígonos y texturizado pixel-art.',
     type: 'model',
-    modelSrc: 'models/blockbench_model.glb'
+    fallbackSrc: makeSvgPlaceholder('3D Prototype', '%2314141e')
   },
   {
     id: 'portfolio-textile',
+    assetKey: 'textile1',
     title: 'Custom Garments',
     discipline: 'Textile Work',
     year: '2024',
@@ -325,8 +428,6 @@ const showcaseData = [
     technique: 'Upcycling, Patronaje & Custom Stitching',
     description: 'Modificación, sastrería y confección integral de prendas. Deconstrucción textil, aplicaciones personalizadas y acabados experimentales.',
     type: 'textile',
-    imgFinal: 'images/textile1_final.jpg',
-    imgOriginal: 'images/textile1_original.jpg',
     fallbackFinal: makeSvgPlaceholder('Prenda Customized', '%232a1a34'),
     fallbackOriginal: makeSvgPlaceholder('Prenda Original', '%23141420', '%23a0a0b5')
   }
@@ -414,20 +515,37 @@ function renderShowcase(index) {
 
   if (container) {
     if (item.type === 'image') {
+      const asset = findPortfolioAsset(item.assetKey, 'images');
+      const src = asset ? asset.path : item.fallbackSrc;
       container.innerHTML = `
-        <img src="${item.mediaSrc}" alt="${item.title}" onerror="this.onerror=null; this.src='${item.fallbackSrc}'">
+        <img src="${src}" alt="${item.title}" onerror="this.onerror=null; this.src='${item.fallbackSrc}'">
       `;
     } else if (item.type === 'model') {
-      container.innerHTML = `
-        <model-viewer src="${item.modelSrc}" alt="${item.title}" auto-rotate camera-controls shadow-intensity="1" ar-status="not-presenting"></model-viewer>
-      `;
+      const asset = findPortfolioAsset(item.assetKey, 'models');
+      if (asset) {
+        container.innerHTML = `
+          <model-viewer src="${asset.path}" alt="${item.title}" auto-rotate camera-controls shadow-intensity="1" ar-status="not-presenting"></model-viewer>
+        `;
+      } else {
+        container.innerHTML = `
+          <img src="${item.fallbackSrc}" alt="${item.title}">
+        `;
+      }
     } else if (item.type === 'textile') {
-      container.innerHTML = `
-        <div class="textile-card-wrapper" style="width:100%; height:100%; min-height:420px; position:relative; overflow:hidden;">
-          <img src="${item.imgFinal}" alt="${item.title} Final" class="textile-img final" onerror="this.onerror=null; this.src='${item.fallbackFinal}'">
-          <img src="${item.imgOriginal}" alt="${item.title} Original" class="textile-img original" onerror="this.onerror=null; this.src='${item.fallbackOriginal}'">
-        </div>
-      `;
+      const assetFinal = findPortfolioAsset('textile1_final', 'images');
+      const assetOrig = findPortfolioAsset('textile1_original', 'images');
+      if (assetFinal && assetOrig) {
+        container.innerHTML = `
+          <div class="textile-card-wrapper" style="width:100%; height:100%; min-height:420px; position:relative; overflow:hidden;">
+            <img src="${assetFinal.path}" alt="${item.title} Final" class="textile-img final">
+            <img src="${assetOrig.path}" alt="${item.title} Original" class="textile-img original">
+          </div>
+        `;
+      } else {
+        container.innerHTML = `
+          <img src="${item.fallbackFinal}" alt="${item.title}">
+        `;
+      }
     }
   }
 }
@@ -566,6 +684,9 @@ function initLogoParticles() {
    8. BANNER INTERACTIVO Y EXPANSIÓN DEL LOGO AL CENTRO
    ========================================================================== */
 document.addEventListener('DOMContentLoaded', () => {
+  // Inicializar arquitectura dinámica de portafolio y assets (Zero-Touch & Zero-404)
+  initDynamicPortfolio();
+
   // Cargar estadísticas de Last.fm
   loadScrobbles();
 
