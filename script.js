@@ -118,7 +118,7 @@ function loadScrobbles() {
             <li class="scrobbles-item">
               <div class="scrobbles-item-left">
                 <span style="color: var(--text-muted); font-family: 'Nova Square'; width: 22px;">#${item.posicion}</span>
-                ${item.portada ? `<img src="${item.portada}" class="scrobbles-cover" alt="Cover" onerror="this.style.display='none'">` : ''}
+                ${item.portada ? `<img src="${item.portada}" class="scrobbles-cover" alt="Cover" onerror="this.onerror=null; this.style.display='none'">` : ''}
                 <div>
                   <strong style="color: #fff; display: block;">${item.nombre}</strong>
                   <span style="font-size: 0.75rem; color: var(--text-muted);">${item.artista}</span>
@@ -158,7 +158,7 @@ function loadScrobbles() {
           elRecientes.innerHTML = data.recientes.slice(0, 8).map(item => `
             <li class="scrobbles-item">
               <div class="scrobbles-item-left">
-                ${item.portada ? `<img src="${item.portada}" class="scrobbles-cover" alt="Cover" onerror="this.style.display='none'">` : ''}
+                ${item.portada ? `<img src="${item.portada}" class="scrobbles-cover" alt="Cover" onerror="this.onerror=null; this.style.display='none'">` : ''}
                 <div>
                   <strong style="color: #fff; display: block;">${item.cancion}</strong>
                   <span style="font-size: 0.75rem; color: var(--text-muted);">${item.artista}${item.album ? ` — ${item.album}` : ''}</span>
@@ -277,6 +277,9 @@ function initCustomAudioPlayers() {
 /* ==========================================================================
    6. SHOWCASE EXPANDIDO / 3D FLIP MODAL (Illustration, Animation, Modeling, Textile)
    ========================================================================== */
+const makeSvgPlaceholder = (text, bg = '%231a1a24', fg = '%23ffffff', w = 700, h = 500) =>
+  `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}' viewBox='0 0 ${w} ${h}'><rect width='100%' height='100%' fill='${bg}'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='${fg}' font-family='sans-serif' font-size='18'>${encodeURIComponent(text)}</text></svg>`;
+
 const showcaseData = [
   {
     id: 'portfolio-illustration',
@@ -288,7 +291,7 @@ const showcaseData = [
     description: 'Bocetos y diseño conceptual para "la Naranja". Desarrollo de siluetas, expresiones e iteraciones cromáticas para universo visual propio.',
     type: 'image',
     mediaSrc: 'images/illustration1.jpg',
-    fallbackSrc: 'https://via.placeholder.com/700x500/1a1a24/ffffff?text=La+Naranja'
+    fallbackSrc: makeSvgPlaceholder('La Naranja', '%231a1a24')
   },
   {
     id: 'portfolio-animation',
@@ -300,7 +303,7 @@ const showcaseData = [
     description: 'Storyboards dinámicos y animatics sincronizados para los proyectos Scar y Feliz. Enfoque en ritmo visual, narrativa y actuación de personajes.',
     type: 'image',
     mediaSrc: 'images/storyboard1.gif',
-    fallbackSrc: 'https://via.placeholder.com/700x500/1a1a24/ffffff?text=Animatic+Preview'
+    fallbackSrc: makeSvgPlaceholder('Animatic Preview', '%231a1a24')
   },
   {
     id: 'portfolio-modeling',
@@ -324,8 +327,8 @@ const showcaseData = [
     type: 'textile',
     imgFinal: 'images/textile1_final.jpg',
     imgOriginal: 'images/textile1_original.jpg',
-    fallbackFinal: 'https://via.placeholder.com/700x500/2a1a34/ffffff?text=Prenda+Customized',
-    fallbackOriginal: 'https://via.placeholder.com/700x500/141420/a0a0b5?text=Prenda+Original'
+    fallbackFinal: makeSvgPlaceholder('Prenda Customized', '%232a1a34'),
+    fallbackOriginal: makeSvgPlaceholder('Prenda Original', '%23141420', '%23a0a0b5')
   }
 ];
 
@@ -412,7 +415,7 @@ function renderShowcase(index) {
   if (container) {
     if (item.type === 'image') {
       container.innerHTML = `
-        <img src="${item.mediaSrc}" alt="${item.title}" onerror="this.src='${item.fallbackSrc}'">
+        <img src="${item.mediaSrc}" alt="${item.title}" onerror="this.onerror=null; this.src='${item.fallbackSrc}'">
       `;
     } else if (item.type === 'model') {
       container.innerHTML = `
@@ -421,8 +424,8 @@ function renderShowcase(index) {
     } else if (item.type === 'textile') {
       container.innerHTML = `
         <div class="textile-card-wrapper" style="width:100%; height:100%; min-height:420px; position:relative; overflow:hidden;">
-          <img src="${item.imgFinal}" alt="${item.title} Final" class="textile-img final" onerror="this.src='${item.fallbackFinal}'">
-          <img src="${item.imgOriginal}" alt="${item.title} Original" class="textile-img original" onerror="this.src='${item.fallbackOriginal}'">
+          <img src="${item.imgFinal}" alt="${item.title} Final" class="textile-img final" onerror="this.onerror=null; this.src='${item.fallbackFinal}'">
+          <img src="${item.imgOriginal}" alt="${item.title} Original" class="textile-img original" onerror="this.onerror=null; this.src='${item.fallbackOriginal}'">
         </div>
       `;
     }

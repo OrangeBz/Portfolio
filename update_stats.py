@@ -9,7 +9,7 @@ def fetch_lastfm(method, limit=5):
     url = f"http://ws.audioscrobbler.com/2.0/?method={method}&user={USER}&api_key={API_KEY}&format=json&limit={limit}"
     req = urllib.request.Request(url, headers={'User-Agent': 'OrangeBzSite/1.0'})
     with urllib.request.urlopen(req) as response:
-        return json.loads(response.read().decode())
+        return json.loads(response.read().decode('utf-8'))
 
 def get_image_url(image_list, size_index=1):
     if isinstance(image_list, list) and len(image_list) > size_index:
@@ -57,11 +57,19 @@ try:
         "recientes": recientes
     }
 
-    # Guardar en la misma carpeta del script
+    # Guardar en script_dir y opcionalmente en parent dir si es diferente
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    output_path = os.path.join(script_dir, "scrobbles.json")
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    out_paths = {os.path.join(script_dir, "scrobbles.json")}
+    parent_dir = os.path.dirname(script_dir)
+    if os.path.exists(parent_dir):
+        out_paths.add(os.path.join(parent_dir, "scrobbles.json"))
+
+    for out in out_paths:
+        try:
+            with open(out, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            print(f"Nota guardando {out}: {e}")
 
     print("scrobbles.json actualizado con éxito.")
 
