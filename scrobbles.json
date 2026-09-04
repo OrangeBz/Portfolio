@@ -3,12 +3,12 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "24"
+      "reproducciones": "27"
     },
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "12"
+      "reproducciones": "14"
     },
     {
       "posicion": 3,
@@ -22,7 +22,22 @@
     },
     {
       "posicion": 5,
+      "nombre": "Malcriada",
+      "reproducciones": "6"
+    },
+    {
+      "posicion": 6,
       "nombre": "Clovis Reyes",
+      "reproducciones": "5"
+    },
+    {
+      "posicion": 7,
+      "nombre": "OrangeBz",
+      "reproducciones": "5"
+    },
+    {
+      "posicion": 8,
+      "nombre": "RXLZQ",
       "reproducciones": "5"
     }
   ],
@@ -56,6 +71,12 @@
       "nombre": "Grave",
       "artista": "Pluxry SkUrt",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/7f18d663d977d57cbe4852e872b7f489.jpg"
+    },
+    {
+      "posicion": 6,
+      "nombre": "selfsabotage",
+      "artista": "saraunh0ly",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5648088b415daab2710f8ae775f05adf.jpg"
     }
   ],
   "top_canciones_mes": [
@@ -81,73 +102,71 @@
     },
     {
       "posicion": 5,
+      "nombre": "Malcriada - PARANOIA",
+      "artista": "Malcriada"
+    },
+    {
+      "posicion": 6,
       "nombre": "Grave",
       "artista": "Pluxry SkUrt"
     }
   ],
   "recientes": [
     {
-      "cancion": "ONE TRICK PONY",
-      "artista": "MAYOCHUP: Tema",
+      "cancion": "foolish",
+      "artista": "saraunh0ly",
+      "album": "foolish",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/51fc2897b9e0e506f417f4040e9b1395.jpg",
+      "fecha": "04 Sep 2026, 01:34"
+    },
+    {
+      "cancion": "LOUCURA LETAL (Ultra Slowed)",
+      "artista": "Nxxkz & Nakama",
       "album": "",
       "portada": "",
-      "fecha": "Ahora mismo"
+      "fecha": "04 Sep 2026, 01:32"
     },
     {
-      "cancion": "ONE TRICK PONY",
-      "artista": "MAYOCHUP: Tema",
+      "cancion": "Nowhere To Run",
+      "artista": "Stegosaurus Rex: Tema",
       "album": "",
       "portada": "",
-      "fecha": "03 Sep 2026, 19:17"
+      "fecha": "04 Sep 2026, 01:27"
     },
     {
-      "cancion": "Bonita",
-      "artista": "Cabas",
-      "album": "Bonita",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/b02a8cfbcffad7adb1579faad9d4ed34.jpg",
-      "fecha": "03 Sep 2026, 19:13"
-    },
-    {
-      "cancion": "The Lady in My Life",
-      "artista": "Michael Jackson",
-      "album": "Thriller 25 Super Deluxe Edition",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6e2894e4edba9f42ee448670a59fc12e.png",
-      "fecha": "03 Sep 2026, 19:08"
-    },
-    {
-      "cancion": "Reloj ingrato (versión bolero)",
-      "artista": "Doc 3V",
+      "cancion": "LOUCURA LETAL (Ultra Slowed)",
+      "artista": "Nxxkz & Nakama",
       "album": "",
       "portada": "",
-      "fecha": "03 Sep 2026, 19:05"
+      "fecha": "04 Sep 2026, 01:26"
     },
     {
-      "cancion": "NOT THAT I'M ANYWHERE",
-      "artista": "Cities Aviv: Tema",
-      "album": "",
-      "portada": "",
-      "fecha": "03 Sep 2026, 18:43"
-    },
-    {
-      "cancion": "Dirty Diana",
-      "artista": "Michael Jackson",
-      "album": "The Essential Michael Jackson",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/36577e77dabeb2aed157e98c8924d436.jpg",
-      "fecha": "03 Sep 2026, 18:38"
-    },
-    {
-      "cancion": "hunter eyes (slowed)",
-      "artista": "laydownrot",
-      "album": "hunter eyes (slowed)",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9695fea17c24baaddbbcd2d89629107c.jpg",
-      "fecha": "03 Sep 2026, 18:36"
-    },
-    {
-      "cancion": "TB",
+      "cancion": "CUT",
       "artista": "XXANTERIA",
-      "album": "TB",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5abaebfae074a3f8ed4f24d27805df6b.jpg",
-      "fecha": "03 Sep 2026, 18:34"
+      "album": "",
+      "portada": "",
+      "fecha": "04 Sep 2026, 01:24"
+    },
+    {
+      "cancion": "Gothic Summer",
+      "artista": "Prayers",
+      "album": "Gothic Summer",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d60a1aef539659005740cad3407cc063.jpg",
+      "fecha": "04 Sep 2026, 01:22"
+    },
+    {
+      "cancion": "pride (super slowed)",
+      "artista": "SLXUGHTER",
+      "album": "",
+      "portada": "",
+      "fecha": "04 Sep 2026, 01:20"
+    },
+    {
+      "cancion": "TAKING IT FAST",
+      "artista": "XXANTERIA",
+      "album": "TAKING IT FAST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "04 Sep 2026, 01:18"
     }
   ]
 }
