@@ -26,6 +26,9 @@ jobs:
     steps:
       - name: Checkout repositorio
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -37,18 +40,18 @@ jobs:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
           LASTFM_USER: ${{ secrets.LASTFM_USER }}
         run: |
-          if [ -f "root/update_stats.py" ]; then
-            python root/update_stats.py
-          elif [ -f "update_stats.py" ]; then
+          if [ -f "update_stats.py" ]; then
             python update_stats.py
+          elif [ -f "root/update_stats.py" ]; then
+            python root/update_stats.py
           fi
 
       - name: Escanear portafolio de medios
         run: |
-          if [ -f "root/update_media.py" ]; then
-            python root/update_media.py
-          elif [ -f "update_media.py" ]; then
+          if [ -f "update_media.py" ]; then
             python update_media.py
+          elif [ -f "root/update_media.py" ]; then
+            python root/update_media.py
           fi
 
       - name: Guardar y subir cambios
@@ -56,4 +59,10 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add -A
-          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: actualizar scrobbles y portfolio_data [skip ci]" && git pull --rebase origin main && git push)
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "auto: actualizar scrobbles y portfolio_data [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "No hay cambios nuevos que guardar."
+          fi
