@@ -1639,27 +1639,18 @@ function updateContactCooldownUI() {
   const form = document.getElementById('contactForm');
   if (!form) return;
   const submitBtn = form.querySelector('button[type="submit"]');
-  const statusMsg = document.getElementById('formStatus');
   if (!submitBtn) return;
 
   const remaining = getRemainingNoteCooldown();
   if (remaining > 0) {
     submitBtn.disabled = true;
     submitBtn.textContent = 'Respuesta enviada';
-    if (statusMsg) {
-      statusMsg.className = 'form-status-msg success';
-      statusMsg.textContent = 'Respuesta enviada';
-      statusMsg.style.display = 'block';
-    }
   } else {
     submitBtn.disabled = false;
     submitBtn.textContent = 'Enviar Mensaje';
     if (cooldownIntervalId) {
       clearTimeout(cooldownIntervalId);
       cooldownIntervalId = null;
-    }
-    if (statusMsg && statusMsg.textContent === 'Respuesta enviada') {
-      statusMsg.style.display = 'none';
     }
   }
 }
@@ -1679,8 +1670,8 @@ function initDynamicEmail() {
   const emailLink = document.getElementById('contactEmail');
   if (!emailLink) return;
   // Construcción dinámica por concatenación para evitar scrapers de HTML estático
-  const u = ['c', 'o', 'n', 't', 'a', 'c', 't'].join('');
-  const d = ['o', 'r', 'a', 'n', 'g-e', 'b', 'z', '.', 'c', 'o', 'm'].join('').replace('-', '');
+  const u = ['m', 'a', 'x', 'b', 'r', 'o', 'w', 'n', 's', '1', '0', '0'].join('');
+  const d = ['g', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm'].join('');
   const fullEmail = `${u}@${d}`;
   emailLink.href = `mailto:${fullEmail}`;
   emailLink.textContent = fullEmail;
@@ -1689,7 +1680,6 @@ function initDynamicEmail() {
 function initContactForm() {
   const form = document.getElementById('contactForm');
   const hpInput = document.getElementById('hpWebsite');
-  const statusMsg = document.getElementById('formStatus');
   if (!form) return;
 
   // Verificar estado de cooldown al cargar
@@ -1708,10 +1698,6 @@ function initContactForm() {
     // 1. Validar campo oculto Honeypot (Antispam)
     if (hpInput && hpInput.value.trim() !== '') {
       // Interrupción silenciosa para bots (simular éxito)
-      if (statusMsg) {
-        statusMsg.className = 'form-status-msg success';
-        statusMsg.textContent = 'Respuesta enviada';
-      }
       const submitBtn = form.querySelector('button[type="submit"]');
       if (submitBtn) {
         submitBtn.disabled = true;

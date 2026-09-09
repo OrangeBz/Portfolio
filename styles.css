@@ -1077,6 +1077,17 @@ model-viewer {
   user-select: none !important;
   -webkit-user-select: none !important;
   --poster-color: transparent;
+  --progress-bar-color: transparent;
+  --progress-mask: transparent;
+  --progress-bar-height: 0px;
+}
+
+model-viewer::part(default-progress-bar),
+model-viewer::part(default-progress-mask) {
+  display: none !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  visibility: hidden !important;
 }
 
 /* Eliminar contorno naranja o foco predeterminado del navegador al seleccionar, abrir o cerrar */
@@ -1956,4 +1967,14 @@ body:has(.showcase-lightbox.active) .floating-nav {
   cursor: not-allowed;
   filter: grayscale(0.6);
   pointer-events: none;
+}
+
+/* ==========================================================================
+   AJUSTES RESPONSIVOS MÓVILES (LOGO DE HOME GRANDE)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .avatar-wrapper {
+    width: clamp(210px, 62vw, 290px) !important;
+    height: clamp(210px, 62vw, 290px) !important;
+  }
 }
