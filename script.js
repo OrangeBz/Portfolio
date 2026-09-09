@@ -1711,7 +1711,6 @@ function initContactForm() {
     const formData = new FormData(form);
     const noteData = {
       id: `note_${Date.now()}`,
-      name: formData.get('name') || '',
       email: formData.get('email') || '',
       message: formData.get('message') || '',
       timestamp: new Date().toISOString()

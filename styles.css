@@ -1970,11 +1970,23 @@ body:has(.showcase-lightbox.active) .floating-nav {
 }
 
 /* ==========================================================================
-   AJUSTES RESPONSIVOS MÓVILES (LOGO DE HOME GRANDE)
+   AJUSTES RESPONSIVOS MÓVILES (LOGO DE HOME GRANDE & NOMBRES 2x2 EN ABOUT)
    ========================================================================== */
 @media (max-width: 768px) {
   .avatar-wrapper {
     width: clamp(210px, 62vw, 290px) !important;
     height: clamp(210px, 62vw, 290px) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-names {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(80px, auto));
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px 24px;
+    max-width: 260px;
+    margin: 0 auto 16px;
   }
 }
