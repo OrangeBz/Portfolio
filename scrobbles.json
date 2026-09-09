@@ -1,0 +1,187 @@
+{
+  "top_artistas_mes": [
+    {
+      "posicion": 1,
+      "nombre": "XXANTERIA",
+      "reproducciones": "34"
+    },
+    {
+      "posicion": 2,
+      "nombre": "saraunh0ly",
+      "reproducciones": "17"
+    },
+    {
+      "posicion": 3,
+      "nombre": "DVRST",
+      "reproducciones": "10"
+    },
+    {
+      "posicion": 4,
+      "nombre": "Elven Dior",
+      "reproducciones": "9"
+    },
+    {
+      "posicion": 5,
+      "nombre": "LONOWN",
+      "reproducciones": "9"
+    },
+    {
+      "posicion": 6,
+      "nombre": "RXLZQ",
+      "reproducciones": "7"
+    },
+    {
+      "posicion": 7,
+      "nombre": "ariis",
+      "reproducciones": "6"
+    },
+    {
+      "posicion": 8,
+      "nombre": "Malcriada",
+      "reproducciones": "6"
+    },
+    {
+      "posicion": 9,
+      "nombre": "OrangeBz",
+      "reproducciones": "6"
+    },
+    {
+      "posicion": 10,
+      "nombre": "Pluxry SkUrt",
+      "reproducciones": "6"
+    }
+  ],
+  "top_albumes_mes": [
+    {
+      "posicion": 1,
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
+    },
+    {
+      "posicion": 2,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
+    },
+    {
+      "posicion": 3,
+      "nombre": "captivation",
+      "artista": "LONOWN",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png"
+    },
+    {
+      "posicion": 4,
+      "nombre": "Grave",
+      "artista": "Pluxry SkUrt",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/7f18d663d977d57cbe4852e872b7f489.jpg"
+    },
+    {
+      "posicion": 5,
+      "nombre": "NO GOING BACK",
+      "artista": "XXANTERIA",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d598cff2afd3b45498d2538ac0303f7e.png"
+    },
+    {
+      "posicion": 6,
+      "nombre": "TAKING IT FAST",
+      "artista": "XXANTERIA",
+      "portada": ""
+    }
+  ],
+  "top_canciones_mes": [
+    {
+      "posicion": 1,
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis"
+    },
+    {
+      "posicion": 2,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST"
+    },
+    {
+      "posicion": 3,
+      "nombre": "En este vídeo",
+      "artista": "Elven Dior"
+    },
+    {
+      "posicion": 4,
+      "nombre": "snobbery",
+      "artista": "LONOWN"
+    },
+    {
+      "posicion": 5,
+      "nombre": "Grave",
+      "artista": "Pluxry SkUrt"
+    },
+    {
+      "posicion": 6,
+      "nombre": "NO GOING BACK",
+      "artista": "XXANTERIA"
+    },
+    {
+      "posicion": 7,
+      "nombre": "TAKING IT FAST",
+      "artista": "XXANTERIA"
+    }
+  ],
+  "recientes": [
+    {
+      "cancion": "Theme To Navigate The Day-Glo Buy Grid",
+      "artista": "Nero's Day at Disneyland",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Sep 2026, 17:23"
+    },
+    {
+      "cancion": "TAKING IT FAST",
+      "artista": "XXANTERIA",
+      "album": "TAKING IT FAST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "09 Sep 2026, 17:22"
+    },
+    {
+      "cancion": "TAKING IT FAST",
+      "artista": "XXANTERIA",
+      "album": "TAKING IT FAST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "09 Sep 2026, 17:19"
+    },
+    {
+      "cancion": "CUT",
+      "artista": "XXANTERIA",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Sep 2026, 17:12"
+    },
+    {
+      "cancion": "White Waking",
+      "artista": "Les Rallizes Dénudés",
+      "album": "Naked Diza Star, Vol. 1 (Remastered)",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/a84c9d26a55344d9e124117351c643a8.jpg",
+      "fecha": "09 Sep 2026, 16:54"
+    },
+    {
+      "cancion": "restless",
+      "artista": "ilyhiryu",
+      "album": "restless",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "09 Sep 2026, 16:40"
+    },
+    {
+      "cancion": "123 (the longest dream)",
+      "artista": "(un)familiar.",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Sep 2026, 16:00"
+    },
+    {
+      "cancion": "We All Fall Down",
+      "artista": "STOMACH BOOK",
+      "album": "STOMACH BOOK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/8ead242813b913055c12404eedff34ed.jpg",
+      "fecha": "09 Sep 2026, 13:02"
+    }
+  ]
+}

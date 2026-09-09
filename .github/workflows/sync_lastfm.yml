@@ -59,15 +59,17 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           
+          # Asegurar que estamos en la rama main
+          git checkout -B main
+          
           # Verificar si los scripts de Python generaron o modificaron archivos
           if [ -n "$(git status --porcelain)" ]; then
             git add -A
             git commit -m "auto: actualizar scrobbles y portfolio_data [skip ci]"
             
-            # Sincronizar e intentar hacer push con reintentos
-            git fetch origin main
-            git rebase origin/main
-            git push origin main || (git pull --rebase origin main && git push origin main)
+            # Incorporar cualquier cambio remoto con estrategia para preservar datos frescos
+            git pull --rebase -X theirs origin main
+            git push origin main
           else
             echo "No hay cambios para actualizar."
           fi
