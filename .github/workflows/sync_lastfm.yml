@@ -1,0 +1,59 @@
+name: Actualizar Datos del Sitio
+
+on:
+  schedule:
+    - cron: '0 0 */3 * *'  # Se ejecuta automáticamente cada 3 días a las 00:00 UTC
+  workflow_dispatch:        # Permite ejecución manual desde la pestaña Actions en GitHub
+  push:
+    paths:
+      - 'media/**'
+      - 'models/**'
+      - 'audio/**'
+      - 'images/**'
+      - 'projects/**'
+      - 'root/media/**'
+      - 'root/models/**'
+      - 'root/audio/**'
+      - 'root/images/**'
+      - 'root/projects/**'
+
+permissions:
+  contents: write           # Permite hacer commit y push al repositorio desde el bot de Actions
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Obtener datos de Last.fm
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          LASTFM_USER: ${{ secrets.LASTFM_USER }}
+        run: |
+          if [ -f "root/update_stats.py" ]; then
+            python root/update_stats.py
+          elif [ -f "update_stats.py" ]; then
+            python update_stats.py
+          fi
+
+      - name: Escanear portafolio de medios
+        run: |
+          if [ -f "root/update_media.py" ]; then
+            python root/update_media.py
+          elif [ -f "update_media.py" ]; then
+            python update_media.py
+          fi
+
+      - name: Guardar y subir cambios
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: actualizar scrobbles y portfolio_data [skip ci]" && git push)
