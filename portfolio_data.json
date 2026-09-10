@@ -85,22 +85,6 @@
     "animation": [],
     "music": [
       {
-        "name": "They Watch.ogg",
-        "title": "They Watch",
-        "year": "Desconocido",
-        "software": "No especificado",
-        "technique": "General / No especificado",
-        "description": "",
-        "key": "they watch",
-        "path": "media/audio/They Watch.ogg",
-        "alt_path": "../media/audio/They Watch.ogg",
-        "category": "audio",
-        "discipline": "music",
-        "ext": "ogg",
-        "folder": "media",
-        "repo_url": "https://github.com/OrangeBz"
-      },
-      {
         "name": "They Watch.png",
         "title": "They Watch",
         "year": "Desconocido",
@@ -113,6 +97,22 @@
         "category": "images",
         "discipline": "music",
         "ext": "png",
+        "folder": "media",
+        "repo_url": "https://github.com/OrangeBz"
+      },
+      {
+        "name": "They Watch.ogg",
+        "title": "They Watch",
+        "year": "Desconocido",
+        "software": "No especificado",
+        "technique": "General / No especificado",
+        "description": "",
+        "key": "they watch",
+        "path": "media/audio/They Watch.ogg",
+        "alt_path": "../media/audio/They Watch.ogg",
+        "category": "audio",
+        "discipline": "music",
+        "ext": "ogg",
         "folder": "media",
         "repo_url": "https://github.com/OrangeBz"
       }
