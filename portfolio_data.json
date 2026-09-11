@@ -85,22 +85,6 @@
     "animation": [],
     "music": [
       {
-        "name": "They Watch.mp3",
-        "title": "They Watch",
-        "year": "Desconocido",
-        "software": "No especificado",
-        "technique": "General / No especificado",
-        "description": "",
-        "key": "they watch",
-        "path": "media/audio/They Watch.mp3",
-        "alt_path": "../media/audio/They Watch.mp3",
-        "category": "audio",
-        "discipline": "music",
-        "ext": "mp3",
-        "folder": "media",
-        "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
-      },
-      {
         "name": "They Watch.png",
         "title": "They Watch",
         "year": "Desconocido",
@@ -117,20 +101,20 @@
         "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
       },
       {
-        "name": "We were two.mp3",
-        "title": "We Were Two",
+        "name": "They Watch.mp3",
+        "title": "They Watch",
         "year": "Desconocido",
         "software": "No especificado",
         "technique": "General / No especificado",
         "description": "",
-        "key": "we were two",
-        "path": "media/audio/We were two.mp3",
-        "alt_path": "../media/audio/We were two.mp3",
+        "key": "they watch",
+        "path": "media/audio/They Watch.mp3",
+        "alt_path": "../media/audio/They Watch.mp3",
         "category": "audio",
         "discipline": "music",
         "ext": "mp3",
         "folder": "media",
-        "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
+        "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
       },
       {
         "name": "We were two.jpg",
@@ -145,6 +129,22 @@
         "category": "images",
         "discipline": "music",
         "ext": "jpg",
+        "folder": "media",
+        "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
+      },
+      {
+        "name": "We were two.mp3",
+        "title": "We Were Two",
+        "year": "Desconocido",
+        "software": "No especificado",
+        "technique": "General / No especificado",
+        "description": "",
+        "key": "we were two",
+        "path": "media/audio/We were two.mp3",
+        "alt_path": "../media/audio/We were two.mp3",
+        "category": "audio",
+        "discipline": "music",
+        "ext": "mp3",
         "folder": "media",
         "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
       }
