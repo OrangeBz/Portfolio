@@ -7,8 +7,8 @@ TARGET_FOLDERS = ["media", "models", "audio", "projects", "images", "visuals", "
 FILE_TYPES = {
     "images": {".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg", ".bmp"},
     "models": {".glb", ".gltf", ".obj", ".fbx"},
-    "audio": {".mp3", ".wav", ".ogg", ".flac", ".m4a"},
-    "video": {".mp4", ".webm", ".mov"}
+    "audio": {".mp3", ".wav", ".ogg", ".flac", ".m4a", ".aac"},
+    "video": {".mp4", ".webm", ".mov", ".m4v", ".ogv"}
 }
 
 DISCIPLINE_MAP = {
@@ -120,17 +120,19 @@ def parse_filename_metadata(filename):
 
 def parse_repo_txt(txt_path):
     """
-    Lee un archivo .txt en la carpeta coding/ y extrae asociaciones Proyecto -> URL.
+    Lee un archivo .txt en la carpeta coding/ o visuals/coding/ y extrae asociaciones Proyecto -> URL.
     Soporta formatos:
     - Hola www.asdad.com
     - Hola https://github.com/usuario/repo
     - Hola: https://github.com/...
     - Hola = https://...
     - Hola - https://...
+    - OrangeBz/MegaBox https://github.com/OrangeBz/MegaBox
     """
     repo_map = {}
+    repo_list = []
     if not os.path.exists(txt_path):
-        return repo_map
+        return repo_map, repo_list
 
     try:
         with open(txt_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -155,25 +157,37 @@ def parse_repo_txt(txt_path):
                         url = f"https://{url}"
 
                     if key_part:
-                        key_lower = key_part.lower()
+                        clean_title = key_part.split("/")[-1].strip() if "/" in key_part else key_part.strip()
+                        key_lower = clean_title.lower()
                         repo_map[key_lower] = url
                         clean_k = re.sub(r'[^a-z0-9]', '', key_lower)
                         if clean_k:
                             repo_map[clean_k] = url
+                        repo_list.append({
+                            "title": clean_title,
+                            "url": url,
+                            "raw_key": key_part
+                        })
                 else:
                     parts = line.split(None, 1)
                     if len(parts) == 2:
                         key_part, raw_url = parts[0].strip(" :,-=\t"), parts[1].strip()
                         url = raw_url if raw_url.startswith(("http://", "https://")) else f"https://{raw_url}"
-                        key_lower = key_part.lower()
+                        clean_title = key_part.split("/")[-1].strip() if "/" in key_part else key_part.strip()
+                        key_lower = clean_title.lower()
                         repo_map[key_lower] = url
                         clean_k = re.sub(r'[^a-z0-9]', '', key_lower)
                         if clean_k:
                             repo_map[clean_k] = url
+                        repo_list.append({
+                            "title": clean_title,
+                            "url": url,
+                            "raw_key": key_part
+                        })
     except Exception as e:
         print(f"Nota leyendo repositorios de {txt_path}: {e}")
 
-    return repo_map
+    return repo_map, repo_list
 
 def scan_portfolio():
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -216,12 +230,17 @@ def scan_portfolio():
 
             # 1. Pre-escanear archivos .txt para mapeo de repositorios en este árbol
             repo_mappings = {}
+            programming_repos = []
             for root_dir, _, files in os.walk(folder_dir):
                 for file in files:
                     if file.lower().endswith(".txt"):
                         txt_path = os.path.join(root_dir, file)
-                        parsed_repos = parse_repo_txt(txt_path)
+                        rel_txt = os.path.relpath(txt_path, start=base).replace("\\", "/")
+                        txt_disc = detect_discipline(rel_txt, "coding")
+                        parsed_repos, parsed_list = parse_repo_txt(txt_path)
                         repo_mappings.update(parsed_repos)
+                        if txt_disc == "programming":
+                            programming_repos.extend(parsed_list)
 
             # 2. Escanear archivos multimedia
             folder_items = []
@@ -287,6 +306,36 @@ def scan_portfolio():
                     
                     folder_items.append(item_data)
                     portfolio["all"].append(item_data)
+
+            # 3. Repositorios de Programación que no tengan imagen propia (exclusivamente de coding/programming)
+            if programming_repos:
+                existing_prog_keys = {
+                    re.sub(r'[^a-z0-9]', '', item.get("title", "").lower())
+                    for item in portfolio["by_discipline"]["programming"]
+                }
+                for repo in programming_repos:
+                    clean_rk = re.sub(r'[^a-z0-9]', '', repo["title"].lower())
+                    if clean_rk and clean_rk not in existing_prog_keys:
+                        existing_prog_keys.add(clean_rk)
+                        standalone_prog = {
+                            "name": f"{repo['title']}.txt",
+                            "title": repo["title"],
+                            "year": "Desconocido",
+                            "software": "GitHub / Código",
+                            "technique": "Desarrollo de Software",
+                            "description": "Proyecto y repositorio de código abierto en GitHub.",
+                            "key": clean_rk,
+                            "path": "",
+                            "alt_path": "",
+                            "category": "coding",
+                            "discipline": "programming",
+                            "ext": "txt",
+                            "folder": folder_name,
+                            "repo_url": repo["url"]
+                        }
+                        portfolio["by_discipline"]["programming"].append(standalone_prog)
+                        folder_items.append(standalone_prog)
+                        portfolio["all"].append(standalone_prog)
 
             folder_items.sort(key=lambda x: x["name"])
             portfolio["by_folder"][folder_name] = folder_items

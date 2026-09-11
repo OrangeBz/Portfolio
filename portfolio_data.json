@@ -85,6 +85,22 @@
     "animation": [],
     "music": [
       {
+        "name": "They Watch.mp3",
+        "title": "They Watch",
+        "year": "Desconocido",
+        "software": "No especificado",
+        "technique": "General / No especificado",
+        "description": "",
+        "key": "they watch",
+        "path": "media/audio/They Watch.mp3",
+        "alt_path": "../media/audio/They Watch.mp3",
+        "category": "audio",
+        "discipline": "music",
+        "ext": "mp3",
+        "folder": "media",
+        "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
+      },
+      {
         "name": "They Watch.png",
         "title": "They Watch",
         "year": "Desconocido",
@@ -98,23 +114,39 @@
         "discipline": "music",
         "ext": "png",
         "folder": "media",
-        "repo_url": "https://github.com/OrangeBz"
+        "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
       },
       {
-        "name": "They Watch.ogg",
-        "title": "They Watch",
+        "name": "We were two.mp3",
+        "title": "We Were Two",
         "year": "Desconocido",
         "software": "No especificado",
         "technique": "General / No especificado",
         "description": "",
-        "key": "they watch",
-        "path": "media/audio/They Watch.ogg",
-        "alt_path": "../media/audio/They Watch.ogg",
+        "key": "we were two",
+        "path": "media/audio/We were two.mp3",
+        "alt_path": "../media/audio/We were two.mp3",
         "category": "audio",
         "discipline": "music",
-        "ext": "ogg",
+        "ext": "mp3",
         "folder": "media",
-        "repo_url": "https://github.com/OrangeBz"
+        "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
+      },
+      {
+        "name": "We were two.jpg",
+        "title": "We Were Two",
+        "year": "Desconocido",
+        "software": "No especificado",
+        "technique": "General / No especificado",
+        "description": "",
+        "key": "we were two",
+        "path": "media/visuals/music/We were two.jpg",
+        "alt_path": "../media/visuals/music/We were two.jpg",
+        "category": "images",
+        "discipline": "music",
+        "ext": "jpg",
+        "folder": "media",
+        "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
       }
     ],
     "modeling": [
@@ -185,7 +217,24 @@
         "repo_url": "https://github.com/OrangeBz"
       }
     ],
-    "programming": [],
+    "programming": [
+      {
+        "name": "MegaBox.png",
+        "title": "Mega Box",
+        "year": "Desconocido",
+        "software": "No especificado",
+        "technique": "General / No especificado",
+        "description": "",
+        "key": "megabox",
+        "path": "media/visuals/coding/MegaBox.png",
+        "alt_path": "../media/visuals/coding/MegaBox.png",
+        "category": "images",
+        "discipline": "programming",
+        "ext": "png",
+        "folder": "media",
+        "repo_url": "https://github.com/OrangeBz/MegaBox"
+      }
+    ],
     "general": []
   },
   "images": [
@@ -236,6 +285,22 @@
       "ext": "jpg",
       "folder": "media",
       "repo_url": "https://github.com/OrangeBz"
+    },
+    {
+      "name": "MegaBox.png",
+      "title": "Mega Box",
+      "year": "Desconocido",
+      "software": "No especificado",
+      "technique": "General / No especificado",
+      "description": "",
+      "key": "megabox",
+      "path": "media/visuals/coding/MegaBox.png",
+      "alt_path": "../media/visuals/coding/MegaBox.png",
+      "category": "images",
+      "discipline": "programming",
+      "ext": "png",
+      "folder": "media",
+      "repo_url": "https://github.com/OrangeBz/MegaBox"
     },
     {
       "name": "Pants 1.png",
@@ -299,7 +364,23 @@
       "discipline": "music",
       "ext": "png",
       "folder": "media",
-      "repo_url": "https://github.com/OrangeBz"
+      "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
+    },
+    {
+      "name": "We were two.jpg",
+      "title": "We Were Two",
+      "year": "Desconocido",
+      "software": "No especificado",
+      "technique": "General / No especificado",
+      "description": "",
+      "key": "we were two",
+      "path": "media/visuals/music/We were two.jpg",
+      "alt_path": "../media/visuals/music/We were two.jpg",
+      "category": "images",
+      "discipline": "music",
+      "ext": "jpg",
+      "folder": "media",
+      "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
     },
     {
       "name": "What i deserve.jpg",
@@ -354,20 +435,36 @@
   ],
   "audio": [
     {
-      "name": "They Watch.ogg",
+      "name": "They Watch.mp3",
       "title": "They Watch",
       "year": "Desconocido",
       "software": "No especificado",
       "technique": "General / No especificado",
       "description": "",
       "key": "they watch",
-      "path": "media/audio/They Watch.ogg",
-      "alt_path": "../media/audio/They Watch.ogg",
+      "path": "media/audio/They Watch.mp3",
+      "alt_path": "../media/audio/They Watch.mp3",
       "category": "audio",
       "discipline": "music",
-      "ext": "ogg",
+      "ext": "mp3",
       "folder": "media",
-      "repo_url": "https://github.com/OrangeBz"
+      "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
+    },
+    {
+      "name": "We were two.mp3",
+      "title": "We Were Two",
+      "year": "Desconocido",
+      "software": "No especificado",
+      "technique": "General / No especificado",
+      "description": "",
+      "key": "we were two",
+      "path": "media/audio/We were two.mp3",
+      "alt_path": "../media/audio/We were two.mp3",
+      "category": "audio",
+      "discipline": "music",
+      "ext": "mp3",
+      "folder": "media",
+      "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
     }
   ],
   "video": [],
@@ -455,6 +552,22 @@
         "repo_url": "https://github.com/OrangeBz"
       },
       {
+        "name": "MegaBox.png",
+        "title": "Mega Box",
+        "year": "Desconocido",
+        "software": "No especificado",
+        "technique": "General / No especificado",
+        "description": "",
+        "key": "megabox",
+        "path": "media/visuals/coding/MegaBox.png",
+        "alt_path": "../media/visuals/coding/MegaBox.png",
+        "category": "images",
+        "discipline": "programming",
+        "ext": "png",
+        "folder": "media",
+        "repo_url": "https://github.com/OrangeBz/MegaBox"
+      },
+      {
         "name": "Pants 1.png",
         "title": "Pants 1",
         "year": "Desconocido",
@@ -503,20 +616,20 @@
         "repo_url": "https://github.com/OrangeBz"
       },
       {
-        "name": "They Watch.ogg",
+        "name": "They Watch.mp3",
         "title": "They Watch",
         "year": "Desconocido",
         "software": "No especificado",
         "technique": "General / No especificado",
         "description": "",
         "key": "they watch",
-        "path": "media/audio/They Watch.ogg",
-        "alt_path": "../media/audio/They Watch.ogg",
+        "path": "media/audio/They Watch.mp3",
+        "alt_path": "../media/audio/They Watch.mp3",
         "category": "audio",
         "discipline": "music",
-        "ext": "ogg",
+        "ext": "mp3",
         "folder": "media",
-        "repo_url": "https://github.com/OrangeBz"
+        "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
       },
       {
         "name": "They Watch.png",
@@ -532,7 +645,39 @@
         "discipline": "music",
         "ext": "png",
         "folder": "media",
-        "repo_url": "https://github.com/OrangeBz"
+        "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
+      },
+      {
+        "name": "We were two.jpg",
+        "title": "We Were Two",
+        "year": "Desconocido",
+        "software": "No especificado",
+        "technique": "General / No especificado",
+        "description": "",
+        "key": "we were two",
+        "path": "media/visuals/music/We were two.jpg",
+        "alt_path": "../media/visuals/music/We were two.jpg",
+        "category": "images",
+        "discipline": "music",
+        "ext": "jpg",
+        "folder": "media",
+        "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
+      },
+      {
+        "name": "We were two.mp3",
+        "title": "We Were Two",
+        "year": "Desconocido",
+        "software": "No especificado",
+        "technique": "General / No especificado",
+        "description": "",
+        "key": "we were two",
+        "path": "media/audio/We were two.mp3",
+        "alt_path": "../media/audio/We were two.mp3",
+        "category": "audio",
+        "discipline": "music",
+        "ext": "mp3",
+        "folder": "media",
+        "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
       },
       {
         "name": "What i deserve.jpg",
@@ -634,6 +779,22 @@
       "repo_url": "https://github.com/OrangeBz"
     },
     {
+      "name": "MegaBox.png",
+      "title": "Mega Box",
+      "year": "Desconocido",
+      "software": "No especificado",
+      "technique": "General / No especificado",
+      "description": "",
+      "key": "megabox",
+      "path": "media/visuals/coding/MegaBox.png",
+      "alt_path": "../media/visuals/coding/MegaBox.png",
+      "category": "images",
+      "discipline": "programming",
+      "ext": "png",
+      "folder": "media",
+      "repo_url": "https://github.com/OrangeBz/MegaBox"
+    },
+    {
       "name": "Pants 1.png",
       "title": "Pants 1",
       "year": "Desconocido",
@@ -682,20 +843,20 @@
       "repo_url": "https://github.com/OrangeBz"
     },
     {
-      "name": "They Watch.ogg",
+      "name": "They Watch.mp3",
       "title": "They Watch",
       "year": "Desconocido",
       "software": "No especificado",
       "technique": "General / No especificado",
       "description": "",
       "key": "they watch",
-      "path": "media/audio/They Watch.ogg",
-      "alt_path": "../media/audio/They Watch.ogg",
+      "path": "media/audio/They Watch.mp3",
+      "alt_path": "../media/audio/They Watch.mp3",
       "category": "audio",
       "discipline": "music",
-      "ext": "ogg",
+      "ext": "mp3",
       "folder": "media",
-      "repo_url": "https://github.com/OrangeBz"
+      "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
     },
     {
       "name": "They Watch.png",
@@ -711,7 +872,39 @@
       "discipline": "music",
       "ext": "png",
       "folder": "media",
-      "repo_url": "https://github.com/OrangeBz"
+      "repo_url": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz"
+    },
+    {
+      "name": "We were two.jpg",
+      "title": "We Were Two",
+      "year": "Desconocido",
+      "software": "No especificado",
+      "technique": "General / No especificado",
+      "description": "",
+      "key": "we were two",
+      "path": "media/visuals/music/We were two.jpg",
+      "alt_path": "../media/visuals/music/We were two.jpg",
+      "category": "images",
+      "discipline": "music",
+      "ext": "jpg",
+      "folder": "media",
+      "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
+    },
+    {
+      "name": "We were two.mp3",
+      "title": "We Were Two",
+      "year": "Desconocido",
+      "software": "No especificado",
+      "technique": "General / No especificado",
+      "description": "",
+      "key": "we were two",
+      "path": "media/audio/We were two.mp3",
+      "alt_path": "../media/audio/We were two.mp3",
+      "category": "audio",
+      "discipline": "music",
+      "ext": "mp3",
+      "folder": "media",
+      "repo_url": "https://soundcloud.com/orangebz/sets/we-were-two"
     },
     {
       "name": "What i deserve.jpg",

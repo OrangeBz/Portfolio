@@ -263,6 +263,46 @@ function resolveMediaUrl(primaryPath, altPath) {
   return primaryPath || altPath || '';
 }
 
+function getAudioMimeType(url) {
+  if (!url) return '';
+  const clean = url.split('?')[0].split('#')[0].toLowerCase();
+  if (clean.endsWith('.m4a') || clean.endsWith('.mp4') || clean.endsWith('.aac')) {
+    return 'audio/mp4';
+  }
+  if (clean.endsWith('.ogg') || clean.endsWith('.oga')) {
+    return 'audio/ogg';
+  }
+  if (clean.endsWith('.mp3')) {
+    return 'audio/mpeg';
+  }
+  if (clean.endsWith('.wav')) {
+    return 'audio/wav';
+  }
+  if (clean.endsWith('.flac')) {
+    return 'audio/flac';
+  }
+  if (clean.endsWith('.webm')) {
+    return 'audio/webm';
+  }
+  return 'audio/mp4';
+}
+
+function isVideoMedia(item) {
+  if (!item) return false;
+  if (item.category === 'video') return true;
+  const path = (item.path || item.name || '').toLowerCase();
+  return /\.(mp4|webm|mov|m4v|ogv)$/i.test(path);
+}
+
+function getVideoMimeType(url) {
+  if (!url) return 'video/mp4';
+  const clean = url.split('?')[0].split('#')[0].toLowerCase();
+  if (clean.endsWith('.webm')) return 'video/webm';
+  if (clean.endsWith('.ogv')) return 'video/ogg';
+  if (clean.endsWith('.mov')) return 'video/quicktime';
+  return 'video/mp4';
+}
+
 function handleTextileLensMove(e, wrapper) {
   if (!wrapper) return;
   const rect = wrapper.getBoundingClientRect();
@@ -382,57 +422,126 @@ function groupTextileItems(textileList) {
   });
 }
 
+/* ==========================================================================
+   ENLACES A ÁLBUMES DE MÚSICA (Configuración de enlaces externos)
+   ========================================================================== */
+const ALBUM_LINKS = {
+  "they watch": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz",
+  "theywatch": "https://www.youtube.com/watch?v=mCI5RP5iXH8&list=PLVDRuey0pTfz2CrTeDYFstPvMAeq8PXQz",
+  "we were two": "https://soundcloud.com/orangebz/sets/we-were-two",
+  "weweretwo": "https://soundcloud.com/orangebz/sets/we-were-two",
+  "ww2": "https://soundcloud.com/orangebz/sets/we-were-two"
+};
+
+function getAlbumUrl(title, item) {
+  if (item && item.album_url) return item.album_url;
+  if (item && item.url) return item.url;
+  if (item && item.repo_url && item.repo_url !== 'https://github.com/OrangeBz') return item.repo_url;
+  const cleanTitle = (title || '').toLowerCase().trim();
+  const compactTitle = cleanTitle.replace(/[^a-z0-9]/g, '');
+  if (ALBUM_LINKS[cleanTitle]) return ALBUM_LINKS[cleanTitle];
+  if (ALBUM_LINKS[compactTitle]) return ALBUM_LINKS[compactTitle];
+  for (const [k, u] of Object.entries(ALBUM_LINKS)) {
+    const cleanK = k.toLowerCase().trim();
+    if (cleanTitle === cleanK || compactTitle === cleanK.replace(/[^a-z0-9]/g, '')) return u;
+  }
+  return '#';
+}
+
 function groupMusicItems() {
-  const musicImages = (portfolioData.by_discipline && portfolioData.by_discipline.music) 
-    ? portfolioData.by_discipline.music.filter(item => item.category === 'images') 
+  const musicDiscipline = (portfolioData.by_discipline && portfolioData.by_discipline.music) 
+    ? portfolioData.by_discipline.music 
     : [];
+  
+  // Filtrar todos los visuales de música (imágenes, gifs y videos)
+  const musicVisuals = musicDiscipline.filter(item => 
+    item.category === 'images' || 
+    item.category === 'video' || 
+    /\.(jpg|jpeg|png|webp|gif|svg|bmp|mp4|webm|mov|m4v|ogv)$/i.test(item.name || item.path || '')
+  );
+
   const musicAudio = (portfolioData.audio && portfolioData.audio.length > 0) 
     ? portfolioData.audio 
-    : ((portfolioData.by_discipline && portfolioData.by_discipline.music) 
-      ? portfolioData.by_discipline.music.filter(item => item.category === 'audio') 
-      : []);
+    : musicDiscipline.filter(item => item.category === 'audio');
 
   const cleanKey = str => (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 
   const musicCards = [];
   const matchedAudioSet = new Set();
 
-  // 1. Procesar todas las carátulas en media/visuals/music/
-  musicImages.forEach(img => {
-    const imgKey = cleanKey(img.title) || cleanKey(img.key) || cleanKey(img.name);
-    
+  // Agrupar visuales por clave limpia para vincular video + imagen (poster) del mismo álbum si ambos existen
+  const visualGroups = {};
+  musicVisuals.forEach(vis => {
+    const k = cleanKey(vis.title) || cleanKey(vis.key) || cleanKey(vis.name);
+    if (!visualGroups[k]) {
+      visualGroups[k] = {
+        key: k,
+        items: [],
+        videoItem: null,
+        imageItem: null
+      };
+    }
+    visualGroups[k].items.push(vis);
+    if (isVideoMedia(vis)) {
+      if (!visualGroups[k].videoItem) visualGroups[k].videoItem = vis;
+    } else {
+      if (!visualGroups[k].imageItem) visualGroups[k].imageItem = vis;
+    }
+  });
+
+  // 1. Procesar todas las carátulas (video, gif, imagen)
+  Object.values(visualGroups).forEach(group => {
+    const isVideo = !!group.videoItem;
+    const visualItem = group.videoItem || group.imageItem || group.items[0];
+    const posterItem = isVideo ? group.imageItem : null;
+    const gKey = group.key;
+
     // Buscar audio coincidente por nombre/clave
     const matchedAudio = musicAudio.find(aud => {
       const audKey = cleanKey(aud.title) || cleanKey(aud.key) || cleanKey(aud.name);
-      return audKey === imgKey || (audKey && imgKey && (audKey.includes(imgKey) || imgKey.includes(audKey)));
+      return audKey === gKey || (audKey && gKey && (audKey.includes(gKey) || gKey.includes(audKey)));
     });
 
     if (matchedAudio) {
       matchedAudioSet.add(matchedAudio);
     }
 
+    const cardTitle = visualItem.title || (matchedAudio ? matchedAudio.title : 'Producción Musical');
+    const albumUrl = getAlbumUrl(cardTitle, visualItem) !== '#' 
+      ? getAlbumUrl(cardTitle, visualItem) 
+      : (matchedAudio ? getAlbumUrl(cardTitle, matchedAudio) : '#');
+
     musicCards.push({
-      title: img.title || (matchedAudio ? matchedAudio.title : 'Producción Musical'),
-      year: img.year !== 'Desconocido' ? img.year : (matchedAudio && matchedAudio.year !== 'Desconocido' ? matchedAudio.year : 'Desconocido'),
-      software: img.software !== 'No especificado' ? img.software : (matchedAudio && matchedAudio.software !== 'No especificado' ? matchedAudio.software : 'No especificado'),
-      technique: img.technique !== 'General / No especificado' ? img.technique : (matchedAudio && matchedAudio.technique !== 'General / No especificado' ? matchedAudio.technique : 'General / No especificado'),
-      description: (img.description && img.description.trim()) ? img.description : (matchedAudio && matchedAudio.description && matchedAudio.description.trim() ? matchedAudio.description : 'Álbum conceptual / Producción e instrumental.'),
-      imageItem: img,
-      audioItem: matchedAudio || null
+      title: cardTitle,
+      year: visualItem.year !== 'Desconocido' ? visualItem.year : (matchedAudio && matchedAudio.year !== 'Desconocido' ? matchedAudio.year : 'Desconocido'),
+      software: visualItem.software !== 'No especificado' ? visualItem.software : (matchedAudio && matchedAudio.software !== 'No especificado' ? matchedAudio.software : 'No especificado'),
+      technique: visualItem.technique !== 'General / No especificado' ? visualItem.technique : (matchedAudio && matchedAudio.technique !== 'General / No especificado' ? matchedAudio.technique : 'General / No especificado'),
+      description: (visualItem.description && visualItem.description.trim()) ? visualItem.description : (matchedAudio && matchedAudio.description && matchedAudio.description.trim() ? matchedAudio.description : 'Álbum conceptual / Producción e instrumental.'),
+      visualItem: visualItem,
+      posterItem: posterItem,
+      isVideo: isVideo,
+      imageItem: visualItem,
+      audioItem: matchedAudio || null,
+      albumUrl: albumUrl
     });
   });
 
-  // 2. Procesar pistas de audio que no tengan carátula de imagen
+  // 2. Procesar pistas de audio que no tengan carátula de imagen ni de video
   musicAudio.forEach(aud => {
     if (matchedAudioSet.has(aud)) return;
+    const cardTitle = aud.title || 'Pista de Audio';
     musicCards.push({
-      title: aud.title || 'Pista de Audio',
+      title: cardTitle,
       year: aud.year || 'Desconocido',
       software: aud.software || 'No especificado',
       technique: aud.technique || 'General / No especificado',
       description: (aud.description && aud.description.trim()) ? aud.description : 'Pista original / Exploración sonora.',
+      visualItem: null,
+      posterItem: null,
+      isVideo: false,
       imageItem: null,
-      audioItem: aud
+      audioItem: aud,
+      albumUrl: getAlbumUrl(cardTitle, aud)
     });
   });
 
@@ -450,6 +559,79 @@ function findPortfolioAsset(key, category = null) {
     const itemPath = (item.path || '').toLowerCase();
     return itemKey === lowerKey || itemKey.includes(lowerKey) || itemName.includes(lowerKey) || itemPath.includes(lowerKey);
   }) || null;
+}
+
+async function syncLiveRepoTxt() {
+  const possibleTxtPaths = [
+    'media/visuals/coding/repos.txt',
+    'visuals/coding/repos.txt',
+    'coding/repos.txt',
+    'media/coding/repos.txt'
+  ];
+
+  for (const path of possibleTxtPaths) {
+    try {
+      const res = await fetch(path);
+      if (!res.ok) continue;
+      const text = await res.text();
+      const lines = text.split('\n');
+      let changed = false;
+
+      lines.forEach(line => {
+        line = line.trim();
+        if (!line || line.startsWith('#')) return;
+        const urlMatch = line.match(/(https?:\/\/[^\s]+|www\.[^\s]+|github\.com\/[^\s]+)/i);
+        if (urlMatch) {
+          const rawUrl = urlMatch[0];
+          const keyPart = line.substring(0, urlMatch.index).trim().replace(/^[:,-=\s]+|[:,-=\s]+$/g, '');
+          const cleanTitle = keyPart.includes('/') ? keyPart.split('/').pop().trim() : (keyPart || 'Proyecto');
+          const cleanKey = cleanTitle.toLowerCase().replace(/[^a-z0-9]/g, '');
+          const finalUrl = rawUrl.startsWith('http') ? rawUrl : `https://${rawUrl}`;
+
+          if (!portfolioData.by_discipline.programming) {
+            portfolioData.by_discipline.programming = [];
+          }
+
+          const existing = portfolioData.by_discipline.programming.find(it => {
+            const k = (it.key || it.title || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+            return k === cleanKey;
+          });
+
+          if (existing) {
+            if (existing.repo_url !== finalUrl) {
+              existing.repo_url = finalUrl;
+              changed = true;
+            }
+          } else {
+            portfolioData.by_discipline.programming.push({
+              name: `${cleanTitle}.txt`,
+              title: cleanTitle,
+              year: 'Desconocido',
+              software: 'GitHub / Código',
+              technique: 'Desarrollo de Software',
+              description: 'Proyecto y repositorio de código abierto en GitHub.',
+              key: cleanKey,
+              path: '',
+              alt_path: '',
+              category: 'coding',
+              discipline: 'programming',
+              ext: 'txt',
+              folder: 'coding',
+              repo_url: finalUrl
+            });
+            changed = true;
+          }
+        }
+      });
+
+      if (changed) {
+        renderDynamicSlots();
+      }
+      break;
+    } catch (e) {
+      // Continuar al siguiente path si este falla
+    }
+  }
 }
 
 function initDynamicPortfolio() {
@@ -471,11 +653,13 @@ function initDynamicPortfolio() {
       }, data);
       renderDynamicSlots();
       bindDynamicAudio();
+      syncLiveRepoTxt();
     })
     .catch(err => {
       console.info("Modo offline / assets locales por defecto:", err.message);
       renderDynamicSlots();
       bindDynamicAudio();
+      syncLiveRepoTxt();
     });
 }
 
@@ -564,20 +748,43 @@ function renderDynamicSlots() {
     const musicItems = groupMusicItems();
     if (musicItems.length > 0) {
       musicGrid.innerHTML = musicItems.map((item, idx) => {
-        const imgSrc = item.imageItem ? resolveMediaUrl(item.imageItem.path, item.imageItem.alt_path) : makeSvgPlaceholder(item.title, '%23181426', '%23ffffff', 260, 180);
-        const altImgSrc = item.imageItem ? item.imageItem.alt_path : imgSrc;
+        let coverHtml = '';
+        if (item.isVideo && item.visualItem) {
+          const videoSrc = resolveMediaUrl(item.visualItem.path, item.visualItem.alt_path);
+          const altVideoSrc = videoSrc === item.visualItem.path ? item.visualItem.alt_path : item.visualItem.path;
+          const posterSrc = item.posterItem ? resolveMediaUrl(item.posterItem.path, item.posterItem.alt_path) : '';
+          coverHtml = `
+            <video class="card-img card-video" autoplay loop muted playsinline ${posterSrc ? `poster="${encodeURI(posterSrc)}"` : ''} preload="metadata">
+              <source src="${encodeURI(videoSrc)}" type="${getVideoMimeType(videoSrc)}">
+              ${altVideoSrc && altVideoSrc !== videoSrc ? `<source src="${encodeURI(altVideoSrc)}" type="${getVideoMimeType(altVideoSrc)}">` : ''}
+            </video>
+          `;
+        } else {
+          const imgSrc = item.visualItem ? resolveMediaUrl(item.visualItem.path, item.visualItem.alt_path) : makeSvgPlaceholder(item.title, '%23181426', '%23ffffff', 260, 180);
+          const altImgSrc = item.visualItem ? item.visualItem.alt_path : imgSrc;
+          coverHtml = `<img src="${encodeURI(imgSrc)}" alt="${item.title}" class="card-img" onerror="this.onerror=null; this.src='${encodeURI(altImgSrc)}'">`;
+        }
+
         const audioSrc = item.audioItem ? resolveMediaUrl(item.audioItem.path, item.audioItem.alt_path) : '';
         const altAudioSrc = item.audioItem ? (audioSrc === item.audioItem.path ? item.audioItem.alt_path : item.audioItem.path) : '';
         const hasAudio = !!audioSrc;
         const descText = (item.description && item.description.trim()) ? item.description : 'Álbum conceptual / Producción e instrumental.';
 
         return `
-          <article class="project-card" data-music-idx="${idx}">
-            <img src="${encodeURI(imgSrc)}" alt="${item.title}" class="card-img" onerror="this.onerror=null; this.src='${encodeURI(altImgSrc)}'">
+          <article class="project-card music-card" data-music-idx="${idx}">
+            <div class="music-cover-wrapper">
+              ${coverHtml}
+              <a href="${item.albumUrl}" ${item.albumUrl !== '#' ? 'target="_blank" rel="noopener noreferrer"' : ''} class="album-corner-btn" title="Ir al álbum: ${item.title}" aria-label="Ir al álbum: ${item.title}" onclick="event.stopPropagation();">
+                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+              </a>
+            </div>
             <h3 class="card-title">${item.title}</h3>
             <p class="card-desc">${descText}</p>
             <div class="custom-audio-player ${hasAudio ? '' : 'player-disabled'}">
-              <audio preload="metadata" ${hasAudio ? `src="${encodeURI(audioSrc)}" data-alt-src="${encodeURI(altAudioSrc)}"` : ''}></audio>
+              <audio preload="metadata" ${hasAudio ? `src="${encodeURI(audioSrc)}" data-alt-src="${encodeURI(altAudioSrc)}"` : ''}>
+                ${hasAudio ? `<source src="${encodeURI(audioSrc)}" type="${getAudioMimeType(audioSrc)}">` : ''}
+                ${hasAudio && altAudioSrc ? `<source src="${encodeURI(altAudioSrc)}" type="${getAudioMimeType(altAudioSrc)}">` : ''}
+              </audio>
               <button class="player-toggle-btn" aria-label="Reproducir / Pausar" ${hasAudio ? '' : 'disabled title="Audio no disponible"'}>
                 <svg class="svg-icon play-icon" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
                 <svg class="svg-icon pause-icon" viewBox="0 0 24 24" style="display:none;"><rect x="5" y="4" width="4" height="16"/><rect x="15" y="4" width="4" height="16"/></svg>
@@ -661,6 +868,33 @@ function renderDynamicSlots() {
         slot.innerHTML = `<img src="${srcFinal}" alt="${title}" class="card-img" onerror="this.onerror=null; this.src='${assetFinal.alt_path}'">`;
       } else {
         slot.innerHTML = `<img src="${makeSvgPlaceholder(title, '%232a1a34', '%23ffffff', 260, 180)}" alt="${title}" class="card-img">`;
+      }
+    } else if (type === 'audio') {
+      const asset = findPortfolioAsset(key, 'audio') || findPortfolioAsset(key, 'music');
+      if (asset && asset.path) {
+        const audioSrc = resolveMediaUrl(asset.path, asset.alt_path);
+        const altAudioSrc = audioSrc === asset.path ? asset.alt_path : asset.path;
+        slot.innerHTML = `
+          <div class="custom-audio-player">
+            <audio preload="metadata" src="${encodeURI(audioSrc)}" data-alt-src="${encodeURI(altAudioSrc)}">
+              <source src="${encodeURI(audioSrc)}" type="${getAudioMimeType(audioSrc)}">
+              <source src="${encodeURI(altAudioSrc)}" type="${getAudioMimeType(altAudioSrc)}">
+            </audio>
+            <button class="player-toggle-btn" aria-label="Reproducir / Pausar">
+              <svg class="svg-icon play-icon" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+              <svg class="svg-icon pause-icon" viewBox="0 0 24 24" style="display:none;"><rect x="5" y="4" width="4" height="16"/><rect x="15" y="4" width="4" height="16"/></svg>
+            </button>
+            <div class="player-timeline-wrapper">
+              <div class="player-timeline">
+                <div class="player-progress"></div>
+              </div>
+              <div class="player-time-display">
+                <span class="player-curr-time">0:00</span>
+                <span class="player-dur-time">0:00</span>
+              </div>
+            </div>
+          </div>
+        `;
       }
     }
   });
@@ -751,11 +985,21 @@ function initCustomAudioPlayers() {
 
     const parentCard = player.closest('.project-card');
     if (parentCard) {
-      const cardImg = parentCard.querySelector('.card-img');
-      if (cardImg) {
-        cardImg.style.cursor = 'pointer';
-        cardImg.setAttribute('title', 'Clic para reproducir / pausar');
-        cardImg.addEventListener('click', togglePlayPause);
+      const coverWrapper = parentCard.querySelector('.music-cover-wrapper');
+      if (coverWrapper) {
+        coverWrapper.style.cursor = 'pointer';
+        coverWrapper.setAttribute('title', 'Clic para reproducir / pausar');
+        coverWrapper.addEventListener('click', (e) => {
+          if (e.target.closest('.album-corner-btn')) return;
+          togglePlayPause(e);
+        });
+      } else {
+        const cardImg = parentCard.querySelector('.card-img');
+        if (cardImg) {
+          cardImg.style.cursor = 'pointer';
+          cardImg.setAttribute('title', 'Clic para reproducir / pausar');
+          cardImg.addEventListener('click', togglePlayPause);
+        }
       }
     }
 
@@ -765,6 +1009,16 @@ function initCustomAudioPlayers() {
         audio.dataset.altTried = 'true';
         audio.src = alt;
         audio.load();
+      } else if (!audio.dataset.formatTried) {
+        audio.dataset.formatTried = 'true';
+        const cur = audio.currentSrc || audio.src || '';
+        if (cur.endsWith('.ogg')) {
+          audio.src = cur.replace(/\.ogg$/i, '.m4a');
+          audio.load();
+        } else if (cur.endsWith('.m4a')) {
+          audio.src = cur.replace(/\.m4a$/i, '.ogg');
+          audio.load();
+        }
       }
     });
 
