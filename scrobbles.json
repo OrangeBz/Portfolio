@@ -8,47 +8,47 @@
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "26"
+      "reproducciones": "30"
     },
     {
       "posicion": 3,
       "nombre": "LONOWN",
-      "reproducciones": "13"
+      "reproducciones": "14"
     },
     {
       "posicion": 4,
-      "nombre": "Elven Dior",
-      "reproducciones": "11"
+      "nombre": "DVRST",
+      "reproducciones": "12"
     },
     {
       "posicion": 5,
-      "nombre": "DVRST",
-      "reproducciones": "10"
+      "nombre": "Elven Dior",
+      "reproducciones": "12"
     },
     {
       "posicion": 6,
       "nombre": "RXLZQ",
-      "reproducciones": "10"
+      "reproducciones": "12"
     },
     {
       "posicion": 7,
       "nombre": "InterWorld",
-      "reproducciones": "8"
+      "reproducciones": "10"
     },
     {
       "posicion": 8,
       "nombre": "Malcriada",
-      "reproducciones": "8"
+      "reproducciones": "10"
     },
     {
       "posicion": 9,
       "nombre": "ariis",
-      "reproducciones": "7"
+      "reproducciones": "8"
     },
     {
       "posicion": 10,
       "nombre": "Clovis Reyes",
-      "reproducciones": "7"
+      "reproducciones": "8"
     }
   ],
   "top_albumes_mes": [
@@ -60,27 +60,27 @@
     },
     {
       "posicion": 2,
-      "nombre": "NO GOING BACK",
-      "artista": "XXANTERIA",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d598cff2afd3b45498d2538ac0303f7e.png"
-    },
-    {
-      "posicion": 3,
       "nombre": "FUNK DO BOUNCE",
       "artista": "ariis",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
     },
     {
-      "posicion": 4,
+      "posicion": 3,
       "nombre": "Fluxxwave (Super Slowed)",
       "artista": "Clovis Reyes",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg"
     },
     {
+      "posicion": 4,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
+    },
+    {
       "posicion": 5,
-      "nombre": "Mestre do Funk",
-      "artista": "JXDEMANE",
-      "portada": ""
+      "nombre": "FrankJavCee vol 1.999",
+      "artista": "FrankJavCee",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/dea66fc3d1faf1dcfea552e4be44bfee.jpg"
     },
     {
       "posicion": 6,
@@ -97,23 +97,23 @@
     },
     {
       "posicion": 2,
-      "nombre": "NO GOING BACK",
-      "artista": "XXANTERIA"
-    },
-    {
-      "posicion": 3,
       "nombre": "FUNK DO BOUNCE",
       "artista": "ariis"
     },
     {
-      "posicion": 4,
+      "posicion": 3,
       "nombre": "Fluxxwave (Super Slowed)",
       "artista": "Clovis Reyes"
     },
     {
+      "posicion": 4,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST"
+    },
+    {
       "posicion": 5,
-      "nombre": "Mestre do Funk",
-      "artista": "JXDEMANE"
+      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
+      "artista": "FrankJavCee"
     },
     {
       "posicion": 6,
@@ -122,66 +122,66 @@
     },
     {
       "posicion": 7,
-      "nombre": "Autumn Wind",
-      "artista": "DVRST"
+      "nombre": "MELANCHOLY",
+      "artista": "Rxds"
     }
   ],
   "recientes": [
     {
-      "cancion": "countingsheep",
-      "artista": "saraunh0ly",
-      "album": "shqiptaraunh0ly",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e8d507c0fa88976085f502958d750c61.jpg",
-      "fecha": "12 Sep 2026, 22:44"
-    },
-    {
-      "cancion": "longing4ivory",
-      "artista": "saraunh0ly",
-      "album": "shqiptaraunh0ly",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e8d507c0fa88976085f502958d750c61.jpg",
-      "fecha": "12 Sep 2026, 22:41"
-    },
-    {
-      "cancion": "vallevejt",
-      "artista": "saraunh0ly",
-      "album": "shqiptaraunh0ly",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e8d507c0fa88976085f502958d750c61.jpg",
-      "fecha": "12 Sep 2026, 22:38"
-    },
-    {
-      "cancion": "Смерти Больше Нет",
-      "artista": "IC3PEAK",
-      "album": "Сказка",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/c402a0fdf4fd871e926154ae81d20fac.jpg",
-      "fecha": "12 Sep 2026, 22:33"
-    },
-    {
-      "cancion": "Go Bananas",
+      "cancion": "tURN iT uP",
       "artista": "Little Big",
-      "album": "Go Bananas",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/f85c0c791eb86ba08306f44f76c56bbd.jpg",
-      "fecha": "12 Sep 2026, 22:31"
+      "album": "",
+      "portada": "",
+      "fecha": "15 Sep 2026, 22:20"
     },
     {
-      "cancion": "NO MORE DEATH ULTRAFUNK",
-      "artista": "Cape",
-      "album": "NO MORE DEATH ULTRAFUNK",
+      "cancion": "Hazy Moon Jumpstyle (Official Visualizer)",
+      "artista": "PHXKHXNG",
+      "album": "",
+      "portada": "",
+      "fecha": "15 Sep 2026, 22:18"
+    },
+    {
+      "cancion": "(Slowed & Reverb)",
+      "artista": "BAD HABIT HORROR FUNK",
+      "album": "",
+      "portada": "",
+      "fecha": "15 Sep 2026, 22:16"
+    },
+    {
+      "cancion": "Ticking",
+      "artista": "Tin",
+      "album": "Ticking EP",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/709fa3a68402c662be3c47647bbd8c25.jpg",
+      "fecha": "15 Sep 2026, 22:11"
+    },
+    {
+      "cancion": "Mo Bamba",
+      "artista": "Sheck Wes",
+      "album": "MO BAMBA",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/26e00f0e05b0203e48e92e791c867425.png",
+      "fecha": "15 Sep 2026, 22:08"
+    },
+    {
+      "cancion": "Liar",
+      "artista": "Little Big",
+      "album": "Antipositive, Pt. 2",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/3294e186a4af32ea733a2069ca014f04.jpg",
+      "fecha": "15 Sep 2026, 22:05"
+    },
+    {
+      "cancion": "Workshop",
+      "artista": "PersonFromBrazil",
+      "album": "Workshop",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "12 Sep 2026, 22:29"
+      "fecha": "15 Sep 2026, 21:58"
     },
     {
-      "cancion": "Requiem",
-      "artista": "STOMACH BOOK",
-      "album": "STOMACH BOOK",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/8ead242813b913055c12404eedff34ed.jpg",
-      "fecha": "12 Sep 2026, 22:20"
-    },
-    {
-      "cancion": "wutiwant",
-      "artista": "saraunh0ly",
-      "album": "wutiwant",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/fcedf9b7629c7f63313889b42f416165.jpg",
-      "fecha": "12 Sep 2026, 21:35"
+      "cancion": "I know",
+      "artista": "Anelo Music",
+      "album": "",
+      "portada": "",
+      "fecha": "15 Sep 2026, 21:57"
     }
   ]
 }
