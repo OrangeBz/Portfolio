@@ -2,85 +2,85 @@
   "top_artistas_mes": [
     {
       "posicion": 1,
-      "nombre": "XXANTERIA",
-      "reproducciones": "38"
+      "nombre": "saraunh0ly",
+      "reproducciones": "48"
     },
     {
       "posicion": 2,
-      "nombre": "saraunh0ly",
-      "reproducciones": "30"
+      "nombre": "XXANTERIA",
+      "reproducciones": "42"
     },
     {
       "posicion": 3,
       "nombre": "LONOWN",
-      "reproducciones": "14"
+      "reproducciones": "17"
     },
     {
       "posicion": 4,
-      "nombre": "DVRST",
-      "reproducciones": "12"
+      "nombre": "Elven Dior",
+      "reproducciones": "14"
     },
     {
       "posicion": 5,
-      "nombre": "Elven Dior",
-      "reproducciones": "12"
+      "nombre": "DVRST",
+      "reproducciones": "13"
     },
     {
       "posicion": 6,
       "nombre": "RXLZQ",
-      "reproducciones": "12"
+      "reproducciones": "13"
     },
     {
       "posicion": 7,
-      "nombre": "InterWorld",
+      "nombre": "FrankJavCee",
       "reproducciones": "10"
     },
     {
       "posicion": 8,
-      "nombre": "Malcriada",
+      "nombre": "InterWorld",
       "reproducciones": "10"
     },
     {
       "posicion": 9,
-      "nombre": "ariis",
-      "reproducciones": "8"
+      "nombre": "Malcriada",
+      "reproducciones": "10"
     },
     {
       "posicion": 10,
-      "nombre": "Clovis Reyes",
-      "reproducciones": "8"
+      "nombre": "OrangeBz",
+      "reproducciones": "10"
     }
   ],
   "top_albumes_mes": [
     {
       "posicion": 1,
+      "nombre": "lookback",
+      "artista": "saraunh0ly",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e46e1da6655f5fc1f2d1240eb6b601e4.jpg"
+    },
+    {
+      "posicion": 2,
       "nombre": "captivation",
       "artista": "LONOWN",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png"
     },
     {
-      "posicion": 2,
-      "nombre": "FUNK DO BOUNCE",
-      "artista": "ariis",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
+      "posicion": 3,
+      "nombre": "FrankJavCee vol 1.999",
+      "artista": "FrankJavCee",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/dea66fc3d1faf1dcfea552e4be44bfee.jpg"
     },
     {
-      "posicion": 3,
+      "posicion": 4,
       "nombre": "Fluxxwave (Super Slowed)",
       "artista": "Clovis Reyes",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg"
     },
     {
-      "posicion": 4,
+      "posicion": 5,
       "nombre": "Autumn Wind",
       "artista": "DVRST",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
-    },
-    {
-      "posicion": 5,
-      "nombre": "FrankJavCee vol 1.999",
-      "artista": "FrankJavCee",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/dea66fc3d1faf1dcfea552e4be44bfee.jpg"
     },
     {
       "posicion": 6,
@@ -92,28 +92,28 @@
   "top_canciones_mes": [
     {
       "posicion": 1,
+      "nombre": "lookback",
+      "artista": "saraunh0ly"
+    },
+    {
+      "posicion": 2,
       "nombre": "snobbery",
       "artista": "LONOWN"
     },
     {
-      "posicion": 2,
-      "nombre": "FUNK DO BOUNCE",
-      "artista": "ariis"
+      "posicion": 3,
+      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
+      "artista": "FrankJavCee"
     },
     {
-      "posicion": 3,
+      "posicion": 4,
       "nombre": "Fluxxwave (Super Slowed)",
       "artista": "Clovis Reyes"
     },
     {
-      "posicion": 4,
+      "posicion": 5,
       "nombre": "Autumn Wind",
       "artista": "DVRST"
-    },
-    {
-      "posicion": 5,
-      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
-      "artista": "FrankJavCee"
     },
     {
       "posicion": 6,
@@ -128,60 +128,67 @@
   ],
   "recientes": [
     {
-      "cancion": "tURN iT uP",
-      "artista": "Little Big",
+      "cancion": "Continued Jungle Exploration",
+      "artista": "MindOverMutantMusic",
       "album": "",
       "portada": "",
-      "fecha": "15 Sep 2026, 22:20"
+      "fecha": "Ahora mismo"
     },
     {
-      "cancion": "Hazy Moon Jumpstyle (Official Visualizer)",
-      "artista": "PHXKHXNG",
+      "cancion": "Continued Jungle Exploration",
+      "artista": "MindOverMutantMusic",
       "album": "",
       "portada": "",
-      "fecha": "15 Sep 2026, 22:18"
+      "fecha": "19 Sep 2026, 02:17"
     },
     {
-      "cancion": "(Slowed & Reverb)",
-      "artista": "BAD HABIT HORROR FUNK",
+      "cancion": "Castle Funk (DELTARUNE Chapter 3+4 Soundtrack) - Toby Fox",
+      "artista": "Toby Fox",
       "album": "",
       "portada": "",
-      "fecha": "15 Sep 2026, 22:16"
+      "fecha": "19 Sep 2026, 02:12"
     },
     {
-      "cancion": "Ticking",
-      "artista": "Tin",
-      "album": "Ticking EP",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/709fa3a68402c662be3c47647bbd8c25.jpg",
-      "fecha": "15 Sep 2026, 22:11"
+      "cancion": "Rumbling Waterfall",
+      "artista": "Jukio Kallio",
+      "album": "Fall Guys Season 5 (Original Game Soundtrack)",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e56f17a2e09972dd6049ebacf75d9887.jpg",
+      "fecha": "19 Sep 2026, 02:07"
     },
     {
-      "cancion": "Mo Bamba",
-      "artista": "Sheck Wes",
-      "album": "MO BAMBA",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/26e00f0e05b0203e48e92e791c867425.png",
-      "fecha": "15 Sep 2026, 22:08"
+      "cancion": "Nuclear Throne",
+      "artista": "Jukio Kallio",
+      "album": "Nuclear Throne OST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/debbb66ee2b1b8493c2e94bbdb98b8ae.jpg",
+      "fecha": "19 Sep 2026, 02:05"
     },
     {
-      "cancion": "Liar",
-      "artista": "Little Big",
-      "album": "Antipositive, Pt. 2",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/3294e186a4af32ea733a2069ca014f04.jpg",
-      "fecha": "15 Sep 2026, 22:05"
+      "cancion": "Arcana Theme",
+      "artista": "Release",
+      "album": "",
+      "portada": "",
+      "fecha": "19 Sep 2026, 02:01"
     },
     {
-      "cancion": "Workshop",
-      "artista": "PersonFromBrazil",
-      "album": "Workshop",
+      "cancion": "Art Party",
+      "artista": "Paul Wiley",
+      "album": "Selections From (Terrifier 2 soundtrack)",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "15 Sep 2026, 21:58"
+      "fecha": "19 Sep 2026, 01:52"
     },
     {
-      "cancion": "I know",
-      "artista": "Anelo Music",
+      "cancion": "Main Theme",
+      "artista": "Release",
       "album": "",
       "portada": "",
-      "fecha": "15 Sep 2026, 21:57"
+      "fecha": "19 Sep 2026, 01:48"
+    },
+    {
+      "cancion": "lancer",
+      "artista": "Toby Fox",
+      "album": "DELTARUNE Chapter 1 Soundtrack",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/66c325b35265c953defa9bace953bd15.jpg",
+      "fecha": "18 Sep 2026, 21:47"
     }
   ]
 }
