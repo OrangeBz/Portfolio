@@ -3,51 +3,51 @@
     {
       "posicion": 1,
       "nombre": "saraunh0ly",
-      "reproducciones": "48"
+      "reproducciones": "50"
     },
     {
       "posicion": 2,
       "nombre": "XXANTERIA",
-      "reproducciones": "42"
+      "reproducciones": "48"
     },
     {
       "posicion": 3,
       "nombre": "LONOWN",
-      "reproducciones": "17"
+      "reproducciones": "18"
     },
     {
       "posicion": 4,
-      "nombre": "Elven Dior",
-      "reproducciones": "14"
+      "nombre": "DVRST",
+      "reproducciones": "17"
     },
     {
       "posicion": 5,
-      "nombre": "DVRST",
-      "reproducciones": "13"
+      "nombre": "Elven Dior",
+      "reproducciones": "16"
     },
     {
       "posicion": 6,
       "nombre": "RXLZQ",
-      "reproducciones": "13"
+      "reproducciones": "16"
     },
     {
       "posicion": 7,
-      "nombre": "FrankJavCee",
-      "reproducciones": "10"
+      "nombre": "Release",
+      "reproducciones": "13"
     },
     {
       "posicion": 8,
       "nombre": "InterWorld",
-      "reproducciones": "10"
+      "reproducciones": "12"
     },
     {
       "posicion": 9,
-      "nombre": "Malcriada",
-      "reproducciones": "10"
+      "nombre": "Rxds",
+      "reproducciones": "11"
     },
     {
       "posicion": 10,
-      "nombre": "OrangeBz",
+      "nombre": "FrankJavCee",
       "reproducciones": "10"
     }
   ],
@@ -66,27 +66,27 @@
     },
     {
       "posicion": 3,
-      "nombre": "FrankJavCee vol 1.999",
-      "artista": "FrankJavCee",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/dea66fc3d1faf1dcfea552e4be44bfee.jpg"
-    },
-    {
-      "posicion": 4,
-      "nombre": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg"
-    },
-    {
-      "posicion": 5,
       "nombre": "Autumn Wind",
       "artista": "DVRST",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
     },
     {
+      "posicion": 4,
+      "nombre": "Melancholy",
+      "artista": "Rxds",
+      "portada": ""
+    },
+    {
+      "posicion": 5,
+      "nombre": "selfsabotage",
+      "artista": "saraunh0ly",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5648088b415daab2710f8ae775f05adf.jpg"
+    },
+    {
       "posicion": 6,
-      "nombre": "Grave",
-      "artista": "Pluxry SkUrt",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/7f18d663d977d57cbe4852e872b7f489.jpg"
+      "nombre": "FrankJavCee vol 1.999",
+      "artista": "FrankJavCee",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/dea66fc3d1faf1dcfea552e4be44bfee.jpg"
     }
   ],
   "top_canciones_mes": [
@@ -102,93 +102,86 @@
     },
     {
       "posicion": 3,
-      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
-      "artista": "FrankJavCee"
-    },
-    {
-      "posicion": 4,
-      "nombre": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes"
-    },
-    {
-      "posicion": 5,
       "nombre": "Autumn Wind",
       "artista": "DVRST"
     },
     {
+      "posicion": 4,
+      "nombre": "MELANCHOLY",
+      "artista": "Rxds"
+    },
+    {
+      "posicion": 5,
+      "nombre": "selfsabotage",
+      "artista": "saraunh0ly"
+    },
+    {
       "posicion": 6,
-      "nombre": "Grave",
-      "artista": "Pluxry SkUrt"
+      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
+      "artista": "FrankJavCee"
     },
     {
       "posicion": 7,
-      "nombre": "MELANCHOLY",
-      "artista": "Rxds"
+      "nombre": "Grave",
+      "artista": "Pluxry SkUrt"
     }
   ],
   "recientes": [
     {
-      "cancion": "Continued Jungle Exploration",
-      "artista": "MindOverMutantMusic",
+      "cancion": "Oliver Tree (Splitting Branches)",
+      "artista": "Sacred Elements (ft Finn Rivera)",
       "album": "",
       "portada": "",
-      "fecha": "Ahora mismo"
+      "fecha": "21 Sep 2026, 17:08"
     },
     {
-      "cancion": "Continued Jungle Exploration",
-      "artista": "MindOverMutantMusic",
+      "cancion": "Dilatação Hipnótica 5.0 (Slowed)",
+      "artista": "DJ CRAZY 013",
       "album": "",
       "portada": "",
-      "fecha": "19 Sep 2026, 02:17"
+      "fecha": "21 Sep 2026, 16:27"
     },
     {
-      "cancion": "Castle Funk (DELTARUNE Chapter 3+4 Soundtrack) - Toby Fox",
-      "artista": "Toby Fox",
+      "cancion": "Guilt Trip",
+      "artista": "Kanye West",
+      "album": "Yeezus",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/71d8c1f84d67e60c5dda039d6fb3653f.png",
+      "fecha": "21 Sep 2026, 16:22"
+    },
+    {
+      "cancion": "123 (the longest dream)",
+      "artista": "(un)familiar.",
       "album": "",
       "portada": "",
-      "fecha": "19 Sep 2026, 02:12"
+      "fecha": "21 Sep 2026, 16:18"
     },
     {
-      "cancion": "Rumbling Waterfall",
-      "artista": "Jukio Kallio",
-      "album": "Fall Guys Season 5 (Original Game Soundtrack)",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e56f17a2e09972dd6049ebacf75d9887.jpg",
-      "fecha": "19 Sep 2026, 02:07"
-    },
-    {
-      "cancion": "Nuclear Throne",
-      "artista": "Jukio Kallio",
-      "album": "Nuclear Throne OST",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/debbb66ee2b1b8493c2e94bbdb98b8ae.jpg",
-      "fecha": "19 Sep 2026, 02:05"
-    },
-    {
-      "cancion": "Arcana Theme",
-      "artista": "Release",
+      "cancion": "TV Girlfriend",
+      "artista": "Hatsune Miku",
       "album": "",
       "portada": "",
-      "fecha": "19 Sep 2026, 02:01"
+      "fecha": "21 Sep 2026, 16:15"
     },
     {
-      "cancion": "Art Party",
-      "artista": "Paul Wiley",
-      "album": "Selections From (Terrifier 2 soundtrack)",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "19 Sep 2026, 01:52"
-    },
-    {
-      "cancion": "Main Theme",
-      "artista": "Release",
+      "cancion": "NEFFEX - Fight Back  No.37",
+      "artista": "NEFFEX",
       "album": "",
       "portada": "",
-      "fecha": "19 Sep 2026, 01:48"
+      "fecha": "21 Sep 2026, 14:13"
     },
     {
-      "cancion": "lancer",
-      "artista": "Toby Fox",
-      "album": "DELTARUNE Chapter 1 Soundtrack",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/66c325b35265c953defa9bace953bd15.jpg",
-      "fecha": "18 Sep 2026, 21:47"
+      "cancion": "DEAD END",
+      "artista": "DudePlaya",
+      "album": "DEAD END",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6aed25e143eed491d57bfa5c63bc0e0b.jpg",
+      "fecha": "21 Sep 2026, 14:11"
+    },
+    {
+      "cancion": "FUNK SIGILO (SLOWED)",
+      "artista": "h6itam",
+      "album": "FUNK SIGILO",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/065a0d156af1d52f7c6f0742166325bd.png",
+      "fecha": "21 Sep 2026, 14:09"
     }
   ]
 }
