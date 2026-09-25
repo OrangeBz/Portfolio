@@ -3,52 +3,52 @@
     {
       "posicion": 1,
       "nombre": "saraunh0ly",
-      "reproducciones": "50"
+      "reproducciones": "56"
     },
     {
       "posicion": 2,
       "nombre": "XXANTERIA",
-      "reproducciones": "48"
+      "reproducciones": "49"
     },
     {
       "posicion": 3,
-      "nombre": "LONOWN",
-      "reproducciones": "18"
+      "nombre": "DVRST",
+      "reproducciones": "19"
     },
     {
       "posicion": 4,
-      "nombre": "DVRST",
-      "reproducciones": "17"
+      "nombre": "LONOWN",
+      "reproducciones": "19"
     },
     {
       "posicion": 5,
       "nombre": "Elven Dior",
-      "reproducciones": "16"
+      "reproducciones": "18"
     },
     {
       "posicion": 6,
       "nombre": "RXLZQ",
-      "reproducciones": "16"
+      "reproducciones": "18"
     },
     {
       "posicion": 7,
-      "nombre": "Release",
-      "reproducciones": "13"
+      "nombre": "Oliver Tree",
+      "reproducciones": "16"
     },
     {
       "posicion": 8,
-      "nombre": "InterWorld",
-      "reproducciones": "12"
+      "nombre": "Release",
+      "reproducciones": "15"
     },
     {
       "posicion": 9,
-      "nombre": "Rxds",
-      "reproducciones": "11"
+      "nombre": "InterWorld",
+      "reproducciones": "14"
     },
     {
       "posicion": 10,
-      "nombre": "FrankJavCee",
-      "reproducciones": "10"
+      "nombre": "Rxds",
+      "reproducciones": "13"
     }
   ],
   "top_albumes_mes": [
@@ -66,15 +66,15 @@
     },
     {
       "posicion": 3,
-      "nombre": "Autumn Wind",
-      "artista": "DVRST",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
-    },
-    {
-      "posicion": 4,
       "nombre": "Melancholy",
       "artista": "Rxds",
       "portada": ""
+    },
+    {
+      "posicion": 4,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
     },
     {
       "posicion": 5,
@@ -84,9 +84,9 @@
     },
     {
       "posicion": 6,
-      "nombre": "FrankJavCee vol 1.999",
-      "artista": "FrankJavCee",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/dea66fc3d1faf1dcfea552e4be44bfee.jpg"
+      "nombre": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg"
     }
   ],
   "top_canciones_mes": [
@@ -102,13 +102,13 @@
     },
     {
       "posicion": 3,
-      "nombre": "Autumn Wind",
-      "artista": "DVRST"
+      "nombre": "MELANCHOLY",
+      "artista": "Rxds"
     },
     {
       "posicion": 4,
-      "nombre": "MELANCHOLY",
-      "artista": "Rxds"
+      "nombre": "Autumn Wind",
+      "artista": "DVRST"
     },
     {
       "posicion": 5,
@@ -117,71 +117,71 @@
     },
     {
       "posicion": 6,
-      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
-      "artista": "FrankJavCee"
+      "nombre": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes"
     },
     {
       "posicion": 7,
-      "nombre": "Grave",
-      "artista": "Pluxry SkUrt"
+      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
+      "artista": "FrankJavCee"
     }
   ],
   "recientes": [
     {
-      "cancion": "Oliver Tree (Splitting Branches)",
-      "artista": "Sacred Elements (ft Finn Rivera)",
+      "cancion": "tëtërters___",
+      "artista": "saraunh0ly",
+      "album": "tëtërters___",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5cfa613da7d571b4e2f30773914d6dfb.jpg",
+      "fecha": "24 Sep 2026, 22:39"
+    },
+    {
+      "cancion": "Nowhere To Run",
+      "artista": "Stegosaurus Rex",
+      "album": "The Dino Soars",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/b94f49bb96a144b2b7f542d8972f7c2f.jpg",
+      "fecha": "24 Sep 2026, 22:34"
+    },
+    {
+      "cancion": "BEEPER FUNK (SLOWED)",
+      "artista": "dj paulinho mondi",
       "album": "",
       "portada": "",
-      "fecha": "21 Sep 2026, 17:08"
+      "fecha": "24 Sep 2026, 22:32"
     },
     {
-      "cancion": "Dilatação Hipnótica 5.0 (Slowed)",
-      "artista": "DJ CRAZY 013",
-      "album": "",
-      "portada": "",
-      "fecha": "21 Sep 2026, 16:27"
+      "cancion": "void of love",
+      "artista": "latex fruit",
+      "album": "void of love",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/3a2a9b81e3de93342d9f52e283f1e565.jpg",
+      "fecha": "24 Sep 2026, 21:55"
     },
     {
-      "cancion": "Guilt Trip",
-      "artista": "Kanye West",
-      "album": "Yeezus",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/71d8c1f84d67e60c5dda039d6fb3653f.png",
-      "fecha": "21 Sep 2026, 16:22"
+      "cancion": "wutiwant",
+      "artista": "saraunh0ly",
+      "album": "wutiwant",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/fcedf9b7629c7f63313889b42f416165.jpg",
+      "fecha": "24 Sep 2026, 21:49"
     },
     {
-      "cancion": "123 (the longest dream)",
-      "artista": "(un)familiar.",
-      "album": "",
-      "portada": "",
-      "fecha": "21 Sep 2026, 16:18"
+      "cancion": "tëtërters___",
+      "artista": "saraunh0ly",
+      "album": "tëtërters___",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5cfa613da7d571b4e2f30773914d6dfb.jpg",
+      "fecha": "24 Sep 2026, 21:47"
     },
     {
-      "cancion": "TV Girlfriend",
-      "artista": "Hatsune Miku",
-      "album": "",
-      "portada": "",
-      "fecha": "21 Sep 2026, 16:15"
+      "cancion": "imnormal",
+      "artista": "saraunh0ly",
+      "album": "imnormal",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/289881dcdc7e759755b2297327609c65.jpg",
+      "fecha": "24 Sep 2026, 21:41"
     },
     {
-      "cancion": "NEFFEX - Fight Back  No.37",
-      "artista": "NEFFEX",
-      "album": "",
-      "portada": "",
-      "fecha": "21 Sep 2026, 14:13"
-    },
-    {
-      "cancion": "DEAD END",
-      "artista": "DudePlaya",
-      "album": "DEAD END",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6aed25e143eed491d57bfa5c63bc0e0b.jpg",
-      "fecha": "21 Sep 2026, 14:11"
-    },
-    {
-      "cancion": "FUNK SIGILO (SLOWED)",
-      "artista": "h6itam",
-      "album": "FUNK SIGILO",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/065a0d156af1d52f7c6f0742166325bd.png",
-      "fecha": "21 Sep 2026, 14:09"
+      "cancion": "mmm00nm0thz",
+      "artista": "saraunh0ly",
+      "album": "mmm00nm0thz",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/a3572630bee503aaa3250cd0e8ef3bce.jpg",
+      "fecha": "24 Sep 2026, 21:39"
     }
   ]
 }
