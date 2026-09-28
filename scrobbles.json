@@ -3,32 +3,32 @@
     {
       "posicion": 1,
       "nombre": "saraunh0ly",
-      "reproducciones": "56"
+      "reproducciones": "58"
     },
     {
       "posicion": 2,
       "nombre": "XXANTERIA",
-      "reproducciones": "49"
+      "reproducciones": "55"
     },
     {
       "posicion": 3,
-      "nombre": "DVRST",
-      "reproducciones": "19"
+      "nombre": "RXLZQ",
+      "reproducciones": "21"
     },
     {
       "posicion": 4,
-      "nombre": "LONOWN",
-      "reproducciones": "19"
+      "nombre": "DVRST",
+      "reproducciones": "20"
     },
     {
       "posicion": 5,
-      "nombre": "Elven Dior",
-      "reproducciones": "18"
+      "nombre": "LONOWN",
+      "reproducciones": "20"
     },
     {
       "posicion": 6,
-      "nombre": "RXLZQ",
-      "reproducciones": "18"
+      "nombre": "Elven Dior",
+      "reproducciones": "19"
     },
     {
       "posicion": 7,
@@ -38,16 +38,16 @@
     {
       "posicion": 8,
       "nombre": "Release",
-      "reproducciones": "15"
+      "reproducciones": "16"
     },
     {
       "posicion": 9,
       "nombre": "InterWorld",
-      "reproducciones": "14"
+      "reproducciones": "15"
     },
     {
       "posicion": 10,
-      "nombre": "Rxds",
+      "nombre": "Malcriada",
       "reproducciones": "13"
     }
   ],
@@ -60,33 +60,33 @@
     },
     {
       "posicion": 2,
-      "nombre": "captivation",
-      "artista": "LONOWN",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png"
-    },
-    {
-      "posicion": 3,
-      "nombre": "Melancholy",
-      "artista": "Rxds",
-      "portada": ""
-    },
-    {
-      "posicion": 4,
-      "nombre": "Autumn Wind",
-      "artista": "DVRST",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
-    },
-    {
-      "posicion": 5,
       "nombre": "selfsabotage",
       "artista": "saraunh0ly",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5648088b415daab2710f8ae775f05adf.jpg"
     },
     {
+      "posicion": 3,
+      "nombre": "captivation",
+      "artista": "LONOWN",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png"
+    },
+    {
+      "posicion": 4,
+      "nombre": "Melancholy",
+      "artista": "Rxds",
+      "portada": ""
+    },
+    {
+      "posicion": 5,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
+    },
+    {
       "posicion": 6,
-      "nombre": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg"
+      "nombre": "DON`T STOP",
+      "artista": "GLXXMSTRIDER",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/52df8578c33f06f24cde675e4a160860.jpg"
     }
   ],
   "top_canciones_mes": [
@@ -97,91 +97,91 @@
     },
     {
       "posicion": 2,
-      "nombre": "snobbery",
-      "artista": "LONOWN"
-    },
-    {
-      "posicion": 3,
-      "nombre": "MELANCHOLY",
-      "artista": "Rxds"
-    },
-    {
-      "posicion": 4,
-      "nombre": "Autumn Wind",
-      "artista": "DVRST"
-    },
-    {
-      "posicion": 5,
       "nombre": "selfsabotage",
       "artista": "saraunh0ly"
     },
     {
+      "posicion": 3,
+      "nombre": "snobbery",
+      "artista": "LONOWN"
+    },
+    {
+      "posicion": 4,
+      "nombre": "MELANCHOLY",
+      "artista": "Rxds"
+    },
+    {
+      "posicion": 5,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST"
+    },
+    {
       "posicion": 6,
-      "nombre": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes"
+      "nombre": "DON`T STOP",
+      "artista": "GLXXMSTRIDER"
     },
     {
       "posicion": 7,
-      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
-      "artista": "FrankJavCee"
+      "nombre": "Grave",
+      "artista": "Pluxry SkUrt"
     }
   ],
   "recientes": [
     {
-      "cancion": "tëtërters___",
-      "artista": "saraunh0ly",
-      "album": "tëtërters___",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5cfa613da7d571b4e2f30773914d6dfb.jpg",
-      "fecha": "24 Sep 2026, 22:39"
+      "cancion": "Founders",
+      "artista": "Alex Peipman",
+      "album": "Machine Party (Original Soundtrack)",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/77b8e3dea625d9bc5e26e74d238edf6b.jpg",
+      "fecha": "28 Sep 2026, 01:00"
     },
     {
-      "cancion": "Nowhere To Run",
-      "artista": "Stegosaurus Rex",
-      "album": "The Dino Soars",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/b94f49bb96a144b2b7f542d8972f7c2f.jpg",
-      "fecha": "24 Sep 2026, 22:34"
-    },
-    {
-      "cancion": "BEEPER FUNK (SLOWED)",
-      "artista": "dj paulinho mondi",
+      "cancion": "back",
+      "artista": "Flakk",
       "album": "",
       "portada": "",
-      "fecha": "24 Sep 2026, 22:32"
+      "fecha": "28 Sep 2026, 00:55"
     },
     {
-      "cancion": "void of love",
-      "artista": "latex fruit",
-      "album": "void of love",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/3a2a9b81e3de93342d9f52e283f1e565.jpg",
-      "fecha": "24 Sep 2026, 21:55"
+      "cancion": "prophecy",
+      "artista": "XXANTERIA",
+      "album": "BONES BREAK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "28 Sep 2026, 00:55"
     },
     {
-      "cancion": "wutiwant",
-      "artista": "saraunh0ly",
-      "album": "wutiwant",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/fcedf9b7629c7f63313889b42f416165.jpg",
-      "fecha": "24 Sep 2026, 21:49"
+      "cancion": "DEFECTIO LETALYS",
+      "artista": "DJ VIC ORIGINAL",
+      "album": "",
+      "portada": "",
+      "fecha": "26 Sep 2026, 18:54"
     },
     {
-      "cancion": "tëtërters___",
-      "artista": "saraunh0ly",
-      "album": "tëtërters___",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5cfa613da7d571b4e2f30773914d6dfb.jpg",
-      "fecha": "24 Sep 2026, 21:47"
+      "cancion": "Celestial Pack Theme",
+      "artista": "Balatro OST in the style of Masayoshi Takanaka (Slow 7",
+      "album": "",
+      "portada": "",
+      "fecha": "26 Sep 2026, 15:44"
     },
     {
-      "cancion": "imnormal",
-      "artista": "saraunh0ly",
-      "album": "imnormal",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/289881dcdc7e759755b2297327609c65.jpg",
-      "fecha": "24 Sep 2026, 21:41"
+      "cancion": "Shop Theme",
+      "artista": "Balatro OST in the style of Masayoshi Takanaka (Slow 7",
+      "album": "",
+      "portada": "",
+      "fecha": "26 Sep 2026, 15:39"
     },
     {
-      "cancion": "mmm00nm0thz",
-      "artista": "saraunh0ly",
-      "album": "mmm00nm0thz",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/a3572630bee503aaa3250cd0e8ef3bce.jpg",
-      "fecha": "24 Sep 2026, 21:39"
+      "cancion": "Main Theme",
+      "artista": "Balatro OST in the style of Masayoshi Takanaka (Slow 7",
+      "album": "",
+      "portada": "",
+      "fecha": "26 Sep 2026, 15:35"
+    },
+    {
+      "cancion": "DON`T STOP",
+      "artista": "GLXXMSTRIDER",
+      "album": "DON`T STOP",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/52df8578c33f06f24cde675e4a160860.jpg",
+      "fecha": "26 Sep 2026, 15:33"
     }
   ]
 }
