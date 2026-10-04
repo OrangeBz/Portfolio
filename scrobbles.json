@@ -2,52 +2,52 @@
   "top_artistas_mes": [
     {
       "posicion": 1,
-      "nombre": "saraunh0ly",
-      "reproducciones": "65"
+      "nombre": "XXANTERIA",
+      "reproducciones": "72"
     },
     {
       "posicion": 2,
-      "nombre": "XXANTERIA",
-      "reproducciones": "64"
+      "nombre": "saraunh0ly",
+      "reproducciones": "69"
     },
     {
       "posicion": 3,
-      "nombre": "Elven Dior",
-      "reproducciones": "23"
+      "nombre": "RXLZQ",
+      "reproducciones": "25"
     },
     {
       "posicion": 4,
-      "nombre": "RXLZQ",
+      "nombre": "DVRST",
       "reproducciones": "23"
     },
     {
       "posicion": 5,
-      "nombre": "DVRST",
-      "reproducciones": "22"
+      "nombre": "Elven Dior",
+      "reproducciones": "23"
     },
     {
       "posicion": 6,
       "nombre": "LONOWN",
-      "reproducciones": "21"
+      "reproducciones": "23"
     },
     {
       "posicion": 7,
+      "nombre": "InterWorld",
+      "reproducciones": "18"
+    },
+    {
+      "posicion": 8,
+      "nombre": "Malcriada",
+      "reproducciones": "18"
+    },
+    {
+      "posicion": 9,
       "nombre": "Oliver Tree",
       "reproducciones": "17"
     },
     {
-      "posicion": 8,
-      "nombre": "InterWorld",
-      "reproducciones": "16"
-    },
-    {
-      "posicion": 9,
-      "nombre": "Malcriada",
-      "reproducciones": "16"
-    },
-    {
       "posicion": 10,
-      "nombre": "Release",
+      "nombre": "Miguel Angeles",
       "reproducciones": "16"
     }
   ],
@@ -60,27 +60,27 @@
     },
     {
       "posicion": 2,
-      "nombre": "Melancholy",
-      "artista": "Rxds",
-      "portada": ""
-    },
-    {
-      "posicion": 3,
-      "nombre": "Autumn Wind",
-      "artista": "DVRST",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
-    },
-    {
-      "posicion": 4,
       "nombre": "captivation",
       "artista": "LONOWN",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png"
     },
     {
-      "posicion": 5,
+      "posicion": 3,
+      "nombre": "Melancholy",
+      "artista": "Rxds",
+      "portada": ""
+    },
+    {
+      "posicion": 4,
       "nombre": "selfsabotage",
       "artista": "saraunh0ly",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5648088b415daab2710f8ae775f05adf.jpg"
+    },
+    {
+      "posicion": 5,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
     },
     {
       "posicion": 6,
@@ -97,23 +97,23 @@
     },
     {
       "posicion": 2,
-      "nombre": "MELANCHOLY",
-      "artista": "Rxds"
-    },
-    {
-      "posicion": 3,
-      "nombre": "Autumn Wind",
-      "artista": "DVRST"
-    },
-    {
-      "posicion": 4,
       "nombre": "snobbery",
       "artista": "LONOWN"
     },
     {
-      "posicion": 5,
+      "posicion": 3,
+      "nombre": "MELANCHOLY",
+      "artista": "Rxds"
+    },
+    {
+      "posicion": 4,
       "nombre": "selfsabotage",
       "artista": "saraunh0ly"
+    },
+    {
+      "posicion": 5,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST"
     },
     {
       "posicion": 6,
@@ -122,66 +122,66 @@
     },
     {
       "posicion": 7,
-      "nombre": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes"
+      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
+      "artista": "FrankJavCee"
     }
   ],
   "recientes": [
     {
-      "cancion": "i want u dead",
-      "artista": "LOVELI LORI",
-      "album": "i want u dead",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "01 Oct 2026, 02:55"
+      "cancion": "World's Greatest!",
+      "artista": "Lil Nas X",
+      "album": "World's Greatest!",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
+      "fecha": "03 Oct 2026, 13:36"
     },
     {
-      "cancion": "COMBATANT",
-      "artista": "ilyhiryu",
-      "album": "COMBATANT",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "01 Oct 2026, 02:52"
+      "cancion": "World's Greatest!",
+      "artista": "Lil Nas X",
+      "album": "World's Greatest!",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
+      "fecha": "03 Oct 2026, 13:21"
     },
     {
-      "cancion": "Gothic Summer",
-      "artista": "Prayers",
-      "album": "Gothic Summer",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d60a1aef539659005740cad3407cc063.jpg",
-      "fecha": "01 Oct 2026, 02:48"
+      "cancion": "World's Greatest!",
+      "artista": "Lil Nas X",
+      "album": "World's Greatest!",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
+      "fecha": "03 Oct 2026, 13:16"
     },
     {
-      "cancion": "pride (super slowed)",
-      "artista": "SLXUGHTER",
-      "album": "",
-      "portada": "",
-      "fecha": "01 Oct 2026, 02:46"
+      "cancion": "World's Greatest!",
+      "artista": "Lil Nas X",
+      "album": "World's Greatest!",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
+      "fecha": "03 Oct 2026, 13:10"
     },
     {
-      "cancion": "TAKING IT FAST",
-      "artista": "XXANTERIA",
-      "album": "TAKING IT FAST",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "01 Oct 2026, 02:45"
+      "cancion": "World's Greatest!",
+      "artista": "Lil Nas X",
+      "album": "World's Greatest!",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
+      "fecha": "03 Oct 2026, 13:05"
     },
     {
-      "cancion": "BOMBO",
-      "artista": "XXANTERIA",
-      "album": "",
-      "portada": "",
-      "fecha": "01 Oct 2026, 02:43"
+      "cancion": "World's Greatest!",
+      "artista": "Lil Nas X",
+      "album": "World's Greatest!",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
+      "fecha": "03 Oct 2026, 12:59"
     },
     {
-      "cancion": "PARANOIA",
-      "artista": "Malcriada",
-      "album": "PARANOIA",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/98be8cb43a0e984c83a0a33fa7526177.jpg",
-      "fecha": "01 Oct 2026, 02:40"
+      "cancion": "World's Greatest!",
+      "artista": "Lil Nas X",
+      "album": "World's Greatest!",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
+      "fecha": "03 Oct 2026, 12:54"
     },
     {
-      "cancion": "restless",
-      "artista": "ilyhiryu",
-      "album": "restless",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "01 Oct 2026, 02:37"
+      "cancion": "World's Greatest!",
+      "artista": "Lil Nas X",
+      "album": "World's Greatest!",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
+      "fecha": "03 Oct 2026, 12:50"
     }
   ]
 }
