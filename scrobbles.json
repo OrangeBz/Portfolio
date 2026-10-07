@@ -3,84 +3,84 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "72"
+      "reproducciones": "80"
     },
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "69"
+      "reproducciones": "71"
     },
     {
       "posicion": 3,
+      "nombre": "DVRST",
+      "reproducciones": "28"
+    },
+    {
+      "posicion": 4,
+      "nombre": "Elven Dior",
+      "reproducciones": "25"
+    },
+    {
+      "posicion": 5,
+      "nombre": "LONOWN",
+      "reproducciones": "25"
+    },
+    {
+      "posicion": 6,
       "nombre": "RXLZQ",
       "reproducciones": "25"
     },
     {
-      "posicion": 4,
-      "nombre": "DVRST",
-      "reproducciones": "23"
-    },
-    {
-      "posicion": 5,
-      "nombre": "Elven Dior",
-      "reproducciones": "23"
-    },
-    {
-      "posicion": 6,
-      "nombre": "LONOWN",
-      "reproducciones": "23"
-    },
-    {
       "posicion": 7,
       "nombre": "InterWorld",
-      "reproducciones": "18"
+      "reproducciones": "20"
     },
     {
       "posicion": 8,
+      "nombre": "Miguel Angeles",
+      "reproducciones": "20"
+    },
+    {
+      "posicion": 9,
       "nombre": "Malcriada",
       "reproducciones": "18"
     },
     {
-      "posicion": 9,
+      "posicion": 10,
       "nombre": "Oliver Tree",
       "reproducciones": "17"
-    },
-    {
-      "posicion": 10,
-      "nombre": "Miguel Angeles",
-      "reproducciones": "16"
     }
   ],
   "top_albumes_mes": [
     {
       "posicion": 1,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
+    },
+    {
+      "posicion": 2,
       "nombre": "lookback",
       "artista": "saraunh0ly",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e46e1da6655f5fc1f2d1240eb6b601e4.jpg"
     },
     {
-      "posicion": 2,
+      "posicion": 3,
       "nombre": "captivation",
       "artista": "LONOWN",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png"
     },
     {
-      "posicion": 3,
+      "posicion": 4,
       "nombre": "Melancholy",
       "artista": "Rxds",
       "portada": ""
     },
     {
-      "posicion": 4,
+      "posicion": 5,
       "nombre": "selfsabotage",
       "artista": "saraunh0ly",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5648088b415daab2710f8ae775f05adf.jpg"
-    },
-    {
-      "posicion": 5,
-      "nombre": "Autumn Wind",
-      "artista": "DVRST",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg"
     },
     {
       "posicion": 6,
@@ -92,28 +92,28 @@
   "top_canciones_mes": [
     {
       "posicion": 1,
+      "nombre": "Autumn Wind",
+      "artista": "DVRST"
+    },
+    {
+      "posicion": 2,
       "nombre": "lookback",
       "artista": "saraunh0ly"
     },
     {
-      "posicion": 2,
+      "posicion": 3,
       "nombre": "snobbery",
       "artista": "LONOWN"
     },
     {
-      "posicion": 3,
+      "posicion": 4,
       "nombre": "MELANCHOLY",
       "artista": "Rxds"
     },
     {
-      "posicion": 4,
+      "posicion": 5,
       "nombre": "selfsabotage",
       "artista": "saraunh0ly"
-    },
-    {
-      "posicion": 5,
-      "nombre": "Autumn Wind",
-      "artista": "DVRST"
     },
     {
       "posicion": 6,
@@ -128,60 +128,60 @@
   ],
   "recientes": [
     {
-      "cancion": "World's Greatest!",
-      "artista": "Lil Nas X",
-      "album": "World's Greatest!",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
-      "fecha": "03 Oct 2026, 13:36"
+      "cancion": "Every Time Again",
+      "artista": "DVRST",
+      "album": "Echoes of Childhood",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/ea60591dade255872e84a10f3fb12a82.jpg",
+      "fecha": "07 Oct 2026, 00:02"
     },
     {
-      "cancion": "World's Greatest!",
-      "artista": "Lil Nas X",
-      "album": "World's Greatest!",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
-      "fecha": "03 Oct 2026, 13:21"
+      "cancion": "Headphone Actor",
+      "artista": "Jin",
+      "album": "MEKAKUCITYDAYS",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d532478fc2ff46e0c64e47c70ed8ede2.jpg",
+      "fecha": "06 Oct 2026, 23:58"
     },
     {
-      "cancion": "World's Greatest!",
-      "artista": "Lil Nas X",
-      "album": "World's Greatest!",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
-      "fecha": "03 Oct 2026, 13:16"
+      "cancion": "Religious Ecstacy Via",
+      "artista": "Nero's Day at Disneyland",
+      "album": "Colonists",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e5529b22d1cd9c2761c9793824e852f4.png",
+      "fecha": "06 Oct 2026, 23:54"
     },
     {
-      "cancion": "World's Greatest!",
-      "artista": "Lil Nas X",
-      "album": "World's Greatest!",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
-      "fecha": "03 Oct 2026, 13:10"
+      "cancion": "amiwutido",
+      "artista": "saraunh0ly",
+      "album": "amiwutido",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/11ed1085726120050452d3af563bff2e.png",
+      "fecha": "06 Oct 2026, 23:51"
     },
     {
-      "cancion": "World's Greatest!",
-      "artista": "Lil Nas X",
-      "album": "World's Greatest!",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
-      "fecha": "03 Oct 2026, 13:05"
+      "cancion": "Theme To Navigate The Day-Glo Buy Grid",
+      "artista": "Nero's Day at Disneyland",
+      "album": "",
+      "portada": "",
+      "fecha": "06 Oct 2026, 16:03"
     },
     {
-      "cancion": "World's Greatest!",
-      "artista": "Lil Nas X",
-      "album": "World's Greatest!",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
-      "fecha": "03 Oct 2026, 12:59"
+      "cancion": "DEATH RATTLE",
+      "artista": "Miguel Angeles",
+      "album": "DEATH RATTLE",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6d90b4d378e1f64af99b0034647a4efd.png",
+      "fecha": "06 Oct 2026, 15:59"
     },
     {
-      "cancion": "World's Greatest!",
-      "artista": "Lil Nas X",
-      "album": "World's Greatest!",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
-      "fecha": "03 Oct 2026, 12:54"
+      "cancion": "haunted",
+      "artista": "XXANTERIA",
+      "album": "Haunted",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "06 Oct 2026, 15:58"
     },
     {
-      "cancion": "World's Greatest!",
-      "artista": "Lil Nas X",
-      "album": "World's Greatest!",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5d75fe826a42641504a269005fac15d4.jpg",
-      "fecha": "03 Oct 2026, 12:50"
+      "cancion": "SHATTERED LOVE",
+      "artista": "KoruSe",
+      "album": "SHATTERED LOVE",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/de7a7b6a5162570bf8aab0df6d72e1cc.jpg",
+      "fecha": "06 Oct 2026, 13:31"
     }
   ]
 }
