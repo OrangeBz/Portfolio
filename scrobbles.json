@@ -3,41 +3,41 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "80"
+      "reproducciones": "81"
     },
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "71"
+      "reproducciones": "73"
     },
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "28"
+      "reproducciones": "30"
     },
     {
       "posicion": 4,
+      "nombre": "RXLZQ",
+      "reproducciones": "26"
+    },
+    {
+      "posicion": 5,
       "nombre": "Elven Dior",
       "reproducciones": "25"
     },
     {
-      "posicion": 5,
+      "posicion": 6,
       "nombre": "LONOWN",
       "reproducciones": "25"
     },
     {
-      "posicion": 6,
-      "nombre": "RXLZQ",
-      "reproducciones": "25"
-    },
-    {
       "posicion": 7,
-      "nombre": "InterWorld",
-      "reproducciones": "20"
+      "nombre": "Miguel Angeles",
+      "reproducciones": "21"
     },
     {
       "posicion": 8,
-      "nombre": "Miguel Angeles",
+      "nombre": "InterWorld",
       "reproducciones": "20"
     },
     {
@@ -48,7 +48,7 @@
     {
       "posicion": 10,
       "nombre": "Oliver Tree",
-      "reproducciones": "17"
+      "reproducciones": "18"
     }
   ],
   "top_albumes_mes": [
@@ -128,60 +128,60 @@
   ],
   "recientes": [
     {
-      "cancion": "Every Time Again",
-      "artista": "DVRST",
-      "album": "Echoes of Childhood",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/ea60591dade255872e84a10f3fb12a82.jpg",
-      "fecha": "07 Oct 2026, 00:02"
-    },
-    {
-      "cancion": "Headphone Actor",
-      "artista": "Jin",
-      "album": "MEKAKUCITYDAYS",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d532478fc2ff46e0c64e47c70ed8ede2.jpg",
-      "fecha": "06 Oct 2026, 23:58"
-    },
-    {
-      "cancion": "Religious Ecstacy Via",
-      "artista": "Nero's Day at Disneyland",
-      "album": "Colonists",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e5529b22d1cd9c2761c9793824e852f4.png",
-      "fecha": "06 Oct 2026, 23:54"
-    },
-    {
-      "cancion": "amiwutido",
-      "artista": "saraunh0ly",
-      "album": "amiwutido",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/11ed1085726120050452d3af563bff2e.png",
-      "fecha": "06 Oct 2026, 23:51"
-    },
-    {
-      "cancion": "Theme To Navigate The Day-Glo Buy Grid",
-      "artista": "Nero's Day at Disneyland",
+      "cancion": "Odetari - I'M A BLACKHOLE (I'm a Star)",
+      "artista": "Odetari",
       "album": "",
       "portada": "",
-      "fecha": "06 Oct 2026, 16:03"
+      "fecha": "09 Oct 2026, 20:22"
     },
     {
-      "cancion": "DEATH RATTLE",
-      "artista": "Miguel Angeles",
-      "album": "DEATH RATTLE",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6d90b4d378e1f64af99b0034647a4efd.png",
-      "fecha": "06 Oct 2026, 15:59"
+      "cancion": "KEEP UP",
+      "artista": "Odetari",
+      "album": "KEEP UP // FROSTBITE",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/845cf12a58f28a4ca7c5ec786e974e49.jpg",
+      "fecha": "09 Oct 2026, 16:56"
     },
     {
-      "cancion": "haunted",
-      "artista": "XXANTERIA",
-      "album": "Haunted",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "06 Oct 2026, 15:58"
+      "cancion": "LOOK DON'T TOUCH - Sped Up",
+      "artista": "ODECORE, Odetari, & cade clair",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Oct 2026, 16:37"
     },
     {
-      "cancion": "SHATTERED LOVE",
-      "artista": "KoruSe",
-      "album": "SHATTERED LOVE",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/de7a7b6a5162570bf8aab0df6d72e1cc.jpg",
-      "fecha": "06 Oct 2026, 13:31"
+      "cancion": "Odetari - I'M A BLACKHOLE (I'm a Star)",
+      "artista": "Odetari",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Oct 2026, 16:35"
+    },
+    {
+      "cancion": "Odetari - I'M A BLACKHOLE (I'm a Star)",
+      "artista": "Odetari",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Oct 2026, 14:04"
+    },
+    {
+      "cancion": "Motorcycle Chase",
+      "artista": "Michael Jackson",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Oct 2026, 13:54"
+    },
+    {
+      "cancion": "Resistance & Rooftop XSCAPE",
+      "artista": "Michael Jackson – XSCAPE",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Oct 2026, 13:53"
+    },
+    {
+      "cancion": "help_urself (prod. dyn remix)",
+      "artista": "Ezekiel",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Oct 2026, 13:50"
     }
   ]
 }
