@@ -3,7 +3,7 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "81"
+      "reproducciones": "90"
     },
     {
       "posicion": 2,
@@ -13,27 +13,27 @@
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "30"
+      "reproducciones": "36"
     },
     {
       "posicion": 4,
-      "nombre": "RXLZQ",
-      "reproducciones": "26"
+      "nombre": "Elven Dior",
+      "reproducciones": "29"
     },
     {
       "posicion": 5,
-      "nombre": "Elven Dior",
-      "reproducciones": "25"
+      "nombre": "RXLZQ",
+      "reproducciones": "28"
     },
     {
       "posicion": 6,
       "nombre": "LONOWN",
-      "reproducciones": "25"
+      "reproducciones": "26"
     },
     {
       "posicion": 7,
       "nombre": "Miguel Angeles",
-      "reproducciones": "21"
+      "reproducciones": "24"
     },
     {
       "posicion": 8,
@@ -43,7 +43,7 @@
     {
       "posicion": 9,
       "nombre": "Malcriada",
-      "reproducciones": "18"
+      "reproducciones": "19"
     },
     {
       "posicion": 10,
@@ -78,15 +78,15 @@
     },
     {
       "posicion": 5,
-      "nombre": "selfsabotage",
-      "artista": "saraunh0ly",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5648088b415daab2710f8ae775f05adf.jpg"
-    },
-    {
-      "posicion": 6,
       "nombre": "FUNK DO BOUNCE",
       "artista": "ariis",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
+    },
+    {
+      "posicion": 6,
+      "nombre": "selfsabotage",
+      "artista": "saraunh0ly",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5648088b415daab2710f8ae775f05adf.jpg"
     }
   ],
   "top_canciones_mes": [
@@ -112,13 +112,13 @@
     },
     {
       "posicion": 5,
-      "nombre": "selfsabotage",
-      "artista": "saraunh0ly"
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis"
     },
     {
       "posicion": 6,
-      "nombre": "FUNK DO BOUNCE",
-      "artista": "ariis"
+      "nombre": "selfsabotage",
+      "artista": "saraunh0ly"
     },
     {
       "posicion": 7,
@@ -128,60 +128,60 @@
   ],
   "recientes": [
     {
-      "cancion": "Odetari - I'M A BLACKHOLE (I'm a Star)",
-      "artista": "Odetari",
-      "album": "",
-      "portada": "",
-      "fecha": "09 Oct 2026, 20:22"
+      "cancion": "Palmtree Panic Funk (SLOWED)",
+      "artista": "DJ Exe",
+      "album": "PALMTREE PANIC FUNK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2cb882e1e0b2e8898ef607d9d2f1a62e.png",
+      "fecha": "12 Oct 2026, 10:07"
     },
     {
-      "cancion": "KEEP UP",
-      "artista": "Odetari",
-      "album": "KEEP UP // FROSTBITE",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/845cf12a58f28a4ca7c5ec786e974e49.jpg",
-      "fecha": "09 Oct 2026, 16:56"
-    },
-    {
-      "cancion": "LOOK DON'T TOUCH - Sped Up",
-      "artista": "ODECORE, Odetari, & cade clair",
+      "cancion": "✻H+3+ЯД✻7luCJIo0T6... (Super Slowed)",
+      "artista": "vyrval",
       "album": "",
       "portada": "",
-      "fecha": "09 Oct 2026, 16:37"
+      "fecha": "12 Oct 2026, 10:04"
     },
     {
-      "cancion": "Odetari - I'M A BLACKHOLE (I'm a Star)",
-      "artista": "Odetari",
+      "cancion": "meow! (krushfunk)",
+      "artista": "JXM, Seek",
       "album": "",
       "portada": "",
-      "fecha": "09 Oct 2026, 16:35"
+      "fecha": "12 Oct 2026, 10:02"
     },
     {
-      "cancion": "Odetari - I'M A BLACKHOLE (I'm a Star)",
-      "artista": "Odetari",
-      "album": "",
-      "portada": "",
-      "fecha": "09 Oct 2026, 14:04"
+      "cancion": "SHATTERED LOVE",
+      "artista": "KoruSe",
+      "album": "SHATTERED LOVE",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/de7a7b6a5162570bf8aab0df6d72e1cc.jpg",
+      "fecha": "12 Oct 2026, 09:59"
     },
     {
-      "cancion": "Motorcycle Chase",
-      "artista": "Michael Jackson",
-      "album": "",
-      "portada": "",
-      "fecha": "09 Oct 2026, 13:54"
+      "cancion": "NITE II",
+      "artista": "Elven Dior",
+      "album": "NITE II",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/40172b2bfccf2676fd138982d2ca90af.png",
+      "fecha": "12 Oct 2026, 09:58"
     },
     {
-      "cancion": "Resistance & Rooftop XSCAPE",
-      "artista": "Michael Jackson – XSCAPE",
-      "album": "",
-      "portada": "",
-      "fecha": "09 Oct 2026, 13:53"
+      "cancion": "FUNKED UP",
+      "artista": "XXANTERIA",
+      "album": "FUNKED UP",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/1a5f48c9ae24653dbe4c9bc98022344d.jpg",
+      "fecha": "12 Oct 2026, 09:56"
     },
     {
-      "cancion": "help_urself (prod. dyn remix)",
-      "artista": "Ezekiel",
+      "cancion": "NITE II",
+      "artista": "Elven Dior",
+      "album": "NITE II",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/40172b2bfccf2676fd138982d2ca90af.png",
+      "fecha": "12 Oct 2026, 09:54"
+    },
+    {
+      "cancion": "ASTRALYN (Slowed)",
+      "artista": "Kuro8",
       "album": "",
       "portada": "",
-      "fecha": "09 Oct 2026, 13:50"
+      "fecha": "12 Oct 2026, 09:53"
     }
   ]
 }
