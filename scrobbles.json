@@ -3,52 +3,52 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "90"
+      "reproducciones": "102"
     },
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "73"
+      "reproducciones": "75"
     },
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "36"
+      "reproducciones": "38"
     },
     {
       "posicion": 4,
+      "nombre": "RXLZQ",
+      "reproducciones": "30"
+    },
+    {
+      "posicion": 5,
       "nombre": "Elven Dior",
       "reproducciones": "29"
     },
     {
-      "posicion": 5,
-      "nombre": "RXLZQ",
-      "reproducciones": "28"
-    },
-    {
       "posicion": 6,
       "nombre": "LONOWN",
-      "reproducciones": "26"
+      "reproducciones": "29"
     },
     {
       "posicion": 7,
       "nombre": "Miguel Angeles",
-      "reproducciones": "24"
+      "reproducciones": "25"
     },
     {
       "posicion": 8,
       "nombre": "InterWorld",
-      "reproducciones": "20"
+      "reproducciones": "23"
     },
     {
       "posicion": 9,
       "nombre": "Malcriada",
-      "reproducciones": "19"
+      "reproducciones": "20"
     },
     {
       "posicion": 10,
-      "nombre": "Oliver Tree",
-      "reproducciones": "18"
+      "nombre": "Rxds",
+      "reproducciones": "19"
     }
   ],
   "top_albumes_mes": [
@@ -60,9 +60,9 @@
     },
     {
       "posicion": 2,
-      "nombre": "lookback",
-      "artista": "saraunh0ly",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e46e1da6655f5fc1f2d1240eb6b601e4.jpg"
+      "nombre": "Melancholy",
+      "artista": "Rxds",
+      "portada": ""
     },
     {
       "posicion": 3,
@@ -72,9 +72,9 @@
     },
     {
       "posicion": 4,
-      "nombre": "Melancholy",
-      "artista": "Rxds",
-      "portada": ""
+      "nombre": "lookback",
+      "artista": "saraunh0ly",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e46e1da6655f5fc1f2d1240eb6b601e4.jpg"
     },
     {
       "posicion": 5,
@@ -84,9 +84,9 @@
     },
     {
       "posicion": 6,
-      "nombre": "selfsabotage",
-      "artista": "saraunh0ly",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/5648088b415daab2710f8ae775f05adf.jpg"
+      "nombre": "ME AME",
+      "artista": "XXANTERIA",
+      "portada": ""
     }
   ],
   "top_canciones_mes": [
@@ -97,8 +97,8 @@
     },
     {
       "posicion": 2,
-      "nombre": "lookback",
-      "artista": "saraunh0ly"
+      "nombre": "MELANCHOLY",
+      "artista": "Rxds"
     },
     {
       "posicion": 3,
@@ -107,8 +107,8 @@
     },
     {
       "posicion": 4,
-      "nombre": "MELANCHOLY",
-      "artista": "Rxds"
+      "nombre": "lookback",
+      "artista": "saraunh0ly"
     },
     {
       "posicion": 5,
@@ -117,8 +117,8 @@
     },
     {
       "posicion": 6,
-      "nombre": "selfsabotage",
-      "artista": "saraunh0ly"
+      "nombre": "ME AME",
+      "artista": "XXANTERIA"
     },
     {
       "posicion": 7,
@@ -128,60 +128,60 @@
   ],
   "recientes": [
     {
-      "cancion": "Palmtree Panic Funk (SLOWED)",
-      "artista": "DJ Exe",
-      "album": "PALMTREE PANIC FUNK",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2cb882e1e0b2e8898ef607d9d2f1a62e.png",
-      "fecha": "12 Oct 2026, 10:07"
-    },
-    {
-      "cancion": "✻H+3+ЯД✻7luCJIo0T6... (Super Slowed)",
-      "artista": "vyrval",
+      "cancion": "intro song (no voice over)",
+      "artista": "No I'm not a Human",
       "album": "",
       "portada": "",
-      "fecha": "12 Oct 2026, 10:04"
+      "fecha": "15 Oct 2026, 17:57"
     },
     {
-      "cancion": "meow! (krushfunk)",
-      "artista": "JXM, Seek",
-      "album": "",
-      "portada": "",
-      "fecha": "12 Oct 2026, 10:02"
+      "cancion": "Giverrr",
+      "artista": "Loukeman",
+      "album": "Sd‐2",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png",
+      "fecha": "15 Oct 2026, 17:51"
     },
     {
-      "cancion": "SHATTERED LOVE",
-      "artista": "KoruSe",
-      "album": "SHATTERED LOVE",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/de7a7b6a5162570bf8aab0df6d72e1cc.jpg",
-      "fecha": "12 Oct 2026, 09:59"
+      "cancion": "Giverrr",
+      "artista": "Loukeman",
+      "album": "Sd‐2",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png",
+      "fecha": "15 Oct 2026, 17:48"
     },
     {
-      "cancion": "NITE II",
-      "artista": "Elven Dior",
-      "album": "NITE II",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/40172b2bfccf2676fd138982d2ca90af.png",
-      "fecha": "12 Oct 2026, 09:58"
+      "cancion": "Giverrr",
+      "artista": "Loukeman",
+      "album": "Sd‐2",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png",
+      "fecha": "15 Oct 2026, 17:46"
     },
     {
-      "cancion": "FUNKED UP",
-      "artista": "XXANTERIA",
-      "album": "FUNKED UP",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/1a5f48c9ae24653dbe4c9bc98022344d.jpg",
-      "fecha": "12 Oct 2026, 09:56"
+      "cancion": "Giverrr",
+      "artista": "Loukeman",
+      "album": "Sd‐2",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png",
+      "fecha": "15 Oct 2026, 17:44"
     },
     {
-      "cancion": "NITE II",
-      "artista": "Elven Dior",
-      "album": "NITE II",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/40172b2bfccf2676fd138982d2ca90af.png",
-      "fecha": "12 Oct 2026, 09:54"
+      "cancion": "Giverrr",
+      "artista": "Loukeman",
+      "album": "Sd‐2",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png",
+      "fecha": "15 Oct 2026, 17:32"
     },
     {
-      "cancion": "ASTRALYN (Slowed)",
-      "artista": "Kuro8",
-      "album": "",
-      "portada": "",
-      "fecha": "12 Oct 2026, 09:53"
+      "cancion": "Machote",
+      "artista": "Arca",
+      "album": "KiCk i [Explicit]",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/360f8f2f6b0f62aedf1264bae6e6f507.jpg",
+      "fecha": "15 Oct 2026, 17:27"
+    },
+    {
+      "cancion": "Prada",
+      "artista": "Arca",
+      "album": "KICK ii",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/ad1db1d1a6a56f372ddd52b199c9afd0.jpg",
+      "fecha": "15 Oct 2026, 17:22"
     }
   ]
 }
