@@ -3,7 +3,7 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "102"
+      "reproducciones": "104"
     },
     {
       "posicion": 2,
@@ -13,42 +13,42 @@
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "38"
+      "reproducciones": "39"
     },
     {
       "posicion": 4,
       "nombre": "RXLZQ",
-      "reproducciones": "30"
+      "reproducciones": "36"
     },
     {
       "posicion": 5,
       "nombre": "Elven Dior",
-      "reproducciones": "29"
+      "reproducciones": "31"
     },
     {
       "posicion": 6,
       "nombre": "LONOWN",
-      "reproducciones": "29"
+      "reproducciones": "31"
     },
     {
       "posicion": 7,
-      "nombre": "Miguel Angeles",
-      "reproducciones": "25"
+      "nombre": "InterWorld",
+      "reproducciones": "26"
     },
     {
       "posicion": 8,
-      "nombre": "InterWorld",
-      "reproducciones": "23"
+      "nombre": "Miguel Angeles",
+      "reproducciones": "26"
     },
     {
       "posicion": 9,
       "nombre": "Malcriada",
-      "reproducciones": "20"
+      "reproducciones": "22"
     },
     {
       "posicion": 10,
-      "nombre": "Rxds",
-      "reproducciones": "19"
+      "nombre": "Loukeman",
+      "reproducciones": "20"
     }
   ],
   "top_albumes_mes": [
@@ -60,21 +60,21 @@
     },
     {
       "posicion": 2,
-      "nombre": "Melancholy",
-      "artista": "Rxds",
-      "portada": ""
-    },
-    {
-      "posicion": 3,
       "nombre": "captivation",
       "artista": "LONOWN",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png"
     },
     {
+      "posicion": 3,
+      "nombre": "Melancholy",
+      "artista": "Rxds",
+      "portada": ""
+    },
+    {
       "posicion": 4,
-      "nombre": "lookback",
-      "artista": "saraunh0ly",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/e46e1da6655f5fc1f2d1240eb6b601e4.jpg"
+      "nombre": "Limited World",
+      "artista": "RXLZQ",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/80d344f727f5515cedcd4778bc636fed.jpg"
     },
     {
       "posicion": 5,
@@ -84,9 +84,9 @@
     },
     {
       "posicion": 6,
-      "nombre": "ME AME",
-      "artista": "XXANTERIA",
-      "portada": ""
+      "nombre": "Sd‐2",
+      "artista": "Loukeman",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png"
     }
   ],
   "top_canciones_mes": [
@@ -97,18 +97,18 @@
     },
     {
       "posicion": 2,
-      "nombre": "MELANCHOLY",
-      "artista": "Rxds"
-    },
-    {
-      "posicion": 3,
       "nombre": "snobbery",
       "artista": "LONOWN"
     },
     {
+      "posicion": 3,
+      "nombre": "MELANCHOLY",
+      "artista": "Rxds"
+    },
+    {
       "posicion": 4,
-      "nombre": "lookback",
-      "artista": "saraunh0ly"
+      "nombre": "Limited World",
+      "artista": "RXLZQ"
     },
     {
       "posicion": 5,
@@ -117,71 +117,71 @@
     },
     {
       "posicion": 6,
-      "nombre": "ME AME",
-      "artista": "XXANTERIA"
+      "nombre": "lookback",
+      "artista": "saraunh0ly"
     },
     {
       "posicion": 7,
-      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
-      "artista": "FrankJavCee"
+      "nombre": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes"
     }
   ],
   "recientes": [
     {
-      "cancion": "intro song (no voice over)",
-      "artista": "No I'm not a Human",
+      "cancion": "Perfect Branded Experiences",
+      "artista": "Nero's Day at Disneyland",
       "album": "",
       "portada": "",
-      "fecha": "15 Oct 2026, 17:57"
+      "fecha": "18 Oct 2026, 16:46"
+    },
+    {
+      "cancion": "Summer Night",
+      "artista": "Incredible Polo",
+      "album": "",
+      "portada": "",
+      "fecha": "18 Oct 2026, 15:36"
+    },
+    {
+      "cancion": "DESAPARECER",
+      "artista": "Malcriada",
+      "album": "TEORÍA DE CONSPIRACIÓN",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/3e9ce8660fe196c5412826b1079176b4.jpg",
+      "fecha": "18 Oct 2026, 15:32"
     },
     {
       "cancion": "Giverrr",
       "artista": "Loukeman",
       "album": "Sd‐2",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png",
-      "fecha": "15 Oct 2026, 17:51"
+      "fecha": "18 Oct 2026, 15:29"
     },
     {
-      "cancion": "Giverrr",
+      "cancion": "JUMZZZ",
+      "artista": "louke man",
+      "album": "",
+      "portada": "",
+      "fecha": "17 Oct 2026, 22:18"
+    },
+    {
+      "cancion": "Real Life Man",
       "artista": "Loukeman",
       "album": "Sd‐2",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png",
-      "fecha": "15 Oct 2026, 17:48"
+      "fecha": "17 Oct 2026, 22:13"
     },
     {
-      "cancion": "Giverrr",
+      "cancion": "Idrk",
       "artista": "Loukeman",
       "album": "Sd‐2",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png",
-      "fecha": "15 Oct 2026, 17:46"
+      "fecha": "17 Oct 2026, 22:10"
     },
     {
-      "cancion": "Giverrr",
+      "cancion": "Won't U",
       "artista": "Loukeman",
       "album": "Sd‐2",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png",
-      "fecha": "15 Oct 2026, 17:44"
-    },
-    {
-      "cancion": "Giverrr",
-      "artista": "Loukeman",
-      "album": "Sd‐2",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/224c9cea71ae18f5c63030e86788f34a.png",
-      "fecha": "15 Oct 2026, 17:32"
-    },
-    {
-      "cancion": "Machote",
-      "artista": "Arca",
-      "album": "KiCk i [Explicit]",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/360f8f2f6b0f62aedf1264bae6e6f507.jpg",
-      "fecha": "15 Oct 2026, 17:27"
-    },
-    {
-      "cancion": "Prada",
-      "artista": "Arca",
-      "album": "KICK ii",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/ad1db1d1a6a56f372ddd52b199c9afd0.jpg",
-      "fecha": "15 Oct 2026, 17:22"
+      "fecha": "17 Oct 2026, 22:09"
     }
   ]
 }
