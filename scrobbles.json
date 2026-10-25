@@ -3,7 +3,7 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "106"
+      "reproducciones": "107"
     },
     {
       "posicion": 2,
@@ -13,32 +13,32 @@
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "40"
+      "reproducciones": "42"
     },
     {
       "posicion": 4,
       "nombre": "RXLZQ",
-      "reproducciones": "37"
+      "reproducciones": "38"
     },
     {
       "posicion": 5,
       "nombre": "Elven Dior",
-      "reproducciones": "31"
+      "reproducciones": "33"
     },
     {
       "posicion": 6,
       "nombre": "LONOWN",
-      "reproducciones": "31"
+      "reproducciones": "33"
     },
     {
       "posicion": 7,
       "nombre": "InterWorld",
-      "reproducciones": "27"
+      "reproducciones": "30"
     },
     {
       "posicion": 8,
       "nombre": "Miguel Angeles",
-      "reproducciones": "26"
+      "reproducciones": "29"
     },
     {
       "posicion": 9,
@@ -47,7 +47,7 @@
     },
     {
       "posicion": 10,
-      "nombre": "Loukeman",
+      "nombre": "FindMyName",
       "reproducciones": "20"
     }
   ],
@@ -72,15 +72,15 @@
     },
     {
       "posicion": 4,
-      "nombre": "Limited World",
-      "artista": "RXLZQ",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/80d344f727f5515cedcd4778bc636fed.jpg"
-    },
-    {
-      "posicion": 5,
       "nombre": "FUNK DO BOUNCE",
       "artista": "ariis",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
+    },
+    {
+      "posicion": 5,
+      "nombre": "Limited World",
+      "artista": "RXLZQ",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/80d344f727f5515cedcd4778bc636fed.jpg"
     },
     {
       "posicion": 6,
@@ -107,13 +107,13 @@
     },
     {
       "posicion": 4,
-      "nombre": "Limited World",
-      "artista": "RXLZQ"
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis"
     },
     {
       "posicion": 5,
-      "nombre": "FUNK DO BOUNCE",
-      "artista": "ariis"
+      "nombre": "Limited World",
+      "artista": "RXLZQ"
     },
     {
       "posicion": 6,
@@ -128,60 +128,60 @@
   ],
   "recientes": [
     {
-      "cancion": "CUT",
-      "artista": "XXANTERIA",
-      "album": "",
-      "portada": "",
-      "fecha": "22 Oct 2026, 00:06"
-    },
-    {
-      "cancion": "Internet Shelter",
-      "artista": "akiaura, STM, & LONOWN",
-      "album": "",
-      "portada": "",
-      "fecha": "20 Oct 2026, 23:53"
-    },
-    {
-      "cancion": "FUKOUNA GIRL",
-      "artista": "STOMACH BOOK",
-      "album": "FUKOUNA GIRL",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/3105ea1164ac522e91af92308b802e69.jpg",
-      "fecha": "20 Oct 2026, 23:47"
-    },
-    {
-      "cancion": "Give Me More",
-      "artista": "Aloboi",
-      "album": "Give Me More",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/72ccf0b717e6ee7c33b3d08da81d78fb.jpg",
-      "fecha": "20 Oct 2026, 23:44"
-    },
-    {
-      "cancion": "The Grinch (Visualizer)",
-      "artista": "Trippie Redd",
-      "album": "",
-      "portada": "",
-      "fecha": "20 Oct 2026, 23:40"
-    },
-    {
-      "cancion": "I'M A BLACKHOLE (STAR)",
-      "artista": "Odetari",
-      "album": "",
-      "portada": "",
-      "fecha": "20 Oct 2026, 23:36"
-    },
-    {
-      "cancion": "Show Me Your Back (Slowed + Reverb)",
-      "artista": "FindMyName",
-      "album": "",
-      "portada": "",
-      "fecha": "20 Oct 2026, 11:59"
-    },
-    {
-      "cancion": "Breath Of Fire",
-      "artista": "RXLZQ",
-      "album": "Breath Of Fire",
+      "cancion": "nose k pensar de ti",
+      "artista": "Asra3",
+      "album": "nose k pensar de ti",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "20 Oct 2026, 11:57"
+      "fecha": "24 Oct 2026, 23:25"
+    },
+    {
+      "cancion": "nose k pensar de ti",
+      "artista": "Asra3",
+      "album": "nose k pensar de ti",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "24 Oct 2026, 23:17"
+    },
+    {
+      "cancion": "nose k pensar de ti",
+      "artista": "Asra3",
+      "album": "nose k pensar de ti",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "24 Oct 2026, 22:37"
+    },
+    {
+      "cancion": "NEVER A MEMORY",
+      "artista": "Odetari",
+      "album": "NEVER A MEMORY",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/4544936ba85fdc3b4bbb7c8f08cbe7a4.png",
+      "fecha": "24 Oct 2026, 17:52"
+    },
+    {
+      "cancion": "NITE II",
+      "artista": "Elven Dior",
+      "album": "NITE II",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/40172b2bfccf2676fd138982d2ca90af.png",
+      "fecha": "24 Oct 2026, 17:32"
+    },
+    {
+      "cancion": "meow! (krushfunk)",
+      "artista": "JXM, Seek",
+      "album": "",
+      "portada": "",
+      "fecha": "24 Oct 2026, 17:30"
+    },
+    {
+      "cancion": "MELANCHOLY",
+      "artista": "Rxds",
+      "album": "Melancholy",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "24 Oct 2026, 17:29"
+    },
+    {
+      "cancion": "A Little Story",
+      "artista": "DVRST",
+      "album": "A Little Story",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/818bd904fe0d42fae7bcaa5d5f403e3d.jpg",
+      "fecha": "24 Oct 2026, 17:26"
     }
   ]
 }
