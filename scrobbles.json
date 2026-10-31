@@ -3,42 +3,42 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "111"
+      "reproducciones": "113"
     },
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "76"
+      "reproducciones": "77"
     },
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "46"
+      "reproducciones": "48"
     },
     {
       "posicion": 4,
       "nombre": "RXLZQ",
-      "reproducciones": "40"
+      "reproducciones": "42"
     },
     {
       "posicion": 5,
+      "nombre": "LONOWN",
+      "reproducciones": "39"
+    },
+    {
+      "posicion": 6,
       "nombre": "Elven Dior",
       "reproducciones": "37"
     },
     {
-      "posicion": 6,
-      "nombre": "LONOWN",
-      "reproducciones": "35"
-    },
-    {
       "posicion": 7,
       "nombre": "InterWorld",
-      "reproducciones": "31"
+      "reproducciones": "33"
     },
     {
       "posicion": 8,
       "nombre": "Miguel Angeles",
-      "reproducciones": "31"
+      "reproducciones": "32"
     },
     {
       "posicion": 9,
@@ -48,7 +48,7 @@
     {
       "posicion": 10,
       "nombre": "FindMyName",
-      "reproducciones": "20"
+      "reproducciones": "21"
     }
   ],
   "top_albumes_mes": [
@@ -84,9 +84,9 @@
     },
     {
       "posicion": 6,
-      "nombre": "NITE II",
-      "artista": "Elven Dior",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/40172b2bfccf2676fd138982d2ca90af.png"
+      "nombre": "BEEPER FUNK",
+      "artista": "winterxrc",
+      "portada": ""
     }
   ],
   "top_canciones_mes": [
@@ -117,71 +117,71 @@
     },
     {
       "posicion": 6,
-      "nombre": "NITE II",
-      "artista": "Elven Dior"
+      "nombre": "BEEPER FUNK",
+      "artista": "winterxrc"
     },
     {
       "posicion": 7,
-      "nombre": "lookback",
-      "artista": "saraunh0ly"
+      "nombre": "ME AME",
+      "artista": "XXANTERIA"
     }
   ],
   "recientes": [
     {
-      "cancion": "Make It Bun Dem",
-      "artista": "Skrillex",
-      "album": "Make It Bun Dem",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/c89dc1adc27afce13bbc0a45ce3f470a.jpg",
-      "fecha": "27 Oct 2026, 22:33"
+      "cancion": "addiction",
+      "artista": "LONOWN",
+      "album": "addiction",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/96505e669048ac5f67df35ef1e2e3a74.jpg",
+      "fecha": "30 Oct 2026, 09:58"
     },
     {
-      "cancion": "Deep End",
-      "artista": "Oliver Tree",
-      "album": "Deep End",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/c901a874eadefa80f03b797812bea59f.png",
-      "fecha": "27 Oct 2026, 22:27"
-    },
-    {
-      "cancion": "The Last Day",
-      "artista": "So Far So Good",
+      "cancion": "Alex Peipman",
+      "artista": "Overdose Casino",
       "album": "",
       "portada": "",
-      "fecha": "27 Oct 2026, 22:10"
+      "fecha": "30 Oct 2026, 09:55"
     },
     {
-      "cancion": "nose k pensar de ti",
-      "artista": "Asra3",
-      "album": "nose k pensar de ti",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "27 Oct 2026, 22:03"
+      "cancion": "snobbery",
+      "artista": "LONOWN",
+      "album": "captivation",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png",
+      "fecha": "30 Oct 2026, 09:52"
+    },
+    {
+      "cancion": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes",
+      "album": "Fluxxwave (Super Slowed)",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg",
+      "fecha": "30 Oct 2026, 09:48"
+    },
+    {
+      "cancion": "Palmtree Panic Funk (SLOWED)",
+      "artista": "DJ Exe",
+      "album": "PALMTREE PANIC FUNK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2cb882e1e0b2e8898ef607d9d2f1a62e.png",
+      "fecha": "30 Oct 2026, 09:45"
     },
     {
       "cancion": "SHATTERED LOVE",
       "artista": "KoruSe",
       "album": "SHATTERED LOVE",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/de7a7b6a5162570bf8aab0df6d72e1cc.jpg",
-      "fecha": "27 Oct 2026, 10:28"
+      "fecha": "30 Oct 2026, 09:42"
     },
     {
-      "cancion": "TRUST (REAL)",
-      "artista": "Miguel Angeles",
-      "album": "TRUST (REAL)",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/630268a34119994010de109b54c3eb9d.jpg",
-      "fecha": "27 Oct 2026, 10:25"
-    },
-    {
-      "cancion": "A Little Story",
-      "artista": "DVRST",
-      "album": "A Little Story",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/818bd904fe0d42fae7bcaa5d5f403e3d.jpg",
-      "fecha": "27 Oct 2026, 10:23"
-    },
-    {
-      "cancion": "Breath Of Fire",
-      "artista": "RXLZQ",
-      "album": "Breath Of Fire",
+      "cancion": "BEEPER FUNK",
+      "artista": "winterxrc",
+      "album": "BEEPER FUNK",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "27 Oct 2026, 10:21"
+      "fecha": "30 Oct 2026, 09:41"
+    },
+    {
+      "cancion": "METAMORPHOSIS",
+      "artista": "InterWorld",
+      "album": "METAMORPHOSIS",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/627178d7198d23103a7ba0a77bbbfddc.jpg",
+      "fecha": "30 Oct 2026, 09:38"
     }
   ]
 }
