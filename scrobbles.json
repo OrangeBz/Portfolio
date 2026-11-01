@@ -13,7 +13,7 @@
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "48"
+      "reproducciones": "51"
     },
     {
       "posicion": 4,
@@ -47,8 +47,8 @@
     },
     {
       "posicion": 10,
-      "nombre": "FindMyName",
-      "reproducciones": "21"
+      "nombre": "Rxds",
+      "reproducciones": "22"
     }
   ],
   "top_albumes_mes": [
@@ -128,60 +128,60 @@
   ],
   "recientes": [
     {
-      "cancion": "addiction",
-      "artista": "LONOWN",
-      "album": "addiction",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/96505e669048ac5f67df35ef1e2e3a74.jpg",
-      "fecha": "30 Oct 2026, 09:58"
+      "cancion": "DREAM FUNK",
+      "artista": "Lumix",
+      "album": "DREAM FUNK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "31 Oct 2026, 19:19"
     },
     {
-      "cancion": "Alex Peipman",
-      "artista": "Overdose Casino",
+      "cancion": "DVRST - Fight!",
+      "artista": "DVRST",
       "album": "",
       "portada": "",
-      "fecha": "30 Oct 2026, 09:55"
+      "fecha": "31 Oct 2026, 19:11"
     },
     {
-      "cancion": "snobbery",
-      "artista": "LONOWN",
-      "album": "captivation",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png",
-      "fecha": "30 Oct 2026, 09:52"
+      "cancion": "Guess Who?",
+      "artista": "uziellsiilver",
+      "album": "Forever An Angel",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/042d01ebf6134b92659d3c3ce65fff7a.jpg",
+      "fecha": "31 Oct 2026, 13:53"
     },
     {
-      "cancion": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes",
-      "album": "Fluxxwave (Super Slowed)",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg",
-      "fecha": "30 Oct 2026, 09:48"
+      "cancion": "Devil Eyes",
+      "artista": "ZODIVK",
+      "album": "Devil Eyes",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/3d498005c18ffe939f6f84c6a3f08f82.jpg",
+      "fecha": "31 Oct 2026, 13:19"
+    },
+    {
+      "cancion": "meow! (krushfunk)",
+      "artista": "JXM, Seek",
+      "album": "",
+      "portada": "",
+      "fecha": "31 Oct 2026, 13:17"
     },
     {
       "cancion": "Palmtree Panic Funk (SLOWED)",
       "artista": "DJ Exe",
       "album": "PALMTREE PANIC FUNK",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2cb882e1e0b2e8898ef607d9d2f1a62e.png",
-      "fecha": "30 Oct 2026, 09:45"
+      "fecha": "31 Oct 2026, 13:16"
     },
     {
-      "cancion": "SHATTERED LOVE",
-      "artista": "KoruSe",
-      "album": "SHATTERED LOVE",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/de7a7b6a5162570bf8aab0df6d72e1cc.jpg",
-      "fecha": "30 Oct 2026, 09:42"
-    },
-    {
-      "cancion": "BEEPER FUNK",
-      "artista": "winterxrc",
-      "album": "BEEPER FUNK",
+      "cancion": "MELANCHOLY",
+      "artista": "Rxds",
+      "album": "Melancholy",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "30 Oct 2026, 09:41"
+      "fecha": "31 Oct 2026, 13:14"
     },
     {
-      "cancion": "METAMORPHOSIS",
-      "artista": "InterWorld",
-      "album": "METAMORPHOSIS",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/627178d7198d23103a7ba0a77bbbfddc.jpg",
-      "fecha": "30 Oct 2026, 09:38"
+      "cancion": "Autumn Wind",
+      "artista": "DVRST",
+      "album": "Autumn Wind",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg",
+      "fecha": "31 Oct 2026, 13:12"
     }
   ]
 }
