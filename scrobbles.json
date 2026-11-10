@@ -3,7 +3,7 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "118"
+      "reproducciones": "120"
     },
     {
       "posicion": 2,
@@ -13,17 +13,17 @@
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "54"
+      "reproducciones": "56"
     },
     {
       "posicion": 4,
       "nombre": "RXLZQ",
-      "reproducciones": "44"
+      "reproducciones": "47"
     },
     {
       "posicion": 5,
       "nombre": "LONOWN",
-      "reproducciones": "43"
+      "reproducciones": "45"
     },
     {
       "posicion": 6,
@@ -33,12 +33,12 @@
     {
       "posicion": 7,
       "nombre": "Miguel Angeles",
-      "reproducciones": "38"
+      "reproducciones": "39"
     },
     {
       "posicion": 8,
       "nombre": "InterWorld",
-      "reproducciones": "35"
+      "reproducciones": "37"
     },
     {
       "posicion": 9,
@@ -48,7 +48,7 @@
     {
       "posicion": 10,
       "nombre": "Rxds",
-      "reproducciones": "25"
+      "reproducciones": "26"
     }
   ],
   "top_albumes_mes": [
@@ -78,15 +78,15 @@
     },
     {
       "posicion": 5,
-      "nombre": "DEATH RATTLE",
-      "artista": "Miguel Angeles",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6d90b4d378e1f64af99b0034647a4efd.png"
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
     },
     {
       "posicion": 6,
-      "nombre": "ME AME",
-      "artista": "XXANTERIA",
-      "portada": ""
+      "nombre": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg"
     }
   ],
   "top_canciones_mes": [
@@ -112,76 +112,76 @@
     },
     {
       "posicion": 5,
-      "nombre": "DEATH RATTLE",
-      "artista": "Miguel Angeles"
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis"
     },
     {
       "posicion": 6,
-      "nombre": "ME AME",
-      "artista": "XXANTERIA"
+      "nombre": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes"
     },
     {
       "posicion": 7,
-      "nombre": "FUNK DO BOUNCE",
-      "artista": "ariis"
+      "nombre": "DEATH RATTLE",
+      "artista": "Miguel Angeles"
     }
   ],
   "recientes": [
-    {
-      "cancion": "MELANCHOLY",
-      "artista": "Rxds",
-      "album": "Melancholy",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "06 Nov 2026, 14:04"
-    },
-    {
-      "cancion": "A Little Story",
-      "artista": "DVRST",
-      "album": "A Little Story",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/818bd904fe0d42fae7bcaa5d5f403e3d.jpg",
-      "fecha": "06 Nov 2026, 14:02"
-    },
-    {
-      "cancion": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
-      "artista": "FrankJavCee",
-      "album": "FrankJavCee vol 1.999",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/dea66fc3d1faf1dcfea552e4be44bfee.jpg",
-      "fecha": "06 Nov 2026, 13:59"
-    },
     {
       "cancion": "addiction",
       "artista": "LONOWN",
       "album": "addiction",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/96505e669048ac5f67df35ef1e2e3a74.jpg",
-      "fecha": "06 Nov 2026, 13:56"
+      "fecha": "09 Nov 2026, 10:00"
     },
     {
-      "cancion": "DEATH RATTLE",
+      "cancion": "TRUST (REAL)",
       "artista": "Miguel Angeles",
-      "album": "DEATH RATTLE",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6d90b4d378e1f64af99b0034647a4efd.png",
-      "fecha": "06 Nov 2026, 13:52"
+      "album": "TRUST (REAL)",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/630268a34119994010de109b54c3eb9d.jpg",
+      "fecha": "09 Nov 2026, 09:57"
+    },
+    {
+      "cancion": "METAMORPHOSIS",
+      "artista": "InterWorld",
+      "album": "METAMORPHOSIS",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/627178d7198d23103a7ba0a77bbbfddc.jpg",
+      "fecha": "09 Nov 2026, 09:55"
+    },
+    {
+      "cancion": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes",
+      "album": "Fluxxwave (Super Slowed)",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg",
+      "fecha": "09 Nov 2026, 09:52"
+    },
+    {
+      "cancion": "Krush Club",
+      "artista": "dxnkwer, k4mikadze",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Nov 2026, 09:50"
+    },
+    {
+      "cancion": "FUNK DO BOUNCE",
+      "artista": "ariis",
+      "album": "FUNK DO BOUNCE",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg",
+      "fecha": "09 Nov 2026, 09:49"
+    },
+    {
+      "cancion": "Alex Peipman",
+      "artista": "Overdose Casino",
+      "album": "",
+      "portada": "",
+      "fecha": "09 Nov 2026, 09:45"
     },
     {
       "cancion": "SHATTERED LOVE",
       "artista": "KoruSe",
       "album": "SHATTERED LOVE",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/de7a7b6a5162570bf8aab0df6d72e1cc.jpg",
-      "fecha": "06 Nov 2026, 13:50"
-    },
-    {
-      "cancion": "NITE II",
-      "artista": "Elven Dior",
-      "album": "NITE II",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/40172b2bfccf2676fd138982d2ca90af.png",
-      "fecha": "06 Nov 2026, 13:48"
-    },
-    {
-      "cancion": "DEAD END",
-      "artista": "DudePlaya",
-      "album": "DEAD END",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6aed25e143eed491d57bfa5c63bc0e0b.jpg",
-      "fecha": "06 Nov 2026, 13:46"
+      "fecha": "09 Nov 2026, 09:40"
     }
   ]
 }
