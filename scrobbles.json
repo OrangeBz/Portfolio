@@ -8,7 +8,7 @@
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "81"
+      "reproducciones": "82"
     },
     {
       "posicion": 3,
@@ -18,17 +18,17 @@
     {
       "posicion": 4,
       "nombre": "RXLZQ",
-      "reproducciones": "47"
+      "reproducciones": "48"
     },
     {
       "posicion": 5,
       "nombre": "LONOWN",
-      "reproducciones": "45"
+      "reproducciones": "46"
     },
     {
       "posicion": 6,
       "nombre": "Elven Dior",
-      "reproducciones": "40"
+      "reproducciones": "42"
     },
     {
       "posicion": 7,
@@ -38,12 +38,12 @@
     {
       "posicion": 8,
       "nombre": "InterWorld",
-      "reproducciones": "37"
+      "reproducciones": "38"
     },
     {
       "posicion": 9,
       "nombre": "Odetari",
-      "reproducciones": "32"
+      "reproducciones": "33"
     },
     {
       "posicion": 10,
@@ -78,15 +78,15 @@
     },
     {
       "posicion": 5,
-      "nombre": "FUNK DO BOUNCE",
-      "artista": "ariis",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
-    },
-    {
-      "posicion": 6,
       "nombre": "Fluxxwave (Super Slowed)",
       "artista": "Clovis Reyes",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg"
+    },
+    {
+      "posicion": 6,
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
     }
   ],
   "top_canciones_mes": [
@@ -112,13 +112,13 @@
     },
     {
       "posicion": 5,
-      "nombre": "FUNK DO BOUNCE",
-      "artista": "ariis"
+      "nombre": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes"
     },
     {
       "posicion": 6,
-      "nombre": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes"
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis"
     },
     {
       "posicion": 7,
@@ -128,60 +128,60 @@
   ],
   "recientes": [
     {
-      "cancion": "addiction",
-      "artista": "LONOWN",
-      "album": "addiction",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/96505e669048ac5f67df35ef1e2e3a74.jpg",
-      "fecha": "09 Nov 2026, 10:00"
-    },
-    {
-      "cancion": "TRUST (REAL)",
-      "artista": "Miguel Angeles",
-      "album": "TRUST (REAL)",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/630268a34119994010de109b54c3eb9d.jpg",
-      "fecha": "09 Nov 2026, 09:57"
-    },
-    {
-      "cancion": "METAMORPHOSIS",
-      "artista": "InterWorld",
-      "album": "METAMORPHOSIS",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/627178d7198d23103a7ba0a77bbbfddc.jpg",
-      "fecha": "09 Nov 2026, 09:55"
-    },
-    {
-      "cancion": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes",
-      "album": "Fluxxwave (Super Slowed)",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg",
-      "fecha": "09 Nov 2026, 09:52"
-    },
-    {
-      "cancion": "Krush Club",
-      "artista": "dxnkwer, k4mikadze",
+      "cancion": "nose k pensar de ti",
+      "artista": "souphis & Asra3",
       "album": "",
       "portada": "",
-      "fecha": "09 Nov 2026, 09:50"
+      "fecha": "13 Nov 2026, 01:03"
     },
     {
-      "cancion": "FUNK DO BOUNCE",
-      "artista": "ariis",
-      "album": "FUNK DO BOUNCE",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg",
-      "fecha": "09 Nov 2026, 09:49"
+      "cancion": "Kurwa",
+      "artista": "Little Big",
+      "album": "Kurwa",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/f0c3119937b162bf3aba3a7195ccf661.jpg",
+      "fecha": "13 Nov 2026, 00:58"
     },
     {
-      "cancion": "Alex Peipman",
-      "artista": "Overdose Casino",
+      "cancion": "Dobri Dani",
+      "artista": "Wikluh Sky & Rahmanee",
       "album": "",
       "portada": "",
-      "fecha": "09 Nov 2026, 09:45"
+      "fecha": "11 Nov 2026, 20:11"
     },
     {
-      "cancion": "SHATTERED LOVE",
-      "artista": "KoruSe",
-      "album": "SHATTERED LOVE",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/de7a7b6a5162570bf8aab0df6d72e1cc.jpg",
-      "fecha": "09 Nov 2026, 09:40"
+      "cancion": "Panini",
+      "artista": "Lil Nas X",
+      "album": "NOW That's What I Call Music! Vol. 72",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/f837d9c3f7421b1894d3ecc75c197117.jpg",
+      "fecha": "11 Nov 2026, 20:09"
+    },
+    {
+      "cancion": "RE FORRO",
+      "artista": "Ca7riel & Paco Amoroso",
+      "album": "PAPOTA",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2fb77307efe975801b3223a42a920dae.jpg",
+      "fecha": "11 Nov 2026, 20:06"
+    },
+    {
+      "cancion": "Besos De Papel",
+      "artista": "souphis",
+      "album": "Besos De Papel",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/ee0fd08ebec0a85d09deafa1f3f5bdac.png",
+      "fecha": "11 Nov 2026, 20:01"
+    },
+    {
+      "cancion": "Smooth Dreams",
+      "artista": "Offenbach Project",
+      "album": "Sun Down",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "11 Nov 2026, 19:57"
+    },
+    {
+      "cancion": "cl0ne",
+      "artista": "saraunh0ly",
+      "album": "cl0ne",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/b7594aa8f18f1a5580c2bbaec8b0ed8b.jpg",
+      "fecha": "11 Nov 2026, 19:54"
     }
   ]
 }
