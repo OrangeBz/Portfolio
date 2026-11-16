@@ -3,12 +3,12 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "120"
+      "reproducciones": "123"
     },
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "82"
+      "reproducciones": "83"
     },
     {
       "posicion": 3,
@@ -32,22 +32,22 @@
     },
     {
       "posicion": 7,
+      "nombre": "InterWorld",
+      "reproducciones": "40"
+    },
+    {
+      "posicion": 8,
       "nombre": "Miguel Angeles",
       "reproducciones": "39"
     },
     {
-      "posicion": 8,
-      "nombre": "InterWorld",
-      "reproducciones": "38"
-    },
-    {
       "posicion": 9,
       "nombre": "Odetari",
-      "reproducciones": "33"
+      "reproducciones": "34"
     },
     {
       "posicion": 10,
-      "nombre": "Rxds",
+      "nombre": "Clovis Reyes",
       "reproducciones": "26"
     }
   ],
@@ -122,66 +122,66 @@
     },
     {
       "posicion": 7,
-      "nombre": "DEATH RATTLE",
-      "artista": "Miguel Angeles"
+      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
+      "artista": "FrankJavCee"
     }
   ],
   "recientes": [
     {
-      "cancion": "nose k pensar de ti",
-      "artista": "souphis & Asra3",
+      "cancion": "(Breaking Bad Original Score)",
+      "artista": "05 The Morning After",
       "album": "",
       "portada": "",
-      "fecha": "13 Nov 2026, 01:03"
+      "fecha": "14 Nov 2026, 22:57"
     },
     {
-      "cancion": "Kurwa",
-      "artista": "Little Big",
-      "album": "Kurwa",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/f0c3119937b162bf3aba3a7195ccf661.jpg",
-      "fecha": "13 Nov 2026, 00:58"
-    },
-    {
-      "cancion": "Dobri Dani",
-      "artista": "Wikluh Sky & Rahmanee",
+      "cancion": "Yo, El Tiempo (Completa) ⏳ Tres Acordes Trukini 🎸",
+      "artista": "Mono Radioactivo",
       "album": "",
       "portada": "",
-      "fecha": "11 Nov 2026, 20:11"
+      "fecha": "14 Nov 2026, 22:53"
     },
     {
-      "cancion": "Panini",
-      "artista": "Lil Nas X",
-      "album": "NOW That's What I Call Music! Vol. 72",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/f837d9c3f7421b1894d3ecc75c197117.jpg",
-      "fecha": "11 Nov 2026, 20:09"
+      "cancion": "intro song (no voice over)",
+      "artista": "No I'm not a Human",
+      "album": "",
+      "portada": "",
+      "fecha": "14 Nov 2026, 22:52"
     },
     {
-      "cancion": "RE FORRO",
-      "artista": "Ca7riel & Paco Amoroso",
-      "album": "PAPOTA",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2fb77307efe975801b3223a42a920dae.jpg",
-      "fecha": "11 Nov 2026, 20:06"
+      "cancion": "TITLE THEME (OST)",
+      "artista": "THE LEGEND OF ZELDA OCARINA OF TIME REMAKE (SWITCH 2)",
+      "album": "",
+      "portada": "",
+      "fecha": "14 Nov 2026, 22:39"
     },
     {
-      "cancion": "Besos De Papel",
-      "artista": "souphis",
-      "album": "Besos De Papel",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/ee0fd08ebec0a85d09deafa1f3f5bdac.png",
-      "fecha": "11 Nov 2026, 20:01"
+      "cancion": "Blade",
+      "artista": "D'Angello & Francis",
+      "album": "Blade",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/1f9833b26ea4803e21768e5f7f5916ba.jpg",
+      "fecha": "14 Nov 2026, 22:33"
     },
     {
-      "cancion": "Smooth Dreams",
-      "artista": "Offenbach Project",
-      "album": "Sun Down",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "11 Nov 2026, 19:57"
+      "cancion": "METAMORPHOSIS",
+      "artista": "InterWorld",
+      "album": "METAMORPHOSIS",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/627178d7198d23103a7ba0a77bbbfddc.jpg",
+      "fecha": "13 Nov 2026, 10:14"
     },
     {
-      "cancion": "cl0ne",
-      "artista": "saraunh0ly",
-      "album": "cl0ne",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/b7594aa8f18f1a5580c2bbaec8b0ed8b.jpg",
-      "fecha": "11 Nov 2026, 19:54"
+      "cancion": "Fluxxwave (Super Slowed)",
+      "artista": "Clovis Reyes",
+      "album": "Fluxxwave (Super Slowed)",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg",
+      "fecha": "13 Nov 2026, 10:11"
+    },
+    {
+      "cancion": "NO GOING BACK",
+      "artista": "XXANTERIA",
+      "album": "NO GOING BACK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d598cff2afd3b45498d2538ac0303f7e.png",
+      "fecha": "13 Nov 2026, 10:09"
     }
   ]
 }
