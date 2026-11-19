@@ -3,7 +3,7 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "123"
+      "reproducciones": "157"
     },
     {
       "posicion": 2,
@@ -13,7 +13,7 @@
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "56"
+      "reproducciones": "57"
     },
     {
       "posicion": 4,
@@ -23,12 +23,12 @@
     {
       "posicion": 5,
       "nombre": "LONOWN",
-      "reproducciones": "46"
+      "reproducciones": "47"
     },
     {
       "posicion": 6,
       "nombre": "Elven Dior",
-      "reproducciones": "42"
+      "reproducciones": "43"
     },
     {
       "posicion": 7,
@@ -43,7 +43,7 @@
     {
       "posicion": 9,
       "nombre": "Odetari",
-      "reproducciones": "34"
+      "reproducciones": "35"
     },
     {
       "posicion": 10,
@@ -60,33 +60,33 @@
     },
     {
       "posicion": 2,
+      "nombre": "BONES BREAK",
+      "artista": "XXANTERIA",
+      "portada": ""
+    },
+    {
+      "posicion": 3,
       "nombre": "captivation",
       "artista": "LONOWN",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d5411d70d6f32607add3159fee0f99db.png"
     },
     {
-      "posicion": 3,
+      "posicion": 4,
       "nombre": "Melancholy",
       "artista": "Rxds",
       "portada": ""
     },
     {
-      "posicion": 4,
+      "posicion": 5,
       "nombre": "Limited World",
       "artista": "RXLZQ",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/80d344f727f5515cedcd4778bc636fed.jpg"
     },
     {
-      "posicion": 5,
+      "posicion": 6,
       "nombre": "Fluxxwave (Super Slowed)",
       "artista": "Clovis Reyes",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg"
-    },
-    {
-      "posicion": 6,
-      "nombre": "FUNK DO BOUNCE",
-      "artista": "ariis",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/018cc184532800f9bed56c48cd0a0477.jpg"
     }
   ],
   "top_canciones_mes": [
@@ -97,91 +97,91 @@
     },
     {
       "posicion": 2,
+      "nombre": "prophecy",
+      "artista": "XXANTERIA"
+    },
+    {
+      "posicion": 3,
       "nombre": "snobbery",
       "artista": "LONOWN"
     },
     {
-      "posicion": 3,
+      "posicion": 4,
       "nombre": "MELANCHOLY",
       "artista": "Rxds"
     },
     {
-      "posicion": 4,
+      "posicion": 5,
       "nombre": "Limited World",
       "artista": "RXLZQ"
     },
     {
-      "posicion": 5,
+      "posicion": 6,
       "nombre": "Fluxxwave (Super Slowed)",
       "artista": "Clovis Reyes"
     },
     {
-      "posicion": 6,
+      "posicion": 7,
       "nombre": "FUNK DO BOUNCE",
       "artista": "ariis"
-    },
-    {
-      "posicion": 7,
-      "nombre": "Ｓｉｍｐｓｏｎｗａｖｅ １９９５",
-      "artista": "FrankJavCee"
     }
   ],
   "recientes": [
     {
-      "cancion": "(Breaking Bad Original Score)",
-      "artista": "05 The Morning After",
+      "cancion": "Title",
+      "artista": "Spongebob: CFTKK music",
       "album": "",
       "portada": "",
-      "fecha": "14 Nov 2026, 22:57"
+      "fecha": "17 Nov 2026, 21:19"
     },
     {
-      "cancion": "Yo, El Tiempo (Completa) ⏳ Tres Acordes Trukini 🎸",
-      "artista": "Mono Radioactivo",
+      "cancion": "bbno$ - inshallah",
+      "artista": "bbno$",
       "album": "",
       "portada": "",
-      "fecha": "14 Nov 2026, 22:53"
+      "fecha": "17 Nov 2026, 21:14"
     },
     {
-      "cancion": "intro song (no voice over)",
-      "artista": "No I'm not a Human",
-      "album": "",
-      "portada": "",
-      "fecha": "14 Nov 2026, 22:52"
-    },
-    {
-      "cancion": "TITLE THEME (OST)",
-      "artista": "THE LEGEND OF ZELDA OCARINA OF TIME REMAKE (SWITCH 2)",
-      "album": "",
-      "portada": "",
-      "fecha": "14 Nov 2026, 22:39"
-    },
-    {
-      "cancion": "Blade",
-      "artista": "D'Angello & Francis",
-      "album": "Blade",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/1f9833b26ea4803e21768e5f7f5916ba.jpg",
-      "fecha": "14 Nov 2026, 22:33"
-    },
-    {
-      "cancion": "METAMORPHOSIS",
-      "artista": "InterWorld",
-      "album": "METAMORPHOSIS",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/627178d7198d23103a7ba0a77bbbfddc.jpg",
-      "fecha": "13 Nov 2026, 10:14"
-    },
-    {
-      "cancion": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes",
-      "album": "Fluxxwave (Super Slowed)",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg",
-      "fecha": "13 Nov 2026, 10:11"
-    },
-    {
-      "cancion": "NO GOING BACK",
+      "cancion": "prophecy",
       "artista": "XXANTERIA",
-      "album": "NO GOING BACK",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/d598cff2afd3b45498d2538ac0303f7e.png",
-      "fecha": "13 Nov 2026, 10:09"
+      "album": "BONES BREAK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "17 Nov 2026, 21:12"
+    },
+    {
+      "cancion": "prophecy",
+      "artista": "XXANTERIA",
+      "album": "BONES BREAK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "17 Nov 2026, 21:10"
+    },
+    {
+      "cancion": "prophecy",
+      "artista": "XXANTERIA",
+      "album": "BONES BREAK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "17 Nov 2026, 21:08"
+    },
+    {
+      "cancion": "prophecy",
+      "artista": "XXANTERIA",
+      "album": "BONES BREAK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "17 Nov 2026, 21:07"
+    },
+    {
+      "cancion": "prophecy",
+      "artista": "XXANTERIA",
+      "album": "BONES BREAK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "17 Nov 2026, 21:05"
+    },
+    {
+      "cancion": "prophecy",
+      "artista": "XXANTERIA",
+      "album": "BONES BREAK",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "17 Nov 2026, 21:04"
     }
   ]
 }
