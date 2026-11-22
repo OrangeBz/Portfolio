@@ -3,22 +3,22 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "157"
+      "reproducciones": "160"
     },
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "83"
+      "reproducciones": "85"
     },
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "57"
+      "reproducciones": "60"
     },
     {
       "posicion": 4,
       "nombre": "RXLZQ",
-      "reproducciones": "48"
+      "reproducciones": "51"
     },
     {
       "posicion": 5,
@@ -28,7 +28,7 @@
     {
       "posicion": 6,
       "nombre": "Elven Dior",
-      "reproducciones": "43"
+      "reproducciones": "46"
     },
     {
       "posicion": 7,
@@ -38,17 +38,17 @@
     {
       "posicion": 8,
       "nombre": "Miguel Angeles",
-      "reproducciones": "39"
+      "reproducciones": "40"
     },
     {
       "posicion": 9,
       "nombre": "Odetari",
-      "reproducciones": "35"
+      "reproducciones": "38"
     },
     {
       "posicion": 10,
-      "nombre": "Clovis Reyes",
-      "reproducciones": "26"
+      "nombre": "FindMyName",
+      "reproducciones": "28"
     }
   ],
   "top_albumes_mes": [
@@ -72,15 +72,15 @@
     },
     {
       "posicion": 4,
-      "nombre": "Melancholy",
-      "artista": "Rxds",
-      "portada": ""
-    },
-    {
-      "posicion": 5,
       "nombre": "Limited World",
       "artista": "RXLZQ",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/80d344f727f5515cedcd4778bc636fed.jpg"
+    },
+    {
+      "posicion": 5,
+      "nombre": "Melancholy",
+      "artista": "Rxds",
+      "portada": ""
     },
     {
       "posicion": 6,
@@ -107,13 +107,13 @@
     },
     {
       "posicion": 4,
-      "nombre": "MELANCHOLY",
-      "artista": "Rxds"
+      "nombre": "Limited World",
+      "artista": "RXLZQ"
     },
     {
       "posicion": 5,
-      "nombre": "Limited World",
-      "artista": "RXLZQ"
+      "nombre": "MELANCHOLY",
+      "artista": "Rxds"
     },
     {
       "posicion": 6,
@@ -122,66 +122,66 @@
     },
     {
       "posicion": 7,
-      "nombre": "FUNK DO BOUNCE",
-      "artista": "ariis"
+      "nombre": "NITE II",
+      "artista": "Elven Dior"
     }
   ],
   "recientes": [
     {
-      "cancion": "Title",
-      "artista": "Spongebob: CFTKK music",
+      "cancion": "Show Me Your Back (Slowed + Reverb)",
+      "artista": "FindMyName",
       "album": "",
       "portada": "",
-      "fecha": "17 Nov 2026, 21:19"
+      "fecha": "21 Nov 2026, 15:24"
     },
     {
-      "cancion": "bbno$ - inshallah",
-      "artista": "bbno$",
+      "cancion": "Slowed",
+      "artista": "Axiom",
       "album": "",
       "portada": "",
-      "fecha": "17 Nov 2026, 21:14"
+      "fecha": "21 Nov 2026, 15:21"
     },
     {
-      "cancion": "prophecy",
-      "artista": "XXANTERIA",
-      "album": "BONES BREAK",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "17 Nov 2026, 21:12"
+      "cancion": "DEAD END",
+      "artista": "DudePlaya",
+      "album": "DEAD END",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6aed25e143eed491d57bfa5c63bc0e0b.jpg",
+      "fecha": "21 Nov 2026, 15:19"
     },
     {
-      "cancion": "prophecy",
-      "artista": "XXANTERIA",
-      "album": "BONES BREAK",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "17 Nov 2026, 21:10"
+      "cancion": "LOVELY BASTARDS",
+      "artista": "ZWE1HVNDXR",
+      "album": "",
+      "portada": "",
+      "fecha": "21 Nov 2026, 15:17"
     },
     {
-      "cancion": "prophecy",
-      "artista": "XXANTERIA",
-      "album": "BONES BREAK",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "17 Nov 2026, 21:08"
+      "cancion": "Alex Peipman",
+      "artista": "Surrounded",
+      "album": "",
+      "portada": "",
+      "fecha": "21 Nov 2026, 14:58"
     },
     {
-      "cancion": "prophecy",
-      "artista": "XXANTERIA",
-      "album": "BONES BREAK",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "17 Nov 2026, 21:07"
+      "cancion": "I'M A BLACKHOLE (STAR)",
+      "artista": "Odetari",
+      "album": "",
+      "portada": "",
+      "fecha": "21 Nov 2026, 14:54"
     },
     {
-      "cancion": "prophecy",
-      "artista": "XXANTERIA",
-      "album": "BONES BREAK",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "17 Nov 2026, 21:05"
+      "cancion": "NITE II",
+      "artista": "Elven Dior",
+      "album": "NITE II",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/40172b2bfccf2676fd138982d2ca90af.png",
+      "fecha": "21 Nov 2026, 14:33"
     },
     {
-      "cancion": "prophecy",
-      "artista": "XXANTERIA",
-      "album": "BONES BREAK",
+      "cancion": "Breath Of Fire",
+      "artista": "RXLZQ",
+      "album": "Breath Of Fire",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "17 Nov 2026, 21:04"
+      "fecha": "21 Nov 2026, 14:31"
     }
   ]
 }
