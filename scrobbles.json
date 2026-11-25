@@ -3,47 +3,47 @@
     {
       "posicion": 1,
       "nombre": "XXANTERIA",
-      "reproducciones": "160"
+      "reproducciones": "165"
     },
     {
       "posicion": 2,
       "nombre": "saraunh0ly",
-      "reproducciones": "85"
+      "reproducciones": "87"
     },
     {
       "posicion": 3,
       "nombre": "DVRST",
-      "reproducciones": "60"
+      "reproducciones": "61"
     },
     {
       "posicion": 4,
       "nombre": "RXLZQ",
-      "reproducciones": "51"
+      "reproducciones": "55"
     },
     {
       "posicion": 5,
       "nombre": "LONOWN",
-      "reproducciones": "47"
+      "reproducciones": "49"
     },
     {
       "posicion": 6,
       "nombre": "Elven Dior",
-      "reproducciones": "46"
+      "reproducciones": "48"
     },
     {
       "posicion": 7,
-      "nombre": "InterWorld",
-      "reproducciones": "40"
+      "nombre": "Miguel Angeles",
+      "reproducciones": "42"
     },
     {
       "posicion": 8,
-      "nombre": "Miguel Angeles",
-      "reproducciones": "40"
+      "nombre": "Odetari",
+      "reproducciones": "42"
     },
     {
       "posicion": 9,
-      "nombre": "Odetari",
-      "reproducciones": "38"
+      "nombre": "InterWorld",
+      "reproducciones": "41"
     },
     {
       "posicion": 10,
@@ -84,9 +84,9 @@
     },
     {
       "posicion": 6,
-      "nombre": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/9f507ee0419b509b846e280a78cb80c2.jpg"
+      "nombre": "ME AME",
+      "artista": "XXANTERIA",
+      "portada": ""
     }
   ],
   "top_canciones_mes": [
@@ -117,71 +117,71 @@
     },
     {
       "posicion": 6,
-      "nombre": "Fluxxwave (Super Slowed)",
-      "artista": "Clovis Reyes"
+      "nombre": "ME AME",
+      "artista": "XXANTERIA"
     },
     {
       "posicion": 7,
-      "nombre": "NITE II",
-      "artista": "Elven Dior"
+      "nombre": "FUNK DO BOUNCE",
+      "artista": "ariis"
     }
   ],
   "recientes": [
     {
-      "cancion": "Show Me Your Back (Slowed + Reverb)",
-      "artista": "FindMyName",
-      "album": "",
-      "portada": "",
-      "fecha": "21 Nov 2026, 15:24"
-    },
-    {
-      "cancion": "Slowed",
-      "artista": "Axiom",
-      "album": "",
-      "portada": "",
-      "fecha": "21 Nov 2026, 15:21"
-    },
-    {
-      "cancion": "DEAD END",
-      "artista": "DudePlaya",
-      "album": "DEAD END",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/6aed25e143eed491d57bfa5c63bc0e0b.jpg",
-      "fecha": "21 Nov 2026, 15:19"
-    },
-    {
-      "cancion": "LOVELY BASTARDS",
-      "artista": "ZWE1HVNDXR",
-      "album": "",
-      "portada": "",
-      "fecha": "21 Nov 2026, 15:17"
-    },
-    {
-      "cancion": "Alex Peipman",
-      "artista": "Surrounded",
-      "album": "",
-      "portada": "",
-      "fecha": "21 Nov 2026, 14:58"
-    },
-    {
-      "cancion": "I'M A BLACKHOLE (STAR)",
-      "artista": "Odetari",
-      "album": "",
-      "portada": "",
-      "fecha": "21 Nov 2026, 14:54"
-    },
-    {
-      "cancion": "NITE II",
-      "artista": "Elven Dior",
-      "album": "NITE II",
-      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/40172b2bfccf2676fd138982d2ca90af.png",
-      "fecha": "21 Nov 2026, 14:33"
+      "cancion": "ME AME",
+      "artista": "XXANTERIA",
+      "album": "ME AME",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
+      "fecha": "25 Nov 2026, 00:18"
     },
     {
       "cancion": "Breath Of Fire",
       "artista": "RXLZQ",
       "album": "Breath Of Fire",
       "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png",
-      "fecha": "21 Nov 2026, 14:31"
+      "fecha": "25 Nov 2026, 00:15"
+    },
+    {
+      "cancion": "NITE",
+      "artista": "Elven Dior",
+      "album": "NITE",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/a43a1af746d741eb5c9ce1fa6c7beecf.jpg",
+      "fecha": "25 Nov 2026, 00:14"
+    },
+    {
+      "cancion": "suffer with me",
+      "artista": "líue",
+      "album": "Suffer With Me",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/afe77d56a412c4b98207f4199a81edf5.jpg",
+      "fecha": "25 Nov 2026, 00:10"
+    },
+    {
+      "cancion": "Limited World",
+      "artista": "RXLZQ",
+      "album": "Limited World",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/80d344f727f5515cedcd4778bc636fed.jpg",
+      "fecha": "25 Nov 2026, 00:05"
+    },
+    {
+      "cancion": "Autumn Wind",
+      "artista": "DVRST",
+      "album": "Autumn Wind",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/58fdfe209d03494f22a367518461a41a.jpg",
+      "fecha": "25 Nov 2026, 00:00"
+    },
+    {
+      "cancion": "addiction",
+      "artista": "LONOWN",
+      "album": "addiction",
+      "portada": "https://lastfm-img.freetls.fastly.net/i/u/64s/96505e669048ac5f67df35ef1e2e3a74.jpg",
+      "fecha": "24 Nov 2026, 23:56"
+    },
+    {
+      "cancion": "I'M A BLACKHOLE (STAR)",
+      "artista": "Odetari",
+      "album": "",
+      "portada": "",
+      "fecha": "24 Nov 2026, 23:52"
     }
   ]
 }
